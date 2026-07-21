@@ -1,0 +1,96 @@
+{
+  "folder": null,
+  "name": "Suppressing Burst",
+  "type": "ability",
+  "_id": "UeYiysMpM1SGpLgh",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "suppressing-burst",
+    "story": "Trigger discipline: a measured burst that pins them and feeds your Adrenaline.",
+    "keywords": [
+      "ranged",
+      "strike",
+      "weapon"
+    ],
+    "type": "main",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "might"
+        ]
+      },
+      "effects": {
+        "e8bATej3gMj1Amvx": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "e8bATej3gMj1Amvx",
+          "damage": {
+            "tier1": {
+              "value": "2 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "5 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "7 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p>On any hit, gain 1 Adrenaline (trigger discipline).</p>"
+    },
+    "spend": {
+      "text": "",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!UeYiysMpM1SGpLgh"
+}

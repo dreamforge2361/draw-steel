@@ -1,0 +1,94 @@
+{
+  "folder": "UjgMzryDRWk4GYT7",
+  "name": "Operator",
+  "type": "class",
+  "_id": "z7OqnPqyVZvYFg2l",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "description": {
+      "value": "<p>You were built for the trigger. Maybe a corp warframe walked free of its handlers; maybe a Flats veteran who learned that the only law down here is tempo. Either way, you are the crew's front rank - the body between the team and the muzzle flash.</p><p>Your engine is <strong>Adrenaline</strong>: you do not open a fight full. You bank it through the discipline of the trigger - each measured burst, each round you hold the line - and spend it to escalate when the tempo turns your way. Operators are chrome-forward and cast nothing; every edge you have, you bought with steel, wire, and nerve.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "operator",
+    "primary": "Adrenaline",
+    "epic": "Overclock",
+    "turnGain": "1",
+    "minimum": "0",
+    "characteristics": {
+      "core": [
+        "might",
+        "agility"
+      ]
+    },
+    "stamina": {
+      "starting": 21,
+      "level": 9
+    },
+    "recoveries": 10,
+    "level": 0,
+    "advancements": {
+      "St9YLQ3Pu3AMPQyI": {
+        "name": "Key Skill",
+        "img": null,
+        "type": "skill",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "St9YLQ3Pu3AMPQyI",
+        "description": "<p>You gain a martial key skill. (<em>Quick Build:</em> Ranged Weapons.)</p>",
+        "chooseN": 1,
+        "sort": 19000
+      },
+      "qqGCRkJ60w1uygfb": {
+        "name": "Signature Ability",
+        "img": "systems/draw-steel/assets/classes/operator.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "qqGCRkJ60w1uygfb",
+        "chooseN": null,
+        "description": "<p>You gain your signature trigger-discipline attack.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.UeYiysMpM1SGpLgh"
+          }
+        ],
+        "sort": 4000
+      },
+      "J8Jg2T9QZCypIEmO": {
+        "name": "Adrenaline Abilities",
+        "img": "systems/draw-steel/assets/classes/operator.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "J8Jg2T9QZCypIEmO",
+        "chooseN": null,
+        "description": "<p>You gain your starting Adrenaline-spend abilities.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.XxdRD1toKd58FcKw"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.tUCSPdsCVwzzKIcB"
+          }
+        ],
+        "sort": 5000
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!z7OqnPqyVZvYFg2l"
+}
