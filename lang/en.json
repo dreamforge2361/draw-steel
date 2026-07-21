@@ -375,15 +375,15 @@
     "SHEET": {
       "Labels": {
         "Character": "GHOSTWIRE Edgerunner Sheet",
-        "NPC": "Draw Steel NPC Sheet",
-        "Object": "Draw Steel Object Sheet",
-        "Party": "Draw Steel Party Sheet",
-        "Retainer": "Draw Steel Retainer Sheet",
-        "Item": "Draw Steel Item Sheet",
-        "JournalEntry": "Draw Steel Journal Entry Sheet",
-        "ActiveEffect": "Draw Steel Active Effect Config",
-        "CombatantGroup": "Draw Steel Combatant Group Config",
-        "WallDocument": "Draw Steel Wall Config"
+        "NPC": "GHOSTWIRE NPC Sheet",
+        "Object": "GHOSTWIRE Object Sheet",
+        "Party": "GHOSTWIRE Party Sheet",
+        "Retainer": "GHOSTWIRE Retainer Sheet",
+        "Item": "GHOSTWIRE Item Sheet",
+        "JournalEntry": "GHOSTWIRE Journal Entry Sheet",
+        "ActiveEffect": "GHOSTWIRE Active Effect Config",
+        "CombatantGroup": "GHOSTWIRE Combatant Group Config",
+        "WallDocument": "GHOSTWIRE Wall Config"
       },
       "Add": "+ Add {itemName}",
       "NoDocument": "No {documentName}",
@@ -493,12 +493,12 @@
       },
       "Books": {
         "Heroes": {
-          "Label": "Heroes",
-          "Title": "Draw Steel Heroes"
+          "Label": "Edgerunners",
+          "Title": "GHOSTWIRE Edgerunners"
         },
         "Monsters": {
           "Label": "Monsters",
-          "Title": "Draw Steel Monsters"
+          "Title": "GHOSTWIRE Monsters"
         }
       },
       "Licenses": {
@@ -1031,7 +1031,7 @@
         },
         "Actions": {
           "RollFirst": {
-            "Heroes": "The Heroes Determine Who Goes First!",
+            "Heroes": "The Edgerunners Determine Who Goes First!",
             "Enemies": "The Director Determines Who Goes First!"
           },
           "Act": "Act",
@@ -2534,27 +2534,27 @@
     },
     "HINTS": {
       "Actor": {
-        "hero": "A player character, created and run by a player other than the Director.",
+        "hero": "An Edgerunner: a player character, created and run by a player other than the Director.",
         "npc": "A nonplayer character, usually created and run by the Director.",
         "object": "A terrain object is an element placed in an encounter that alters tactics on the battlefield, allowing the Director to better theme an encounter.",
-        "party": "A collection of Heroes used for easy viewing of statistics and setting of hero tokens.",
-        "retainer": " A follower who adventures alongside a hero."
+        "party": "A collection of Edgerunners used for easy viewing of statistics and setting of hero tokens.",
+        "retainer": " A follower who adventures alongside an Edgerunner."
       },
       "Item": {
         "ability": "Special main actions, maneuvers, and more that a creature can use to affect other creatures and objects, and the environment.",
-        "ancestry": "A humanoid creature’s species. Every hero has an ancestry.",
+        "ancestry": "A humanoid creature’s species. Every Edgerunner has an ancestry.",
         "ancestryTrait": "Signature and purchased features for ancestries.",
-        "career": "The job a hero had before becoming a hero.",
+        "career": "The job an Edgerunner had before becoming an Edgerunner.",
         "class": "A hero’s current role, which largely determines how they interact with the game’s rules.",
-        "complication": "A dramatic narrative twist that deepens a hero's backstory and gives them a rules benefit and drawback. Complications are an optional rule.",
-        "culture": "The community in which a hero was raised.",
+        "complication": "A dramatic narrative twist that deepens an Edgerunner's backstory and gives them a rules benefit and drawback. Complications are an optional rule.",
+        "culture": "The community in which an Edgerunner was raised.",
         "feature": "A trait given by classes, ancestries, etc.",
-        "follower": "An NPC dedicated to helping a hero. Many of the actions of a follower are controlled by a player.",
-        "kit": "A fighting style that comes with equipment to match. Kits are available to most heroes who wield weapons and wear armor.",
-        "perk": "A feature available to all heroes that helps with exploration, investigation, negotiation, and more.",
-        "project": "A task a hero undertakes during one or more respite.",
+        "follower": "An NPC dedicated to helping an Edgerunner. Many of the actions of a follower are controlled by a player.",
+        "kit": "A fighting style that comes with equipment to match. Kits are available to most Edgerunners who wield weapons and wear armor.",
+        "perk": "A feature available to all Edgerunners that helps with exploration, investigation, negotiation, and more.",
+        "project": "A task an Edgerunner undertakes during one or more respite.",
         "subclass": "A choice each hero makes at 1st level that determines a specialization within their class.",
-        "title": "A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.",
+        "title": "A special reward that an Edgerunner can earn while adventuring, and which grants benefits or new abilities.",
         "treasure": " A piece of supernatural equipment, from weapons and armor to implements and more."
       },
       "JournalEntryPage": {
