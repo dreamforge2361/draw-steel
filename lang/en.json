@@ -374,7 +374,7 @@
     },
     "SHEET": {
       "Labels": {
-        "Character": "Draw Steel Character Sheet",
+        "Character": "GHOSTWIRE Edgerunner Sheet",
         "NPC": "Draw Steel NPC Sheet",
         "Object": "Draw Steel Object Sheet",
         "Party": "Draw Steel Party Sheet",
@@ -2513,7 +2513,7 @@
       "abilityModifier": "Ability Modifier"
     },
     "Actor": {
-      "hero": "Hero",
+      "hero": "Edgerunner",
       "npc": "NPC",
       "object": "Object",
       "party": "Party",
