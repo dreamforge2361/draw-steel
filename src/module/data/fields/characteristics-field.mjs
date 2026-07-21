@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @import { DataFieldContext, DataFieldOptions } from "@common/data/_types.mjs";
  */
 
@@ -37,5 +37,5 @@ export default class CharacteristicsField extends SchemaField {
   /**
    * A fixed, hard private list of valid characteristics in Draw Steel.
    */
-  static #validCharacteristics = new Set(["might", "agility", "reason", "intuition", "presence"]);
+  static #validCharacteristics = new Set(["might", "agility", "reason", "intuition", "presence", "resolve"]);
 }

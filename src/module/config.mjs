@@ -1,4 +1,4 @@
-import { preLocalize } from "./helpers/localization.mjs";
+﻿import { preLocalize } from "./helpers/localization.mjs";
 import { pseudoDocuments } from "./data/_module.mjs";
 import { systemID } from "./constants.mjs";
 
@@ -66,6 +66,11 @@ export const characteristics = Object.seal({
     reference: {
       uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.z5fiYN750d7idtM0",
     },
+  },
+  resolve: {
+    label: "Resolve",
+    hint: "RES",
+    rollKey: "V",
   },
 });
 preLocalize("characteristics", { keys: ["label", "hint"] });
