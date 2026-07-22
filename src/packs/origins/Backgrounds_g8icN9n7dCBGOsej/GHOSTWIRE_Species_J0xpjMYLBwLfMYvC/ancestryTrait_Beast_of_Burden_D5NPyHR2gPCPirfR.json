@@ -1,0 +1,45 @@
+{
+    "folder":  "Q80NaBiHCPNf6WUo",
+    "name":  "Beast of Burden",
+    "type":  "ancestryTrait",
+    "_id":  "D5NPyHR2gPCPirfR",
+    "img":  "icons/commodities/currency/coin-embossed-star-gold.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eTreat your Physique as one higher again for carrying, dragging, and encumbrance; haul an ally or heavy object at full speed.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-goliar-opt-3",
+                   "advancements":  {
+
+                                    },
+                   "points":  2
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729907055,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!D5NPyHR2gPCPirfR"
+}

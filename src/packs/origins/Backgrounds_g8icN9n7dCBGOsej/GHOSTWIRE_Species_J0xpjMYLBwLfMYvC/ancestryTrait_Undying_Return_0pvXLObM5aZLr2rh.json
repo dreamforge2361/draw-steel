@@ -1,0 +1,44 @@
+{
+    "folder":  "Fp6HhTVVc0m3rly0",
+    "name":  "Undying Return",
+    "type":  "ancestryTrait",
+    "_id":  "0pvXLObM5aZLr2rh",
+    "img":  "icons/sundries/gaming/dice-runed-brown.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eWhen reduced to 0 Stamina you do not die - you go inert and rise again. Only fire (while inert) or consecrated destruction ends you for good (True Death).\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-revenant-free-1",
+                   "advancements":  {
+
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906954,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!0pvXLObM5aZLr2rh"
+}

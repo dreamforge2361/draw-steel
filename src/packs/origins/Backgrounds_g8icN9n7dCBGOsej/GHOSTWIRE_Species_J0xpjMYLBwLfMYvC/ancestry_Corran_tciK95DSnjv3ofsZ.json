@@ -1,0 +1,95 @@
+{
+    "folder":  "J0xpjMYLBwLfMYvC",
+    "name":  "Corran",
+    "type":  "ancestry",
+    "_id":  "tciK95DSnjv3ofsZ",
+    "img":  "systems/draw-steel/assets/ghostwire/species/corran.png",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003e\u003cstrong\u003eAttribute Profile:\u003c/strong\u003e +1 Physique, +1 Resolve, -1 Reflex.\u003c/p\u003e\n\u003ch4\u003eSignature Traits (free at creation)\u003c/h4\u003e\n\u003cul\u003e\u003cli\u003e\u003cstrong\u003eUnyielding\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eHardy Constitution\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eDeepsight\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eCramped-Space Mastery\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eLaborer\u0027s Read\u003c/strong\u003e\u003c/li\u003e\u003c/ul\u003e\n\u003ch4\u003eSpecies Options - Tier 5 (spend 2 ancestry points)\u003c/h4\u003e\n\u003cul\u003e\u003cli\u003e\u003cstrong\u003eIronhold Grip\u003c/strong\u003e (2 BP)\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eTunnel-Sense\u003c/strong\u003e (2 BP)\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eBeast of Burden\u003c/strong\u003e (2 BP)\u003c/li\u003e\u003c/ul\u003e\n\u003cp\u003e\u003cem\u003eHigher-tier species options (Tier 4 through Tier 1) are ratified in the sourcebook and will be added to this picker in a later release.\u003c/em\u003e\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-corran",
+                   "advancements":  {
+                                        "SHmyAelmASg5SX3G":  {
+                                                                 "name":  "Signature Traits",
+                                                                 "img":  "icons/sundries/gaming/dice-runed-brown.webp",
+                                                                 "type":  "itemGrant",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "_id":  "SHmyAelmASg5SX3G",
+                                                                 "pool":  [
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.iuWLCODToA93ngHa"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.TMT6msgXbhjs6xHI"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.EVrdOiXfNu130N3g"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.DWBtgPkl3gckfsEC"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.mJ2Y8qr9KtVA6C3X"
+                                                                              }
+                                                                          ],
+                                                                 "description":  "\u003cp\u003eYour species\u0027 defining traits, granted automatically at creation.\u003c/p\u003e"
+                                                             },
+                                        "V2ySjKMoHDeLMnyA":  {
+                                                                 "name":  "Species Options (Tier 5)",
+                                                                 "img":  "icons/commodities/currency/coin-embossed-star-gold.webp",
+                                                                 "type":  "itemGrant",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "_id":  "V2ySjKMoHDeLMnyA",
+                                                                 "pool":  [
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.REPQmyRYjAhejARy"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.koOyhM8QvlO4GHwU"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.origins.Item.U9NyZIbYGhTJKb2t"
+                                                                              }
+                                                                          ],
+                                                                 "description":  "\u003cp\u003eYou have 2 ancestry points to spend on the following Tier 5 options. (Higher-tier options unlock in a later release.)\u003c/p\u003e",
+                                                                 "chooseN":  2,
+                                                                 "additional":  {
+                                                                                    "type":  "ancestryTrait"
+                                                                                }
+                                                             }
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729907003,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!tciK95DSnjv3ofsZ"
+}

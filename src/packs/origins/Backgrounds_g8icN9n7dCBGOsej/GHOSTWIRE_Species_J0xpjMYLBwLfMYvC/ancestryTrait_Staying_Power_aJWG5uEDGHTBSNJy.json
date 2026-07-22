@@ -1,0 +1,45 @@
+{
+    "folder":  "eOFxqx3EJha6O8Zc",
+    "name":  "Staying Power",
+    "type":  "ancestryTrait",
+    "_id":  "aJWG5uEDGHTBSNJy",
+    "img":  "icons/commodities/currency/coin-embossed-star-gold.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eA standing increase to Stamina (tuned in the damage pass) - humans endure.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-pure-human-opt-3",
+                   "advancements":  {
+
+                                    },
+                   "points":  2
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906842,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!aJWG5uEDGHTBSNJy"
+}

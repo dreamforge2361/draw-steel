@@ -1,0 +1,45 @@
+{
+    "folder":  "J6XXK8TEfWNETAcA",
+    "name":  "Tunnel-Sense",
+    "type":  "ancestryTrait",
+    "_id":  "koOyhM8QvlO4GHwU",
+    "img":  "icons/commodities/currency/coin-embossed-star-gold.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eShort-range tremorsense underground or against solid surfaces - you feel movement, digging, and structural stress through ground and walls.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-corran-opt-2",
+                   "advancements":  {
+
+                                    },
+                   "points":  2
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906996,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!koOyhM8QvlO4GHwU"
+}

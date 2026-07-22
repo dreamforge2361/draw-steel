@@ -1,0 +1,25 @@
+{
+    "name":  "GHOSTWIRE Species",
+    "sorting":  "a",
+    "folder":  "g8icN9n7dCBGOsej",
+    "type":  "Item",
+    "_id":  "J0xpjMYLBwLfMYvC",
+    "description":  "",
+    "sort":  3,
+    "color":  null,
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906804,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!folders!J0xpjMYLBwLfMYvC"
+}

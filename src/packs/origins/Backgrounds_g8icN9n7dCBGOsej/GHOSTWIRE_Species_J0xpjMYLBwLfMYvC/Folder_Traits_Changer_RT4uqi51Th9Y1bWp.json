@@ -1,0 +1,25 @@
+{
+    "name":  "Traits - Changer",
+    "sorting":  "a",
+    "folder":  "J0xpjMYLBwLfMYvC",
+    "type":  "Item",
+    "_id":  "RT4uqi51Th9Y1bWp",
+    "description":  "",
+    "sort":  0,
+    "color":  null,
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906926,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!folders!RT4uqi51Th9Y1bWp"
+}

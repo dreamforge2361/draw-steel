@@ -1,271 +1,439 @@
 {
-  "id": "draw-steel",
-  "title": "GHOSTWIRE",
-  "description": "The Draw Steel system by MCDM for Foundry Virtual Tabletop",
-  "authors": [
-    {
-      "name": "Joseph M.",
-      "url": "https://joseph-meehan.carrd.co/",
-      "discord": "chaosos"
-    },
-    {
-      "name": "Zhell",
-      "discord": "zhell9201"
-    }
-  ],
-  "documentTypes": {
-    "ActiveEffect": {
-      "abilityModifier": {}
-    },
-    "Actor": {
-      "hero": {
-        "htmlFields": ["biography.value", "biography.director"]
-      },
-      "npc": {
-        "htmlFields": ["biography.value", "biography.director"]
-      },
-      "object": {
-        "htmlFields": ["biography.value", "biography.director"]
-      },
-      "party": {
-        "htmlFields": ["description.value"]
-      },
-      "retainer": {
-        "htmlFields": ["biography.value", "biography.director"]
-      }
-    },
-    "ChatMessage": {
-      "standard": {}
-    },
-    "CombatantGroup": {
-      "squad": {}
-    },
-    "Item": {
-      "ability": {
-        "filePathFields": {
-          "power.effects.*.img": ["IMAGE"],
-          "effects.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["effects.*.description"]
-      },
-      "ancestry": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "ancestryTrait": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "career": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "class": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "complication": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "culture": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "feature": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "follower": {
-        "htmlFields": ["description.value", "description.director"]
-      },
-      "kit": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "perk": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "project": {
-        "htmlFields": ["description.value", "description.director"]
-      },
-      "subclass": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "title": {
-        "filePathFields": {
-          "advancements.*.img": ["IMAGE"],
-          "advancements.*.traits.*.img": ["IMAGE"]
-        },
-        "htmlFields": ["description.value", "description.director", "advancements.*.description"]
-      },
-      "treasure": {
-        "htmlFields": ["description.value", "description.director"]
-      }
-    },
-    "JournalEntryPage": {
-      "configuration": {},
-      "reference": {
-        "htmlFields": ["tooltip"]
-      },
-      "tierOutcome": {
-        "htmlFields": ["tier1", "tier2", "tier3"]
-      }
-    }
-  },
-  "flags": {
-    "hotReload": {
-      "extensions": ["css", "html", "hbs", "json"],
-      "paths": ["css", "src/styles", "lang", "templates"]
-    }
-  },
-  "url": "https://github.com/MetaMorphic-Digital/draw-steel",
-  "license": "LICENSE.md",
-  "readme": "README.md",
-  "bugs": "https://github.com/MetaMorphic-Digital/draw-steel/issues",
-  "changelog": "CHANGELOG.md",
-  "media": [
-    {
-      "type": "setup",
-      "url": "systems/draw-steel/assets/system-background.webp",
-      "thumbnail": "systems/draw-steel/assets/system-background.webp"
-    }
-  ],
-  "version": "1.1.2",
-  "compatibility": {
-    "minimum": "14.364",
-    "verified": "14",
-    "maximum": "14"
-  },
-  "esmodules": ["draw-steel.mjs"],
-  "styles": [
-    { "src": "css/draw-steel-system.css", "layer": "system" },
-    { "src": "css/draw-steel-variables.css", "layer": "variables" },
-    { "src": "css/draw-steel-elements.css", "layer": "elements" }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "packs": [
-    {
-      "name": "classes",
-      "label": "DRAW_STEEL.COMPENDIUM.classes",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/classes.webp"
-    },
-    {
-      "name": "abilities",
-      "label": "DRAW_STEEL.COMPENDIUM.abilities",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/abilities.webp"
-    },
-    {
-      "name": "journals",
-      "label": "DRAW_STEEL.COMPENDIUM.journals",
-      "type": "JournalEntry",
-      "banner": "systems/draw-steel/assets/banners/journals.webp",
-      "flags": {
-        "draw-steel": {
-          "display": "table-of-contents"
-        }
-      }
-    },
-    {
-      "name": "tables",
-      "label": "DRAW_STEEL.COMPENDIUM.tables",
-      "type": "RollTable"
-    },
-    {
-      "name": "monsters",
-      "label": "DRAW_STEEL.COMPENDIUM.monsters",
-      "type": "Actor",
-      "banner": "systems/draw-steel/assets/banners/monsters.webp"
-    },
-    {
-      "name": "monster-features",
-      "label": "DRAW_STEEL.COMPENDIUM.monster-features",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/monster-features.webp"
-    },
-    {
-      "name": "origins",
-      "label": "DRAW_STEEL.COMPENDIUM.origins",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/origins.webp"
-    },
-    {
-      "name": "character-options",
-      "label": "DRAW_STEEL.COMPENDIUM.character-options",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/character-options.webp"
-    },
-    {
-      "name": "rewards",
-      "label": "DRAW_STEEL.COMPENDIUM.rewards",
-      "type": "Item",
-      "banner": "systems/draw-steel/assets/banners/rewards.webp"
-    },
-    {
-      "name": "effects",
-      "label": "DRAW_STEEL.COMPENDIUM.effects",
-      "type": "ActiveEffect",
-      "banner": "systems/draw-steel/assets/banners/effects.webp"
-    }
-  ],
-  "packFolders": [
-    {
-      "name": "Draw Steel System",
-      "color": "#483D8B",
-      "packs": ["abilities", "classes", "journals", "monsters", "monster-features", "tables", "character-options", "origins", "rewards", "effects"]
-    }
-  ],
-  "socket": true,
-  "manifest": "https://github.com/MetaMorphic-Digital/draw-steel/releases/latest/download/system.json",
-  "download": "",
-  "background": "systems/draw-steel/assets/system-background.webp",
-  "grid": {
-    "type": 1,
-    "distance": 1,
-    "units": "sq",
-    "diagonals": 0
-  },
-  "primaryTokenAttribute": "stamina",
-  "secondaryTokenAttribute": "hero.primary.value",
-  "initiative": "2d10 + @A"
+    "id":  "draw-steel",
+    "title":  "GHOSTWIRE",
+    "description":  "The Draw Steel system by MCDM for Foundry Virtual Tabletop",
+    "authors":  [
+                    {
+                        "name":  "Joseph M.",
+                        "url":  "https://joseph-meehan.carrd.co/",
+                        "discord":  "chaosos"
+                    },
+                    {
+                        "name":  "Zhell",
+                        "discord":  "zhell9201"
+                    }
+                ],
+    "documentTypes":  {
+                          "ActiveEffect":  {
+                                               "abilityModifier":  {
+
+                                                                   }
+                                           },
+                          "Actor":  {
+                                        "hero":  {
+                                                     "htmlFields":  [
+                                                                        "biography.value",
+                                                                        "biography.director"
+                                                                    ]
+                                                 },
+                                        "npc":  {
+                                                    "htmlFields":  [
+                                                                       "biography.value",
+                                                                       "biography.director"
+                                                                   ]
+                                                },
+                                        "object":  {
+                                                       "htmlFields":  [
+                                                                          "biography.value",
+                                                                          "biography.director"
+                                                                      ]
+                                                   },
+                                        "party":  {
+                                                      "htmlFields":  [
+                                                                         "description.value"
+                                                                     ]
+                                                  },
+                                        "retainer":  {
+                                                         "htmlFields":  [
+                                                                            "biography.value",
+                                                                            "biography.director"
+                                                                        ]
+                                                     }
+                                    },
+                          "ChatMessage":  {
+                                              "standard":  {
+
+                                                           }
+                                          },
+                          "CombatantGroup":  {
+                                                 "squad":  {
+
+                                                           }
+                                             },
+                          "Item":  {
+                                       "ability":  {
+                                                       "filePathFields":  {
+                                                                              "power.effects.*.img":  [
+                                                                                                          "IMAGE"
+                                                                                                      ],
+                                                                              "effects.*.img":  [
+                                                                                                    "IMAGE"
+                                                                                                ]
+                                                                          },
+                                                       "htmlFields":  [
+                                                                          "effects.*.description"
+                                                                      ]
+                                                   },
+                                       "ancestry":  {
+                                                        "filePathFields":  {
+                                                                               "advancements.*.img":  [
+                                                                                                          "IMAGE"
+                                                                                                      ],
+                                                                               "advancements.*.traits.*.img":  [
+                                                                                                                   "IMAGE"
+                                                                                                               ]
+                                                                           },
+                                                        "htmlFields":  [
+                                                                           "description.value",
+                                                                           "description.director",
+                                                                           "advancements.*.description"
+                                                                       ]
+                                                    },
+                                       "ancestryTrait":  {
+                                                             "filePathFields":  {
+                                                                                    "advancements.*.img":  [
+                                                                                                               "IMAGE"
+                                                                                                           ],
+                                                                                    "advancements.*.traits.*.img":  [
+                                                                                                                        "IMAGE"
+                                                                                                                    ]
+                                                                                },
+                                                             "htmlFields":  [
+                                                                                "description.value",
+                                                                                "description.director",
+                                                                                "advancements.*.description"
+                                                                            ]
+                                                         },
+                                       "career":  {
+                                                      "filePathFields":  {
+                                                                             "advancements.*.img":  [
+                                                                                                        "IMAGE"
+                                                                                                    ],
+                                                                             "advancements.*.traits.*.img":  [
+                                                                                                                 "IMAGE"
+                                                                                                             ]
+                                                                         },
+                                                      "htmlFields":  [
+                                                                         "description.value",
+                                                                         "description.director",
+                                                                         "advancements.*.description"
+                                                                     ]
+                                                  },
+                                       "class":  {
+                                                     "filePathFields":  {
+                                                                            "advancements.*.img":  [
+                                                                                                       "IMAGE"
+                                                                                                   ],
+                                                                            "advancements.*.traits.*.img":  [
+                                                                                                                "IMAGE"
+                                                                                                            ]
+                                                                        },
+                                                     "htmlFields":  [
+                                                                        "description.value",
+                                                                        "description.director",
+                                                                        "advancements.*.description"
+                                                                    ]
+                                                 },
+                                       "complication":  {
+                                                            "filePathFields":  {
+                                                                                   "advancements.*.img":  [
+                                                                                                              "IMAGE"
+                                                                                                          ],
+                                                                                   "advancements.*.traits.*.img":  [
+                                                                                                                       "IMAGE"
+                                                                                                                   ]
+                                                                               },
+                                                            "htmlFields":  [
+                                                                               "description.value",
+                                                                               "description.director",
+                                                                               "advancements.*.description"
+                                                                           ]
+                                                        },
+                                       "culture":  {
+                                                       "filePathFields":  {
+                                                                              "advancements.*.img":  [
+                                                                                                         "IMAGE"
+                                                                                                     ],
+                                                                              "advancements.*.traits.*.img":  [
+                                                                                                                  "IMAGE"
+                                                                                                              ]
+                                                                          },
+                                                       "htmlFields":  [
+                                                                          "description.value",
+                                                                          "description.director",
+                                                                          "advancements.*.description"
+                                                                      ]
+                                                   },
+                                       "feature":  {
+                                                       "filePathFields":  {
+                                                                              "advancements.*.img":  [
+                                                                                                         "IMAGE"
+                                                                                                     ],
+                                                                              "advancements.*.traits.*.img":  [
+                                                                                                                  "IMAGE"
+                                                                                                              ]
+                                                                          },
+                                                       "htmlFields":  [
+                                                                          "description.value",
+                                                                          "description.director",
+                                                                          "advancements.*.description"
+                                                                      ]
+                                                   },
+                                       "follower":  {
+                                                        "htmlFields":  [
+                                                                           "description.value",
+                                                                           "description.director"
+                                                                       ]
+                                                    },
+                                       "kit":  {
+                                                   "filePathFields":  {
+                                                                          "advancements.*.img":  [
+                                                                                                     "IMAGE"
+                                                                                                 ],
+                                                                          "advancements.*.traits.*.img":  [
+                                                                                                              "IMAGE"
+                                                                                                          ]
+                                                                      },
+                                                   "htmlFields":  [
+                                                                      "description.value",
+                                                                      "description.director",
+                                                                      "advancements.*.description"
+                                                                  ]
+                                               },
+                                       "perk":  {
+                                                    "filePathFields":  {
+                                                                           "advancements.*.img":  [
+                                                                                                      "IMAGE"
+                                                                                                  ],
+                                                                           "advancements.*.traits.*.img":  [
+                                                                                                               "IMAGE"
+                                                                                                           ]
+                                                                       },
+                                                    "htmlFields":  [
+                                                                       "description.value",
+                                                                       "description.director",
+                                                                       "advancements.*.description"
+                                                                   ]
+                                                },
+                                       "project":  {
+                                                       "htmlFields":  [
+                                                                          "description.value",
+                                                                          "description.director"
+                                                                      ]
+                                                   },
+                                       "subclass":  {
+                                                        "filePathFields":  {
+                                                                               "advancements.*.img":  [
+                                                                                                          "IMAGE"
+                                                                                                      ],
+                                                                               "advancements.*.traits.*.img":  [
+                                                                                                                   "IMAGE"
+                                                                                                               ]
+                                                                           },
+                                                        "htmlFields":  [
+                                                                           "description.value",
+                                                                           "description.director",
+                                                                           "advancements.*.description"
+                                                                       ]
+                                                    },
+                                       "title":  {
+                                                     "filePathFields":  {
+                                                                            "advancements.*.img":  [
+                                                                                                       "IMAGE"
+                                                                                                   ],
+                                                                            "advancements.*.traits.*.img":  [
+                                                                                                                "IMAGE"
+                                                                                                            ]
+                                                                        },
+                                                     "htmlFields":  [
+                                                                        "description.value",
+                                                                        "description.director",
+                                                                        "advancements.*.description"
+                                                                    ]
+                                                 },
+                                       "treasure":  {
+                                                        "htmlFields":  [
+                                                                           "description.value",
+                                                                           "description.director"
+                                                                       ]
+                                                    }
+                                   },
+                          "JournalEntryPage":  {
+                                                   "configuration":  {
+
+                                                                     },
+                                                   "reference":  {
+                                                                     "htmlFields":  [
+                                                                                        "tooltip"
+                                                                                    ]
+                                                                 },
+                                                   "tierOutcome":  {
+                                                                       "htmlFields":  [
+                                                                                          "tier1",
+                                                                                          "tier2",
+                                                                                          "tier3"
+                                                                                      ]
+                                                                   }
+                                               }
+                      },
+    "flags":  {
+                  "hotReload":  {
+                                    "extensions":  [
+                                                       "css",
+                                                       "html",
+                                                       "hbs",
+                                                       "json"
+                                                   ],
+                                    "paths":  [
+                                                  "css",
+                                                  "src/styles",
+                                                  "lang",
+                                                  "templates"
+                                              ]
+                                }
+              },
+    "url":  "https://github.com/MetaMorphic-Digital/draw-steel",
+    "license":  "LICENSE.md",
+    "readme":  "README.md",
+    "bugs":  "https://github.com/MetaMorphic-Digital/draw-steel/issues",
+    "changelog":  "CHANGELOG.md",
+    "media":  [
+                  {
+                      "type":  "setup",
+                      "url":  "systems/draw-steel/assets/system-background.webp",
+                      "thumbnail":  "systems/draw-steel/assets/system-background.webp"
+                  }
+              ],
+    "version":  "1.1.2",
+    "compatibility":  {
+                          "minimum":  "14.364",
+                          "verified":  "14",
+                          "maximum":  "14"
+                      },
+    "esmodules":  [
+                      "draw-steel.mjs"
+                  ],
+    "styles":  [
+                   {
+                       "src":  "css/draw-steel-system.css",
+                       "layer":  "system"
+                   },
+                   {
+                       "src":  "css/draw-steel-variables.css",
+                       "layer":  "variables"
+                   },
+                   {
+                       "src":  "css/draw-steel-elements.css",
+                       "layer":  "elements"
+                   }
+               ],
+    "languages":  [
+                      {
+                          "lang":  "en",
+                          "name":  "English",
+                          "path":  "lang/en.json"
+                      },
+                      {
+                          "lang":  "en",
+                          "name":  "GHOSTWIRE Overrides",
+                          "path":  "lang/ghostwire-en.json"
+                      }
+                  ],
+    "packs":  [
+                  {
+                      "name":  "classes",
+                      "label":  "DRAW_STEEL.COMPENDIUM.classes",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/classes.webp"
+                  },
+                  {
+                      "name":  "abilities",
+                      "label":  "DRAW_STEEL.COMPENDIUM.abilities",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/abilities.webp"
+                  },
+                  {
+                      "name":  "journals",
+                      "label":  "DRAW_STEEL.COMPENDIUM.journals",
+                      "type":  "JournalEntry",
+                      "banner":  "systems/draw-steel/assets/banners/journals.webp",
+                      "flags":  {
+                                    "draw-steel":  {
+                                                       "display":  "table-of-contents"
+                                                   }
+                                }
+                  },
+                  {
+                      "name":  "tables",
+                      "label":  "DRAW_STEEL.COMPENDIUM.tables",
+                      "type":  "RollTable"
+                  },
+                  {
+                      "name":  "monsters",
+                      "label":  "DRAW_STEEL.COMPENDIUM.monsters",
+                      "type":  "Actor",
+                      "banner":  "systems/draw-steel/assets/banners/monsters.webp"
+                  },
+                  {
+                      "name":  "monster-features",
+                      "label":  "DRAW_STEEL.COMPENDIUM.monster-features",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/monster-features.webp"
+                  },
+                  {
+                      "name":  "origins",
+                      "label":  "DRAW_STEEL.COMPENDIUM.origins",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/origins.webp"
+                  },
+                  {
+                      "name":  "character-options",
+                      "label":  "DRAW_STEEL.COMPENDIUM.character-options",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/character-options.webp"
+                  },
+                  {
+                      "name":  "rewards",
+                      "label":  "DRAW_STEEL.COMPENDIUM.rewards",
+                      "type":  "Item",
+                      "banner":  "systems/draw-steel/assets/banners/rewards.webp"
+                  },
+                  {
+                      "name":  "effects",
+                      "label":  "DRAW_STEEL.COMPENDIUM.effects",
+                      "type":  "ActiveEffect",
+                      "banner":  "systems/draw-steel/assets/banners/effects.webp"
+                  }
+              ],
+    "packFolders":  [
+                        {
+                            "name":  "Draw Steel System",
+                            "color":  "#483D8B",
+                            "packs":  [
+                                          "abilities",
+                                          "classes",
+                                          "journals",
+                                          "monsters",
+                                          "monster-features",
+                                          "tables",
+                                          "character-options",
+                                          "origins",
+                                          "rewards",
+                                          "effects"
+                                      ]
+                        }
+                    ],
+    "socket":  true,
+    "manifest":  "https://github.com/MetaMorphic-Digital/draw-steel/releases/latest/download/system.json",
+    "download":  "",
+    "background":  "systems/draw-steel/assets/system-background.webp",
+    "grid":  {
+                 "type":  1,
+                 "distance":  1,
+                 "units":  "sq",
+                 "diagonals":  0
+             },
+    "primaryTokenAttribute":  "stamina",
+    "secondaryTokenAttribute":  "hero.primary.value",
+    "initiative":  "2d10 + @A"
 }

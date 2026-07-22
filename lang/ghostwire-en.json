@@ -1,0 +1,21 @@
+{
+    "TYPES":  {
+                  "Item":  {
+                               "ancestry":  "Species"
+                           },
+                  "HINTS":  {
+                                "Item":  {
+                                             "ancestry":  "A humanoid creature\u0027s species. Every Edgerunner has a species."
+                                         }
+                            }
+              },
+    "DRAW_STEEL":  {
+                       "Actor":  {
+                                     "npc":  {
+                                                 "KeywordGroups":  {
+                                                                       "Ancestry":  "Species"
+                                                                   }
+                                             }
+                                 }
+                   }
+}

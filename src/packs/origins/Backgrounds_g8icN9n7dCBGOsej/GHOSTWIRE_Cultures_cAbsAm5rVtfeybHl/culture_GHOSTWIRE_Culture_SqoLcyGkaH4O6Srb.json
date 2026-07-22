@@ -1,9 +1,9 @@
 {
     "folder":  "cAbsAm5rVtfeybHl",
-    "name":  "GHOSTWIRE Culture",
+    "name":  "Ghostwire Culture",
     "type":  "culture",
     "_id":  "SqoLcyGkaH4O6Srb",
-    "img":  "icons/environment/settlement/city.webp",
+    "img":  "systems/draw-steel/assets/ghostwire/cultures/ghostwire_culture_thumb.png",
     "system":  {
                    "description":  {
                                        "value":  "\u003cp\u003e\u003cem\u003eEvery Edgerunner\u0027s upbringing is described by three Culture aspects - Habitat, Order, and Formation. Each grants one trained skill (choose below), and together they grant a cultural language and a cultural edge.\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTwo-group cap:\u003c/strong\u003e no more than two of your three Culture skills may come from the same skill group; if your picks would give three from one group, choose a different skill for the third aspect.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eHabitat\u003c/strong\u003e - where in the vertical hive you were raised (Halo/Spire, Grid, Flats, Sinks, Off-Grid).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eOrder\u003c/strong\u003e - who governed your daily life (Corporate or Communal).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFormation\u003c/strong\u003e - the training or trade that formed you (Academic, Devout, Laboring, Lawless, Martial, Privileged).\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eCultural edge:\u003c/strong\u003e an edge on Power Rolls to recall lore about your own culture, or to trade on your standing inside it.\u003c/p\u003e",

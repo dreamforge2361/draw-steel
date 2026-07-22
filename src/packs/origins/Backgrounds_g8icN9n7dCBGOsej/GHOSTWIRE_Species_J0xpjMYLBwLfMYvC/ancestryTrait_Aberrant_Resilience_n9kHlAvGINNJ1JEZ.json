@@ -1,0 +1,44 @@
+{
+    "folder":  "l6EFAfZZjkGxAbop",
+    "name":  "Aberrant Resilience",
+    "type":  "ancestryTrait",
+    "_id":  "n9kHlAvGINNJ1JEZ",
+    "img":  "icons/sundries/gaming/dice-runed-brown.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eYour rewritten body shrugs off what would fell a norm: edge on tests to resist disease, toxins, and mutation-inducing hazards.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-mutant-human-free-3",
+                   "advancements":  {
+
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906904,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!n9kHlAvGINNJ1JEZ"
+}

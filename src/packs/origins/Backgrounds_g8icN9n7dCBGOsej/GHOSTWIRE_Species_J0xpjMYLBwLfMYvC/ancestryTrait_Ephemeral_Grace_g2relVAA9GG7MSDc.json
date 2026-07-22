@@ -1,0 +1,44 @@
+{
+    "folder":  "Ujw9LnqRFDaXusbB",
+    "name":  "Ephemeral Grace",
+    "type":  "ancestryTrait",
+    "_id":  "g2relVAA9GG7MSDc",
+    "img":  "icons/sundries/gaming/dice-runed-brown.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eTwo always-on halves: (1) Alluring Poise - edge on social tests to charm, persuade, deceive, or command, and others take a bane to read your true intent; and (2) Fluid Motion - edge to dodge, tumble, and keep your footing, and once per scene turn a hit into a near-miss with a graceful evasion.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-elvani-free-1",
+                   "advancements":  {
+
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729907010,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!g2relVAA9GG7MSDc"
+}

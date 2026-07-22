@@ -1,0 +1,45 @@
+{
+    "folder":  "FsAVhDNGrgzPpKFq",
+    "name":  "Integrated Optics",
+    "type":  "ancestryTrait",
+    "_id":  "nKCv3eg21DS3ZP6g",
+    "img":  "icons/commodities/currency/coin-embossed-star-gold.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eBuilt-in low-light and threat-detection optics: edge on Perception tests to notice and to see in darkness.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-cyborg-opt-1",
+                   "advancements":  {
+
+                                    },
+                   "points":  2
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906880,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!nKCv3eg21DS3ZP6g"
+}

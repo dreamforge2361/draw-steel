@@ -1,0 +1,44 @@
+{
+    "folder":  "J6XXK8TEfWNETAcA",
+    "name":  "Unyielding",
+    "type":  "ancestryTrait",
+    "_id":  "iuWLCODToA93ngHa",
+    "img":  "icons/sundries/gaming/dice-runed-brown.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eYou are built to not go down: a standing bonus to stability (hard to push, pull, or knock prone) plus an edge to resist forced movement. Once per scene, refuse an effect that would knock you prone or move you against your will.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-species-corran-free-1",
+                   "advancements":  {
+
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906983,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!iuWLCODToA93ngHa"
+}

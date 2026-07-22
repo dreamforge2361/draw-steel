@@ -1,0 +1,25 @@
+{
+    "name":  "Traits - Corran",
+    "sorting":  "a",
+    "folder":  "J0xpjMYLBwLfMYvC",
+    "type":  "Item",
+    "_id":  "J6XXK8TEfWNETAcA",
+    "description":  "",
+    "sort":  0,
+    "color":  null,
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784729906980,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!folders!J6XXK8TEfWNETAcA"
+}
