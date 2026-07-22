@@ -74,11 +74,11 @@
       <dd class="level">
         {{#if system.advancementReady}}
         <button type="button" {{disabled (not editable)}} data-action="levelUp" data-tooltip="DRAW_STEEL.SHEET.LevelUp">
-          {{system.level}}
+          {{ds-tier system.level}}
           <i class="fa-solid fa-up-long"></i>
         </button>
         {{else}}
-        {{system.level}}
+        {{ds-tier system.level}}
         {{/if}}
       </dd>
 

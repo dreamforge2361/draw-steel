@@ -1,4 +1,4 @@
-﻿{
+{
     "DOCUMENT":  {
                      "Advancement":  "Advancement",
                      "AdvancementPl":  "Advancements",
@@ -169,7 +169,7 @@
                                                                     }
                                                      },
                                            "HEADERS":  {
-                                                           "level":  "Level {level}",
+                                                           "level":  "Tier {level}",
                                                            "null":  "Initial Advancements"
                                                        },
                                            "SHEET":  {
@@ -192,7 +192,7 @@
                                                              "languageTitle":  "I Speak Their Language"
                                                          },
                                            "ChainConfiguration":  {
-                                                                      "levelUpTitle":  "Level Up: {name}",
+                                                                      "levelUpTitle":  "Tier Up: {name}",
                                                                       "createWithAdvancementsTitle":  "Create {name} with Advancements",
                                                                       "reconfigureTitle":  "Reconfigure Advancement",
                                                                       "dropAdvancementTitle":  "Configure Advancement",
@@ -395,7 +395,7 @@
                                      "Resources":  "Resources",
                                      "EditCharacteristics":  "Edit Characteristics",
                                      "Other":  "Other",
-                                     "LevelUp":  "Level Up Available",
+                                     "LevelUp":  "Tier Up Available",
                                      "ToggleMode":  "Toggle Play/Edit Mode",
                                      "NoCreateAdvancement":  "{name} could not be created as part of the folder drop because it has advancements."
                                  },
@@ -1456,7 +1456,7 @@
                                     "class":  {
                                                   "FIELDS":  {
                                                                  "level":  {
-                                                                               "label":  "Level"
+                                                                               "label":  "Tier"
                                                                            },
                                                                  "primary":  {
                                                                                  "label":  "Heroic Resource"
