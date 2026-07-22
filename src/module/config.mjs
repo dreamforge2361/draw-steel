@@ -1,4 +1,4 @@
-﻿import { preLocalize } from "./helpers/localization.mjs";
+import { preLocalize } from "./helpers/localization.mjs";
 import { pseudoDocuments } from "./data/_module.mjs";
 import { systemID } from "./constants.mjs";
 
@@ -346,20 +346,23 @@ preLocalize("effectEnds", { keys: ["label", "abbreviation"] });
  * @type {Record<string, {label: string}>}
  */
 const skillGroups = {
-  crafting: {
-    label: "DRAW_STEEL.SKILL.Group.Crafting",
+  action: {
+    label: "DRAW_STEEL.SKILL.Group.Action",
   },
-  exploration: {
-    label: "DRAW_STEEL.SKILL.Group.Exploration",
+  technical: {
+    label: "DRAW_STEEL.SKILL.Group.Technical",
   },
-  interpersonal: {
-    label: "DRAW_STEEL.SKILL.Group.Interpersonal",
+  knowledge: {
+    label: "DRAW_STEEL.SKILL.Group.Knowledge",
   },
-  intrigue: {
-    label: "DRAW_STEEL.SKILL.Group.Intrigue",
+  social: {
+    label: "DRAW_STEEL.SKILL.Group.Social",
   },
-  lore: {
-    label: "DRAW_STEEL.SKILL.Group.Lore",
+  vehicle: {
+    label: "DRAW_STEEL.SKILL.Group.VehicleDrone",
+  },
+  arcane: {
+    label: "DRAW_STEEL.SKILL.Group.MagicSupernatural",
   },
 };
 
@@ -368,233 +371,177 @@ const skillGroups = {
  * @type {Record<string, {label: string, group: string}>}
  */
 const skillList = {
-  alchemy: {
-    label: "DRAW_STEEL.SKILL.List.Alchemy",
-    group: "crafting",
+  athletics: {
+    label: "DRAW_STEEL.SKILL.List.Athletics",
+    group: "action",
   },
-  architecture: {
-    label: "DRAW_STEEL.SKILL.List.Architecture",
-    group: "crafting",
+  brawl: {
+    label: "DRAW_STEEL.SKILL.List.Brawl",
+    group: "action",
   },
-  blacksmithing: {
-    label: "DRAW_STEEL.SKILL.List.Blacksmithing",
-    group: "crafting",
+  melee: {
+    label: "DRAW_STEEL.SKILL.List.Melee",
+    group: "action",
   },
-  carpentry: {
-    label: "DRAW_STEEL.SKILL.List.Carpentry",
-    group: "crafting",
+  firearms: {
+    label: "DRAW_STEEL.SKILL.List.Firearms",
+    group: "action",
   },
-  cooking: {
-    label: "DRAW_STEEL.SKILL.List.Cooking",
-    group: "crafting",
+  heavyWeapons: {
+    label: "DRAW_STEEL.SKILL.List.HeavyWeapons",
+    group: "action",
   },
-  fletching: {
-    label: "DRAW_STEEL.SKILL.List.Fletching",
-    group: "crafting",
+  stealth: {
+    label: "DRAW_STEEL.SKILL.List.Stealth",
+    group: "action",
   },
-  forgery: {
-    label: "DRAW_STEEL.SKILL.List.Forgery",
-    group: "crafting",
+  acrobatics: {
+    label: "DRAW_STEEL.SKILL.List.Acrobatics",
+    group: "action",
   },
-  jewelry: {
-    label: "DRAW_STEEL.SKILL.List.Jewelry",
-    group: "crafting",
+  perception: {
+    label: "DRAW_STEEL.SKILL.List.Perception",
+    group: "action",
   },
-  mechanics: {
-    label: "DRAW_STEEL.SKILL.List.Mechanics",
-    group: "crafting",
+  survival: {
+    label: "DRAW_STEEL.SKILL.List.Survival",
+    group: "action",
   },
-  tailoring: {
-    label: "DRAW_STEEL.SKILL.List.Tailoring",
-    group: "crafting",
+  hacking: {
+    label: "DRAW_STEEL.SKILL.List.Hacking",
+    group: "technical",
   },
-  climb: {
-    label: "DRAW_STEEL.SKILL.List.Climb",
-    group: "exploration",
+  electronics: {
+    label: "DRAW_STEEL.SKILL.List.Electronics",
+    group: "technical",
   },
-  drive: {
-    label: "DRAW_STEEL.SKILL.List.Drive",
-    group: "exploration",
+  engineering: {
+    label: "DRAW_STEEL.SKILL.List.Engineering",
+    group: "technical",
   },
-  endurance: {
-    label: "DRAW_STEEL.SKILL.List.Endurance",
-    group: "exploration",
+  repair: {
+    label: "DRAW_STEEL.SKILL.List.Repair",
+    group: "technical",
   },
-  gymnastics: {
-    label: "DRAW_STEEL.SKILL.List.Gymnastics",
-    group: "exploration",
+  cybertech: {
+    label: "DRAW_STEEL.SKILL.List.Cybertech",
+    group: "technical",
   },
-  heal: {
-    label: "DRAW_STEEL.SKILL.List.Heal",
-    group: "exploration",
+  medicine: {
+    label: "DRAW_STEEL.SKILL.List.Medicine",
+    group: "technical",
   },
-  jump: {
-    label: "DRAW_STEEL.SKILL.List.Jump",
-    group: "exploration",
+  demolitions: {
+    label: "DRAW_STEEL.SKILL.List.Demolitions",
+    group: "technical",
   },
-  lift: {
-    label: "DRAW_STEEL.SKILL.List.Lift",
-    group: "exploration",
+  securitySystems: {
+    label: "DRAW_STEEL.SKILL.List.SecuritySystems",
+    group: "technical",
   },
-  navigate: {
-    label: "DRAW_STEEL.SKILL.List.Navigate",
-    group: "exploration",
+  streetwise: {
+    label: "DRAW_STEEL.SKILL.List.Streetwise",
+    group: "knowledge",
   },
-  ride: {
-    label: "DRAW_STEEL.SKILL.List.Ride",
-    group: "exploration",
-  },
-  swim: {
-    label: "DRAW_STEEL.SKILL.List.Swim",
-    group: "exploration",
-  },
-  brag: {
-    label: "DRAW_STEEL.SKILL.List.Brag",
-    group: "interpersonal",
-  },
-  empathize: {
-    label: "DRAW_STEEL.SKILL.List.Empathize",
-    group: "interpersonal",
-  },
-  flirt: {
-    label: "DRAW_STEEL.SKILL.List.Flirt",
-    group: "interpersonal",
-  },
-  gamble: {
-    label: "DRAW_STEEL.SKILL.List.Gamble",
-    group: "interpersonal",
-  },
-  handleAnimals: {
-    label: "DRAW_STEEL.SKILL.List.HandleAnimals",
-    group: "interpersonal",
-  },
-  interrogate: {
-    label: "DRAW_STEEL.SKILL.List.Interrogate",
-    group: "interpersonal",
-  },
-  intimidate: {
-    label: "DRAW_STEEL.SKILL.List.Intimidate",
-    group: "interpersonal",
-  },
-  lead: {
-    label: "DRAW_STEEL.SKILL.List.Lead",
-    group: "interpersonal",
-  },
-  lie: {
-    label: "DRAW_STEEL.SKILL.List.Lie",
-    group: "interpersonal",
-  },
-  music: {
-    label: "DRAW_STEEL.SKILL.List.Music",
-    group: "interpersonal",
-  },
-  perform: {
-    label: "DRAW_STEEL.SKILL.List.Perform",
-    group: "interpersonal",
-  },
-  persuade: {
-    label: "DRAW_STEEL.SKILL.List.Persuade",
-    group: "interpersonal",
-  },
-  readPerson: {
-    label: "DRAW_STEEL.SKILL.List.ReadPerson",
-    group: "interpersonal",
-  },
-  alertness: {
-    label: "DRAW_STEEL.SKILL.List.Alertness",
-    group: "intrigue",
-  },
-  concealObject: {
-    label: "DRAW_STEEL.SKILL.List.ConcealObject",
-    group: "intrigue",
-  },
-  disguise: {
-    label: "DRAW_STEEL.SKILL.List.Disguise",
-    group: "intrigue",
-  },
-  eavesdrop: {
-    label: "DRAW_STEEL.SKILL.List.Eavesdrop",
-    group: "intrigue",
-  },
-  escapeArtist: {
-    label: "DRAW_STEEL.SKILL.List.EscapeArtist",
-    group: "intrigue",
-  },
-  hide: {
-    label: "DRAW_STEEL.SKILL.List.Hide",
-    group: "intrigue",
-  },
-  pickLock: {
-    label: "DRAW_STEEL.SKILL.List.PickLock",
-    group: "intrigue",
-  },
-  pickPocket: {
-    label: "DRAW_STEEL.SKILL.List.PickPocket",
-    group: "intrigue",
-  },
-  sabotage: {
-    label: "DRAW_STEEL.SKILL.List.Sabotage",
-    group: "intrigue",
-  },
-  search: {
-    label: "DRAW_STEEL.SKILL.List.Search",
-    group: "intrigue",
-  },
-  sneak: {
-    label: "DRAW_STEEL.SKILL.List.Sneak",
-    group: "intrigue",
-  },
-  track: {
-    label: "DRAW_STEEL.SKILL.List.Track",
-    group: "intrigue",
-  },
-  culture: {
-    label: "DRAW_STEEL.SKILL.List.Culture",
-    group: "lore",
-  },
-  criminalUnderworld: {
-    label: "DRAW_STEEL.SKILL.List.CriminalUnderworld",
-    group: "lore",
+  corporate: {
+    label: "DRAW_STEEL.SKILL.List.Corporate",
+    group: "knowledge",
   },
   history: {
     label: "DRAW_STEEL.SKILL.List.History",
-    group: "lore",
+    group: "knowledge",
   },
-  magic: {
-    label: "DRAW_STEEL.SKILL.List.Magic",
-    group: "lore",
-  },
-  monsters: {
-    label: "DRAW_STEEL.SKILL.List.Monsters",
-    group: "lore",
-  },
-  nature: {
-    label: "DRAW_STEEL.SKILL.List.Nature",
-    group: "lore",
-  },
-  psionics: {
-    label: "DRAW_STEEL.SKILL.List.Psionics",
-    group: "lore",
+  occult: {
+    label: "DRAW_STEEL.SKILL.List.Occult",
+    group: "knowledge",
   },
   religion: {
     label: "DRAW_STEEL.SKILL.List.Religion",
-    group: "lore",
+    group: "knowledge",
   },
-  rumors: {
-    label: "DRAW_STEEL.SKILL.List.Rumors",
-    group: "lore",
+  matrixTheory: {
+    label: "DRAW_STEEL.SKILL.List.MatrixTheory",
+    group: "knowledge",
   },
-  society: {
-    label: "DRAW_STEEL.SKILL.List.Society",
-    group: "lore",
+  medicineLore: {
+    label: "DRAW_STEEL.SKILL.List.MedicineLore",
+    group: "knowledge",
   },
-  strategy: {
-    label: "DRAW_STEEL.SKILL.List.Strategy",
-    group: "lore",
+  xenology: {
+    label: "DRAW_STEEL.SKILL.List.Xenology",
+    group: "knowledge",
   },
-  timescape: {
-    label: "DRAW_STEEL.SKILL.List.Timescape",
-    group: "lore",
+  negotiation: {
+    label: "DRAW_STEEL.SKILL.List.Negotiation",
+    group: "social",
+  },
+  persuasion: {
+    label: "DRAW_STEEL.SKILL.List.Persuasion",
+    group: "social",
+  },
+  deception: {
+    label: "DRAW_STEEL.SKILL.List.Deception",
+    group: "social",
+  },
+  intimidation: {
+    label: "DRAW_STEEL.SKILL.List.Intimidation",
+    group: "social",
+  },
+  command: {
+    label: "DRAW_STEEL.SKILL.List.Command",
+    group: "social",
+  },
+  readIntent: {
+    label: "DRAW_STEEL.SKILL.List.ReadIntent",
+    group: "social",
+  },
+  performance: {
+    label: "DRAW_STEEL.SKILL.List.Performance",
+    group: "social",
+  },
+  contacts: {
+    label: "DRAW_STEEL.SKILL.List.Contacts",
+    group: "social",
+  },
+  piloting: {
+    label: "DRAW_STEEL.SKILL.List.Piloting",
+    group: "vehicle",
+  },
+  rigging: {
+    label: "DRAW_STEEL.SKILL.List.Rigging",
+    group: "vehicle",
+  },
+  gunnery: {
+    label: "DRAW_STEEL.SKILL.List.Gunnery",
+    group: "vehicle",
+  },
+  navigation: {
+    label: "DRAW_STEEL.SKILL.List.Navigation",
+    group: "vehicle",
+  },
+  spellcraft: {
+    label: "DRAW_STEEL.SKILL.List.Spellcraft",
+    group: "arcane",
+  },
+  rituals: {
+    label: "DRAW_STEEL.SKILL.List.Rituals",
+    group: "arcane",
+  },
+  warding: {
+    label: "DRAW_STEEL.SKILL.List.Warding",
+    group: "arcane",
+  },
+  resonance: {
+    label: "DRAW_STEEL.SKILL.List.Resonance",
+    group: "arcane",
+  },
+  corruption: {
+    label: "DRAW_STEEL.SKILL.List.Corruption",
+    group: "arcane",
+  },
+  summoning: {
+    label: "DRAW_STEEL.SKILL.List.Summoning",
+    group: "arcane",
   },
 };
 
