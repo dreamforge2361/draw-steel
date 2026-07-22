@@ -6,7 +6,7 @@
   "img": "systems/draw-steel/assets/classes/operator.png",
   "system": {
     "description": {
-      "value": "<p>You were built for the trigger. Maybe a corp warframe walked free of its handlers; maybe a Flats veteran who learned that the only law down here is tempo. Either way, you are the crew's front rank - the body between the team and the muzzle flash.</p><p>Your engine is <strong>Adrenaline</strong>: you do not open a fight full. You bank it through the discipline of the trigger - each measured burst, each round you hold the line - and spend it to escalate when the tempo turns your way. Operators are chrome-forward and cast nothing; every edge you have, you bought with steel, wire, and nerve.</p>",
+      "value": "<p>You were built for the trigger. Maybe a corp warframe walked free of its handlers; maybe a Flats veteran who learned that the only law down here is tempo. Either way, you are the crew's front rank - the body between the team and the muzzle flash.</p><p>Your engine is <strong>Adrenaline</strong>: you do not open a fight full. You bank it through the discipline of the trigger and spend it to escalate when the tempo turns your way. Operators are chrome-forward and cast nothing; every edge you have, you bought with steel, wire, and nerve.</p><h3>The Adrenaline Engine</h3><p>Adrenaline is earned by <em>trigger discipline</em>, not rage. You gain Adrenaline from these four triggers:</p><ul><li><strong>Cadence (+2):</strong> At the start of each of your turns in combat, gain 2 Adrenaline.</li><li><strong>First contact (+ your Victories):</strong> On your first turn of each encounter, gain Adrenaline equal to your Victories.</li><li><strong>Called shot (+2):</strong> When you drop an enemy, or land a Tier-1 result on a called or Aided target, gain 2 Adrenaline.</li><li><strong>Fire discipline (+1):</strong> If you began your turn in cover and attacked from it, or took the Defend action last turn, gain 1 Adrenaline.</li></ul><p><strong>Cap by Hero Tier (T5 to T1): 8 / 11 / 14 / 18 / 22.</strong> Unspent Adrenaline is lost at the end of the encounter - you cannot bank it between fights. Signature abilities cost no Adrenaline; heroic abilities spend it. Adrenaline is class power and never bought or fed by nuyen or Body Integrity - chrome makes your abilities better, it never generates Adrenaline.</p>",
       "director": ""
     },
     "source": {
@@ -17,7 +17,7 @@
     "_dsid": "operator",
     "primary": "Adrenaline",
     "epic": "Overclock",
-    "turnGain": "1",
+    "turnGain": "2",
     "minimum": "0",
     "characteristics": {
       "core": [
@@ -80,6 +80,26 @@
           }
         ],
         "sort": 5000
+      },
+      "dkDG6r1Vf5Jn1cqB": {
+        "name": "Vehicle Actions",
+        "img": "systems/draw-steel/assets/classes/operator.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "dkDG6r1Vf5Jn1cqB",
+        "chooseN": null,
+        "description": "<p>You gain the Drive and Pilot move actions. Each is a free Move action that resolves with a Piloting test (2d10 + Reflex + Piloting) when contested. (Ride is the system's stock Basic Ability - every actor already has it.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.KlOWkTfK3Hpgthli"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.pv5nNdtWdutxtQpw"
+          }
+        ],
+        "sort": 6000
       }
     }
   },

@@ -1,0 +1,2897 @@
+import { preLocalize } from "./helpers/localization.mjs";
+import { pseudoDocuments } from "./data/_module.mjs";
+import { systemID } from "./constants.mjs";
+
+/** @import { FormSelectOption } from "@client/applications/forms/fields.mjs" */
+
+/**
+ * @typedef Reference
+ * @property {string} uuid A UUID pointer to a page of type `reference`.
+ * @property {string} [identifier] An optional substitution for the key to construct the reference.
+ */
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef CharacteristicConfig
+ * @property {string} label       Full name (e.g. "Might").
+ * @property {string} hint        Short form in all caps (e.g. "M").
+ * @property {string} rollKey     Key for `@` references in roll data.
+ * @property {Reference} reference
+ */
+
+/**
+ * The set of Characteristics used within the system.
+ * These have special localization handling that checks for `DRAW_STEEL.Actor.characteristics`.
+ * @remarks "none" is reserved for cases where we want an explicit non-option *and* default fallbacks
+ * @type {Record<string, CharacteristicConfig>}
+ */
+export const characteristics = Object.seal({
+  might: {
+    label: "DRAW_STEEL.Actor.characteristics.might.full",
+    hint: "DRAW_STEEL.Actor.characteristics.might.abbreviation",
+    rollKey: "M",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.LedSCHkhclBNG67p",
+    },
+  },
+  agility: {
+    label: "DRAW_STEEL.Actor.characteristics.agility.full",
+    hint: "DRAW_STEEL.Actor.characteristics.agility.abbreviation",
+    rollKey: "A",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.DG2tkerUo16322AY",
+    },
+  },
+  reason: {
+    label: "DRAW_STEEL.Actor.characteristics.reason.full",
+    hint: "DRAW_STEEL.Actor.characteristics.reason.abbreviation",
+    rollKey: "R",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.rZDHwVr23OILE1XM",
+    },
+  },
+  intuition: {
+    label: "DRAW_STEEL.Actor.characteristics.intuition.full",
+    hint: "DRAW_STEEL.Actor.characteristics.intuition.abbreviation",
+    rollKey: "I",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.btHevmmefh3I1dV1",
+    },
+  },
+  presence: {
+    label: "DRAW_STEEL.Actor.characteristics.presence.full",
+    hint: "DRAW_STEEL.Actor.characteristics.presence.abbreviation",
+    rollKey: "P",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.z5fiYN750d7idtM0",
+    },
+  },
+});
+preLocalize("characteristics", { keys: ["label", "hint"] });
+
+/* -------------------------------------------------- */
+
+/**
+ *
+ * @type {Record<number, {label: string, levels: number[]}>}
+ */
+export const echelons = {
+  1: {
+    label: "DRAW_STEEL.ECHELON.1",
+    threshold: -Infinity,
+  },
+  2: {
+    label: "DRAW_STEEL.ECHELON.2",
+    threshold: 4,
+  },
+  3: {
+    label: "DRAW_STEEL.ECHELON.3",
+    threshold: 7,
+  },
+  4: {
+    label: "DRAW_STEEL.ECHELON.4",
+    threshold: 10,
+  },
+};
+preLocalize("echelons", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Valid letter modifiers for size 1 creatures.
+ * @type {Record<string, {label: string}>}
+ */
+export const sizes = {
+  T: {
+    label: "DRAW_STEEL.Actor.base.sizes.T",
+  },
+  S: {
+    label: "DRAW_STEEL.Actor.base.sizes.S",
+  },
+  M: {
+    label: "DRAW_STEEL.Actor.base.sizes.M",
+  },
+  L: {
+    label: "DRAW_STEEL.Actor.base.sizes.L",
+  },
+};
+preLocalize("sizes", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Keys in `CONFIG.Token.movement.actions` to include as valid movement tag options for the Actor sheet.
+ * Order also functions as a priority list for DrawSteelTokenDocument#_inferMovementAction.
+ * @type {string[]}
+ */
+export const speedOptions = ["teleport", "fly", "walk", "swim", "burrow", "climb"];
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for damage types.
+ * @type {Record<string, {label: string, color: foundry.utils.Color}>}
+ */
+export const damageTypes = {
+  acid: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Acid",
+    color: foundry.utils.Color.fromString("#14ff14"),
+  },
+  cold: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Cold",
+    color: foundry.utils.Color.fromString("#14ffd0"),
+  },
+  corruption: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Corruption",
+    color: foundry.utils.Color.fromString("#7b00a8"),
+  },
+  fire: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Fire",
+    color: foundry.utils.Color.fromString("#ff870f"),
+  },
+  holy: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Holy",
+    color: foundry.utils.Color.fromString("#ffed61"),
+  },
+  lightning: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Lightning",
+    color: foundry.utils.Color.fromString("#ffff00"),
+  },
+  poison: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Poison",
+    color: foundry.utils.Color.fromString("#008500"),
+  },
+  psychic: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Psychic",
+    color: foundry.utils.Color.fromString("#d40cc3"),
+  },
+  sonic: {
+    label: "DRAW_STEEL.DAMAGE_TYPE.Sonic",
+    color: foundry.utils.Color.fromString("#999999"),
+  },
+};
+preLocalize("damageTypes", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for healing types.
+ * Keys correspond to keys in `system.stamina`.
+ * This is included in ds.CONFIG not because the top level keys can be customized
+ * but because the properties within the object can be customized.
+ */
+export const healingTypes = {
+  value: {
+    label: "DRAW_STEEL.HEALING_TYPE.Value",
+  },
+  temporary: {
+    label: "DRAW_STEEL.HEALING_TYPE.Temporary",
+  },
+};
+preLocalize("healingTypes", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef DrawSteelCondition
+ * @property {string} name            The i18n name of the condition. Localized as part of effect creation.
+ * @property {string} img             An SVG representing the condition.
+ * @property {string} rule            JournalEntryPage UUID Reference for the condition.
+ * @property {boolean} [sheet=true]   Show on the actor sheet? An explicit false is needed to not show.
+ * @property {boolean} [targeted]     Ask for a targeting prompt when this condition is applied.
+ * @property {number} [maxSources]    How many sources can be valid for this condition?
+ * @property {number} [defaultSpeed]  Used by slowed to infer the default speed to reduce to.
+ * @property {Record<string, Set<string>>} [restrictions] Restrictions on ability usage imposed by this condition.
+ *                                    The system currently supports `dsid` and `type` based restrictions.
+ */
+
+/**
+ * Condition definitions provided by the system that are merged in during the `init` hook
+ * Afterwards all references *should* use the core-provided CONFIG.statusEffects
+ * The `_id` property is handled as part of the merging process.
+ * @type {Record<string, DrawSteelCondition>}
+ */
+export const conditions = {
+  bleeding: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Bleeding.name",
+    img: "icons/svg/blood.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.YzgERGFhFphgpjKQ",
+  },
+  dazed: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Dazed.name",
+    img: "icons/svg/daze.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.K2dZpCsAOU7xMpWb",
+    restrictions: {
+      type: new Set(["freeManeuver", "triggered", "freeTriggered"]),
+    },
+  },
+  frightened: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Frightened.name",
+    img: "icons/svg/terror.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.bXiI9vUF3tF78qXg",
+    targeted: true,
+    maxSources: 1,
+  },
+  grabbed: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Grabbed.name",
+    img: "systems/draw-steel/assets/icons/hand-grabbing-fill.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.aWBP2vfXXM3fzuVn",
+    targeted: true,
+    restrictions: {
+      dsid: new Set(["knockback"]),
+    },
+  },
+  prone: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Prone.name",
+    img: "icons/svg/falling.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.v11clsSMgoFZm3V8",
+  },
+  restrained: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Restrained.name",
+    img: "icons/svg/net.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.6IfH6beu8LjK08Oj",
+    restrictions: {
+      dsid: new Set(["stand-up"]),
+    },
+  },
+  slowed: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Slowed.name",
+    img: "systems/draw-steel/assets/icons/snail.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.aFEwQG4OcYDNp8DL",
+    defaultSpeed: 2,
+  },
+  surprised: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Surprised.name",
+    img: "systems/draw-steel/assets/icons/surprised.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.tmlnHTZhUzy0atvH",
+    sheet: false,
+    restrictions: {
+      type: new Set(["triggered", "freeTriggered"]),
+    },
+  },
+  taunted: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Taunted.name",
+    img: "systems/draw-steel/assets/icons/flag-banner-fold-fill.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.9zseFmXdcSw8MuKh",
+    targeted: true,
+    maxSources: 1,
+  },
+  weakened: {
+    name: "DRAW_STEEL.ActiveEffect.Conditions.Weakened.name",
+    img: "icons/svg/downgrade.svg",
+    rule: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.QZpLhRT6imKlqZ1n",
+    sheet: true,
+  },
+};
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef EffectEnd
+ * @property {string} label           An i18n string for the full effect end.
+ * @property {string} abbreviation    An i18n string for places with limited word length.
+ * @property {string} expiryEvent     The core expiry event this corresponds to.
+ * @property {Reference} reference
+ */
+
+/**
+ * Times when an effect can end.
+ * @type {Record<string, EffectEnd>}
+ */
+export const effectEnds = {
+  turn: {
+    label: "DRAW_STEEL.ActiveEffect.Ends.Turn.Label",
+    abbreviation: "DRAW_STEEL.ActiveEffect.Ends.Turn.Abbr",
+    expiryEvent: "turnEnd",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.SIMO12AE8JWh7yVz",
+      identifier: "eot",
+    },
+  },
+  save: {
+    label: "DRAW_STEEL.ActiveEffect.Ends.Save.Label",
+    abbreviation: "DRAW_STEEL.ActiveEffect.Ends.Save.Abbr",
+    expiryEvent: "save",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.RujpMmSDb3eaV6DS",
+      identifier: "saveEnds",
+    },
+  },
+  encounter: {
+    label: "DRAW_STEEL.ActiveEffect.Ends.Encounter.Label",
+    expiryEvent: "combatEnd",
+    abbreviation: "DRAW_STEEL.ActiveEffect.Ends.Encounter.Abbr",
+  },
+  respite: {
+    label: "DRAW_STEEL.ActiveEffect.Ends.Respite.Label",
+    abbreviation: "DRAW_STEEL.ActiveEffect.Ends.Respite.Abbr",
+    expiryEvent: "respite",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CXUmteRo8UJ2UPr9",
+    },
+  },
+};
+preLocalize("effectEnds", { keys: ["label", "abbreviation"] });
+
+/* -------------------------------------------------- */
+
+/**
+ * Groups of skills; all skills are expected to have a group. Also used for perk types.
+ * @type {Record<string, {label: string}>}
+ */
+const skillGroups = {
+  crafting: {
+    label: "DRAW_STEEL.SKILL.Group.Crafting",
+  },
+  exploration: {
+    label: "DRAW_STEEL.SKILL.Group.Exploration",
+  },
+  interpersonal: {
+    label: "DRAW_STEEL.SKILL.Group.Interpersonal",
+  },
+  intrigue: {
+    label: "DRAW_STEEL.SKILL.Group.Intrigue",
+  },
+  lore: {
+    label: "DRAW_STEEL.SKILL.Group.Lore",
+  },
+};
+
+/**
+ * List of all skills in Draw Steel.
+ * @type {Record<string, {label: string, group: string}>}
+ */
+const skillList = {
+  alchemy: {
+    label: "DRAW_STEEL.SKILL.List.Alchemy",
+    group: "crafting",
+  },
+  architecture: {
+    label: "DRAW_STEEL.SKILL.List.Architecture",
+    group: "crafting",
+  },
+  blacksmithing: {
+    label: "DRAW_STEEL.SKILL.List.Blacksmithing",
+    group: "crafting",
+  },
+  carpentry: {
+    label: "DRAW_STEEL.SKILL.List.Carpentry",
+    group: "crafting",
+  },
+  cooking: {
+    label: "DRAW_STEEL.SKILL.List.Cooking",
+    group: "crafting",
+  },
+  fletching: {
+    label: "DRAW_STEEL.SKILL.List.Fletching",
+    group: "crafting",
+  },
+  forgery: {
+    label: "DRAW_STEEL.SKILL.List.Forgery",
+    group: "crafting",
+  },
+  jewelry: {
+    label: "DRAW_STEEL.SKILL.List.Jewelry",
+    group: "crafting",
+  },
+  mechanics: {
+    label: "DRAW_STEEL.SKILL.List.Mechanics",
+    group: "crafting",
+  },
+  tailoring: {
+    label: "DRAW_STEEL.SKILL.List.Tailoring",
+    group: "crafting",
+  },
+  climb: {
+    label: "DRAW_STEEL.SKILL.List.Climb",
+    group: "exploration",
+  },
+  drive: {
+    label: "DRAW_STEEL.SKILL.List.Drive",
+    group: "exploration",
+  },
+  endurance: {
+    label: "DRAW_STEEL.SKILL.List.Endurance",
+    group: "exploration",
+  },
+  gymnastics: {
+    label: "DRAW_STEEL.SKILL.List.Gymnastics",
+    group: "exploration",
+  },
+  heal: {
+    label: "DRAW_STEEL.SKILL.List.Heal",
+    group: "exploration",
+  },
+  jump: {
+    label: "DRAW_STEEL.SKILL.List.Jump",
+    group: "exploration",
+  },
+  lift: {
+    label: "DRAW_STEEL.SKILL.List.Lift",
+    group: "exploration",
+  },
+  navigate: {
+    label: "DRAW_STEEL.SKILL.List.Navigate",
+    group: "exploration",
+  },
+  ride: {
+    label: "DRAW_STEEL.SKILL.List.Ride",
+    group: "exploration",
+  },
+  swim: {
+    label: "DRAW_STEEL.SKILL.List.Swim",
+    group: "exploration",
+  },
+  brag: {
+    label: "DRAW_STEEL.SKILL.List.Brag",
+    group: "interpersonal",
+  },
+  empathize: {
+    label: "DRAW_STEEL.SKILL.List.Empathize",
+    group: "interpersonal",
+  },
+  flirt: {
+    label: "DRAW_STEEL.SKILL.List.Flirt",
+    group: "interpersonal",
+  },
+  gamble: {
+    label: "DRAW_STEEL.SKILL.List.Gamble",
+    group: "interpersonal",
+  },
+  handleAnimals: {
+    label: "DRAW_STEEL.SKILL.List.HandleAnimals",
+    group: "interpersonal",
+  },
+  interrogate: {
+    label: "DRAW_STEEL.SKILL.List.Interrogate",
+    group: "interpersonal",
+  },
+  intimidate: {
+    label: "DRAW_STEEL.SKILL.List.Intimidate",
+    group: "interpersonal",
+  },
+  lead: {
+    label: "DRAW_STEEL.SKILL.List.Lead",
+    group: "interpersonal",
+  },
+  lie: {
+    label: "DRAW_STEEL.SKILL.List.Lie",
+    group: "interpersonal",
+  },
+  music: {
+    label: "DRAW_STEEL.SKILL.List.Music",
+    group: "interpersonal",
+  },
+  perform: {
+    label: "DRAW_STEEL.SKILL.List.Perform",
+    group: "interpersonal",
+  },
+  persuade: {
+    label: "DRAW_STEEL.SKILL.List.Persuade",
+    group: "interpersonal",
+  },
+  readPerson: {
+    label: "DRAW_STEEL.SKILL.List.ReadPerson",
+    group: "interpersonal",
+  },
+  alertness: {
+    label: "DRAW_STEEL.SKILL.List.Alertness",
+    group: "intrigue",
+  },
+  concealObject: {
+    label: "DRAW_STEEL.SKILL.List.ConcealObject",
+    group: "intrigue",
+  },
+  disguise: {
+    label: "DRAW_STEEL.SKILL.List.Disguise",
+    group: "intrigue",
+  },
+  eavesdrop: {
+    label: "DRAW_STEEL.SKILL.List.Eavesdrop",
+    group: "intrigue",
+  },
+  escapeArtist: {
+    label: "DRAW_STEEL.SKILL.List.EscapeArtist",
+    group: "intrigue",
+  },
+  hide: {
+    label: "DRAW_STEEL.SKILL.List.Hide",
+    group: "intrigue",
+  },
+  pickLock: {
+    label: "DRAW_STEEL.SKILL.List.PickLock",
+    group: "intrigue",
+  },
+  pickPocket: {
+    label: "DRAW_STEEL.SKILL.List.PickPocket",
+    group: "intrigue",
+  },
+  sabotage: {
+    label: "DRAW_STEEL.SKILL.List.Sabotage",
+    group: "intrigue",
+  },
+  search: {
+    label: "DRAW_STEEL.SKILL.List.Search",
+    group: "intrigue",
+  },
+  sneak: {
+    label: "DRAW_STEEL.SKILL.List.Sneak",
+    group: "intrigue",
+  },
+  track: {
+    label: "DRAW_STEEL.SKILL.List.Track",
+    group: "intrigue",
+  },
+  culture: {
+    label: "DRAW_STEEL.SKILL.List.Culture",
+    group: "lore",
+  },
+  criminalUnderworld: {
+    label: "DRAW_STEEL.SKILL.List.CriminalUnderworld",
+    group: "lore",
+  },
+  history: {
+    label: "DRAW_STEEL.SKILL.List.History",
+    group: "lore",
+  },
+  magic: {
+    label: "DRAW_STEEL.SKILL.List.Magic",
+    group: "lore",
+  },
+  monsters: {
+    label: "DRAW_STEEL.SKILL.List.Monsters",
+    group: "lore",
+  },
+  nature: {
+    label: "DRAW_STEEL.SKILL.List.Nature",
+    group: "lore",
+  },
+  psionics: {
+    label: "DRAW_STEEL.SKILL.List.Psionics",
+    group: "lore",
+  },
+  religion: {
+    label: "DRAW_STEEL.SKILL.List.Religion",
+    group: "lore",
+  },
+  rumors: {
+    label: "DRAW_STEEL.SKILL.List.Rumors",
+    group: "lore",
+  },
+  society: {
+    label: "DRAW_STEEL.SKILL.List.Society",
+    group: "lore",
+  },
+  strategy: {
+    label: "DRAW_STEEL.SKILL.List.Strategy",
+    group: "lore",
+  },
+  timescape: {
+    label: "DRAW_STEEL.SKILL.List.Timescape",
+    group: "lore",
+  },
+};
+
+/**
+ * Configuration information for skills.
+ */
+export const skills = {
+  groups: skillGroups,
+  list: skillList,
+  /**
+   * A convenient helper to combine the skill list & groups for display.
+   * @type {FormSelectOption[]}
+   */
+  get optgroups() {
+    const config = ds.CONFIG.skills;
+    return Object.entries(config.list).reduce((arr, [value, { label, group }]) => {
+      arr.push({ label, group: config.groups[group].label, value });
+      return arr;
+    }, []);
+  },
+};
+preLocalize("skills.groups", { key: "label" });
+preLocalize("skills.list", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef DSLanguage
+ * @property {string} label
+ * @property {string} [source]    UUID pointing to a config page that added this language.
+ */
+
+/**
+ * Configuration information for languages.
+ * @type {Record<string, DSLanguage>}
+ */
+export const languages = {
+  // ancestry languages
+  anjali: {
+    label: "DRAW_STEEL.LANGUAGE.Anjali",
+  },
+  axiomatic: {
+    label: "DRAW_STEEL.LANGUAGE.Axiomatic",
+  },
+  caelian: {
+    label: "DRAW_STEEL.LANGUAGE.Caelian",
+  },
+  filliaric: {
+    label: "DRAW_STEEL.LANGUAGE.Filliaric",
+  },
+  highKuric: {
+    label: "DRAW_STEEL.LANGUAGE.HighKuric",
+  },
+  hyrallic: {
+    label: "DRAW_STEEL.LANGUAGE.Hyrallic",
+  },
+  illyvric: {
+    label: "DRAW_STEEL.LANGUAGE.Illyvric",
+  },
+  kalliak: {
+    label: "DRAW_STEEL.LANGUAGE.Kalliak",
+  },
+  kethaic: {
+    label: "DRAW_STEEL.LANGUAGE.Kethaic",
+  },
+  khelt: {
+    label: "DRAW_STEEL.LANGUAGE.Khelt",
+  },
+  khoursirian: {
+    label: "DRAW_STEEL.LANGUAGE.Khoursirian",
+  },
+  lowKuric: {
+    label: "DRAW_STEEL.LANGUAGE.LowKuric",
+  },
+  mindspeech: {
+    label: "DRAW_STEEL.LANGUAGE.Mindspeech",
+  },
+  protoCtholl: {
+    label: "DRAW_STEEL.LANGUAGE.ProtoCtholl",
+  },
+  szetch: {
+    label: "DRAW_STEEL.LANGUAGE.Szetch",
+  },
+  theFirstLanguage: {
+    label: "DRAW_STEEL.LANGUAGE.TheFirstLanguage",
+  },
+  tholl: {
+    label: "DRAW_STEEL.LANGUAGE.Tholl",
+  },
+  urollialic: {
+    label: "DRAW_STEEL.LANGUAGE.Urollialic",
+  },
+  variac: {
+    label: "DRAW_STEEL.LANGUAGE.Variac",
+  },
+  vastariax: {
+    label: "DRAW_STEEL.LANGUAGE.Vastariax",
+  },
+  vhoric: {
+    label: "DRAW_STEEL.LANGUAGE.Vhoric",
+  },
+  voll: {
+    label: "DRAW_STEEL.LANGUAGE.Voll",
+  },
+  yllyric: {
+    label: "DRAW_STEEL.LANGUAGE.Yllyric",
+  },
+  zahariax: {
+    label: "DRAW_STEEL.LANGUAGE.Zahariax",
+  },
+  zaliac: {
+    label: "DRAW_STEEL.LANGUAGE.Zaliac",
+  },
+  // Human languages. Khoursirian already covered
+  higaran: {
+    label: "DRAW_STEEL.LANGUAGE.Higaran",
+  },
+  khemharic: {
+    label: "DRAW_STEEL.LANGUAGE.Khemharic",
+  },
+  oaxuatl: {
+    label: "DRAW_STEEL.LANGUAGE.Oaxuatl",
+  },
+  phaedran: {
+    label: "DRAW_STEEL.LANGUAGE.Phaedran",
+  },
+  riojan: {
+    label: "DRAW_STEEL.LANGUAGE.Riojan",
+  },
+  uvalic: {
+    label: "DRAW_STEEL.LANGUAGE.Uvalic",
+  },
+  vaniric: {
+    label: "DRAW_STEEL.LANGUAGE.Vaniric",
+  },
+  vasloria: {
+    label: "DRAW_STEEL.LANGUAGE.Vasloria",
+  },
+  // Dead languages
+  highRhyvian: {
+    label: "DRAW_STEEL.LANGUAGE.HighRhyvian",
+  },
+  khamish: {
+    label: "DRAW_STEEL.LANGUAGE.Khamish",
+  },
+  kheltivari: {
+    label: "DRAW_STEEL.LANGUAGE.Kheltivari",
+  },
+  lowRhivian: {
+    label: "DRAW_STEEL.LANGUAGE.LowRhivian",
+  },
+  oldVariac: {
+    label: "DRAW_STEEL.LANGUAGE.OldVariac",
+  },
+  phorialtic: {
+    label: "DRAW_STEEL.LANGUAGE.Phorialtic",
+  },
+  rallarian: {
+    label: "DRAW_STEEL.LANGUAGE.Rallarian",
+  },
+  ullorvic: {
+    label: "DRAW_STEEL.LANGUAGE.Ullorvic",
+  },
+};
+preLocalize("languages", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for negotiations.
+ */
+export const negotiation = {
+  /** @type {Record<string, {label: string}>} */
+  motivations: {
+    benevolence: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Benevolence",
+    },
+    discovery: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Discovery",
+    },
+    freedom: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Freedom",
+    },
+    greed: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Greed",
+    },
+    authority: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.HigherAuthority",
+    },
+    justice: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Justice",
+    },
+    legacy: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Legacy",
+    },
+    peace: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Peace",
+    },
+    power: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Power",
+    },
+    protection: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Protection",
+    },
+    revelry: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Revelry",
+    },
+    vengeance: {
+      label: "DRAW_STEEL.Actor.npc.Negotiation.Motivations.Vengeance",
+    },
+  },
+};
+preLocalize("negotiation.motivations", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for height and weight measurements.
+ */
+export const measurements = {
+  /** @type {Record<string, { label: string; group: string }>} */
+  height: {
+    in: {
+      label: "DRAW_STEEL.MEASUREMENT.Height.in",
+      group: "imperial",
+    },
+    ft: {
+      label: "DRAW_STEEL.MEASUREMENT.Height.ft",
+      group: "imperial",
+    },
+    cm: {
+      label: "DRAW_STEEL.MEASUREMENT.Height.cm",
+      group: "metric",
+    },
+    m: {
+      label: "DRAW_STEEL.MEASUREMENT.Height.m",
+      group: "metric",
+    },
+  },
+  /** @type {Record<string, { label: string; group: string }>} */
+  weight: {
+    lb: {
+      label: "DRAW_STEEL.MEASUREMENT.Weight.lbs",
+      group: "imperial",
+    },
+    kg: {
+      label: "DRAW_STEEL.MEASUREMENT.Weight.kg",
+      group: "metric",
+    },
+  },
+  /** @type {Record<string, { label: string }>} */
+  groups: {
+    imperial: {
+      label: "DRAW_STEEL.MEASUREMENT.Groups.imperial",
+    },
+    metric: {
+      label: "DRAW_STEEL.MEASUREMENT.Groups.metric",
+    },
+  },
+};
+preLocalize("measurements.height", { keys: ["label"] });
+preLocalize("measurements.weight", { keys: ["label"] });
+preLocalize("measurements.groups", { keys: ["label"] });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for heroes.
+ */
+export const hero = {
+  /** Items added to new heroes in _preCreate. */
+  defaultItems: new Set([
+    // Aid Attack
+    "Compendium.draw-steel.abilities.Item.Xb3S5N1fZyICD58D",
+    // Catch Breath
+    "Compendium.draw-steel.abilities.Item.nYPJN8Ce2dX9H09K",
+    // Charge
+    "Compendium.draw-steel.abilities.Item.wNqJWJbgAbnJBqZf",
+    // Defend
+    "Compendium.draw-steel.abilities.Item.fjtY7RKBGWx2u5tK",
+    // Escape Grab
+    "Compendium.draw-steel.abilities.Item.iD1SlB15GXJFALya",
+    // Grab
+    "Compendium.draw-steel.abilities.Item.oxaISpgVoCfo6fmt",
+    // Heal
+    "Compendium.draw-steel.abilities.Item.2qWHDVB7SBS9anLB",
+    // Knockback
+    "Compendium.draw-steel.abilities.Item.emug9cXuwndDrWzu",
+    // Melee Free Strike
+    "Compendium.draw-steel.abilities.Item.wU69Y06G9lYFrvp6",
+    // Ranged Free Strike
+    "Compendium.draw-steel.abilities.Item.eqUobBcm81mqZVgJ",
+    // Stand Up
+    "Compendium.draw-steel.abilities.Item.XeUU0Blvi0fy0b2G",
+    // Advance
+    "Compendium.draw-steel.abilities.Item.ucR2C7lMvXrKIMZ7",
+    // Disengage
+    "Compendium.draw-steel.abilities.Item.vBlTvHRZ5JBXWYt6",
+    // Ride
+    "Compendium.draw-steel.abilities.Item.QXOkflcYF6DITJE3",
+  ]),
+  /**
+   * XP advancement options for heroes.
+   */
+  xpTracks: {
+    normal: {
+      label: "DRAW_STEEL.Setting.XPAdvancement.NormalSpeed",
+      track: [0, 16, 32, 48, 64, 80, 96, 112, 128, 144],
+    },
+    double: {
+      label: "DRAW_STEEL.Setting.XPAdvancement.DoubleSpeed",
+      track: [0, 8, 16, 24, 32, 40, 48, 56, 64, 72],
+    },
+    half: {
+      label: "DRAW_STEEL.Setting.XPAdvancement.HalfSpeed",
+      track: [0, 32, 64, 96, 128, 160, 192, 224, 256, 288],
+    },
+  },
+  /**
+   * The chosen XP advancement option from the settings.
+   * @type {number[]}
+   */
+  get xpTrack() {
+    const xpSetting = game.settings.get(systemID, "xpAdvancement");
+    // In case a module added track is removed.
+    const fallbackTrack = ds.CONFIG.hero.xpTracks.normal?.track
+      ?? foundry.utils.objectValues(ds.CONFIG.hero.xpTracks).next().value.track;
+
+    return ds.CONFIG.hero.xpTracks[xpSetting]?.track ?? fallbackTrack;
+  },
+  /**
+   * Ways to spend hero tokens.
+   * @type {Record<string, {label: string, tokens: number, messageContent: string}>}
+   */
+  tokenSpends: {
+    generic: {
+      label: "DRAW_STEEL.Setting.HeroTokens.Generic.label",
+      tokens: 1,
+      messageContent: "DRAW_STEEL.Setting.HeroTokens.Generic.messageContent",
+    },
+    gainSurges: {
+      label: "DRAW_STEEL.Setting.HeroTokens.GainSurges.label",
+      tokens: 1,
+      messageContent: "DRAW_STEEL.Setting.HeroTokens.GainSurges.messageContent",
+    },
+    succeedSave: {
+      label: "DRAW_STEEL.Setting.HeroTokens.SucceedSave.label",
+      tokens: 1,
+      messageContent: "DRAW_STEEL.Setting.HeroTokens.SucceedSave.messageContent",
+    },
+    rerollTest: {
+      label: "DRAW_STEEL.Setting.HeroTokens.RerollTest.label",
+      tokens: 1,
+      messageContent: "DRAW_STEEL.Setting.HeroTokens.RerollTest.messageContent",
+    },
+    regainStamina: {
+      label: "DRAW_STEEL.Setting.HeroTokens.RegainStamina.label",
+      tokens: 2,
+      messageContent: "DRAW_STEEL.Setting.HeroTokens.RegainStamina.messageContent",
+    },
+  },
+};
+preLocalize("hero.tokenSpends", { keys: ["label", "messageContent"], sort: true });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration information for retainers.
+ */
+export const retainer = {
+  /**
+   * The default class added to retainers.
+   * @type {string}
+   */
+  retainerClass: "Compendium.draw-steel.monster-features.Item.ReGdXUMQtcAlBBM3",
+};
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef MonsterKeyword
+ * @property {string} label
+ * @property {string} group
+ * @property {Reference} [reference] An optional pointer to a UUID reference with a description of the keyword.
+ * @property {string} [source]       UUID pointing to a config page that added this language.
+ */
+
+/** @type {Record<string, MonsterKeyword>} */
+const monsterKeywords = {
+  abyssal: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Abyssal",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.GrHx8NCX5FhWslnq",
+    },
+  },
+  accursed: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Accursed",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.iEn2DkOyDEKALG8y",
+    },
+  },
+  animal: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Animal",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CGmMvctU1zPFRyfe",
+    },
+  },
+  beast: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Beast",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.ZydJ0bkDd8a0wvPA",
+    },
+  },
+  construct: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Construct",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.5IVqClzPVA6XJO4y",
+    },
+  },
+  dragon: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Dragon",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.vuD9bbxXevN6htqr",
+    },
+  },
+  elemental: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Elemental",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.e08BCn9FLr5RMQhl",
+    },
+  },
+  fey: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Fey",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CCt86LLL0qZKD19T",
+    },
+  },
+  giant: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Giant",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.LsMcx0o0We7vh7pc",
+    },
+  },
+  horror: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Horror",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.x8xsuo4z0eaO0bnC",
+    },
+  },
+  humanoid: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Humanoid",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.E6fdDf51F2s5giiu",
+    },
+  },
+  infernal: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Infernal",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.hw3WY0zxnWEc0KPQ",
+    },
+  },
+  ooze: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Ooze",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.uuWfDQJe1gvjaMmk",
+    },
+  },
+  plant: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Plant",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2eA3CrXM9L1bpAun",
+    },
+  },
+  soulless: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Soulless",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tq8b1Siu7tQ86Bxt",
+    },
+  },
+  swarm: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Swarm",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.OhMPEI6FwxENCK3g",
+    },
+  },
+  undead: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.Undead",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.General",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.UdGIomLvVZT9Yb2U",
+    },
+  },
+  angulotl: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.angulotl",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  arixx: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.arixx",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  basilisk: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.basilisk",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  bredbeddle: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.bredbeddle",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  bugbear: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.bugbear",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  chimera: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.chimera",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  demon: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.demon",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  devil: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.devil",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  draconian: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.draconian",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  dwarf: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.dwarf",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  elfHigh: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.elfHigh",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  elfShadow: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.elfShadow",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  elfWode: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.elfWode",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  giantFire: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.giantFire",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  giantFrost: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.giantFrost",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  giantHill: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.giantHill",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  giantStone: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.giantStone",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  gnoll: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.gnoll",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  goblin: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.goblin",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  griffon: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.griffon",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  hag: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.hag",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  hobgoblin: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.hobgoblin",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  human: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.human",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  worm: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.worm",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  kobold: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.kobold",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  lightbender: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.lightbender",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  lizardfolk: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.lizardfolk",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  manticore: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.manticore",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  medusa: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.medusa",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  minotaur: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.minotaur",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  ogre: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.ogre",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  olothec: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.olothec",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  orc: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.orc",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  radenwight: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.radenwight",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  rival: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.rival",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  shamblingMound: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.shamblingMound",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  timeRaider: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.timeRaider",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  troll: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.troll",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  mummy: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.mummy",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  vampire: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.vampire",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  multivok: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.multivok",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  servok: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.servok",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  valok: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.valok",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  voicelessTalker: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.voicelessTalker",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  warDog: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.warDog",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  werebeast: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.werebeast",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  wyvern: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.wyvern",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  eyestalk: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.eyestalk",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+  overmind: {
+    label: "DRAW_STEEL.Actor.npc.KEYWORDS.overmind",
+    group: "DRAW_STEEL.Actor.npc.KeywordGroups.Ancestry",
+  },
+};
+
+/**
+ * @typedef MonsterOrganization
+ * @property {string} label
+ * @property {Reference} reference
+ */
+
+/** @type {Record<string, MonsterOrganization>} */
+const monsterOrganizations = {
+  minion: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Minion",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.r58bHi5diuP9bYec",
+    },
+  },
+  horde: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Horde",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.YNoGNdtJCLBkh1Mv",
+    },
+  },
+  platoon: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Platoon",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.G4iXFToD1xUH8LHA",
+    },
+  },
+  elite: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Elite",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7hMnUvUBRIK1Dqsr",
+    },
+  },
+  leader: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Leader",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.JKZSMbQLCgeqluoy",
+    },
+  },
+  solo: {
+    label: "DRAW_STEEL.Actor.npc.ORGANIZATIONS.Solo",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.AhYTCkuNSjqQawnw",
+    },
+  },
+};
+
+/**
+ * @typedef MonsterRole
+ * @property {string} label
+ * @property {Reference} reference
+ */
+
+/** @type {Record<string, MonsterRole>} */
+const monsterRoles = {
+  ambusher: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Ambusher",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.at1wXoR8j4I7zGyw",
+    },
+  },
+  artillery: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Artillery",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.YiIFucMXwcLQWYML",
+    },
+  },
+  brute: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Brute",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.jAW0FNszXkQ8HIPI",
+    },
+  },
+  controller: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Controller",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.lo0u0WhNF5f2Ipbe",
+    },
+  },
+  defender: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Defender",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.vqYVpLwxsP2IyzhT",
+    },
+  },
+  harrier: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Harrier",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.SrjPn5F16qjbCnou",
+    },
+  },
+  hexer: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Hexer",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.BOy0UENOGgkFF95S",
+    },
+  },
+  mount: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Mount",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.VJ8FHxp8YhIzD3nO",
+    },
+  },
+  support: {
+    label: "DRAW_STEEL.Actor.npc.ROLES.Support",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.YZo2PwMXRRep5wHK",
+    },
+  },
+};
+
+/**
+ * Configuration information for monsters.
+ */
+export const monsters = {
+  keywords: monsterKeywords,
+  organizations: monsterOrganizations,
+  roles: monsterRoles,
+};
+preLocalize("monsters.keywords", { keys: ["label", "group"] });
+preLocalize("monsters.organizations", { key: "label" });
+preLocalize("monsters.roles", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef ObjectCategory
+ * @property {string} label
+ * @property {Reference} [reference]
+ */
+
+/** @type {Record<string, ObjectCategory>} */
+const objectCategories = {
+  hazard: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.hazard",
+  },
+  fortification: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.fortification",
+  },
+  trap: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.trap",
+  },
+  trigger: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.trigger",
+  },
+  relic: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.relic",
+  },
+  siegeEngine: {
+    label: "DRAW_STEEL.Actor.object.CATEGORIES.siegeEngine",
+  },
+};
+
+export const objects = {
+  roles: monsterRoles,
+  categories: objectCategories,
+};
+preLocalize("objects.categories", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Keywords available for abilities. Used by both system and user-defined automation.
+ * Groups are directly i18n strings, and exist for the purpose of denoting class-specific keywords.
+ * @type {Record<string, {label: string, group?: string}>}
+ */
+const abilityKeywords = {
+  animal: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Animal",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Fury",
+  },
+  animapathy: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Animapathy",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  area: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Area",
+  },
+  charge: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Charge",
+  },
+  chronopathy: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Chronopathy",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  cryokinesis: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Cryokinesis",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  earth: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Earth",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Elementalist",
+  },
+  encounter: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Encounter",
+  },
+  fire: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Fire",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Elementalist",
+  },
+  green: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Green",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Elementalist",
+  },
+  magic: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Magic",
+  },
+  melee: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Melee",
+  },
+  metamorphosis: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Metamorphosis",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  psionic: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Psionic",
+  },
+  pyrokinesis: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Pyrokinesis",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  ranged: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Ranged",
+  },
+  resopathy: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Resopathy",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  rot: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Rot",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Elementalist",
+  },
+  performance: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Performance",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Troubador",
+  },
+  strike: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Strike",
+  },
+  telekinesis: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Telekinesis",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  telepathy: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Telepathy",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Talent",
+  },
+  void: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Void",
+    group: "DRAW_STEEL.Item.ability.KeywordGroups.Elementalist",
+  },
+  weapon: {
+    label: "DRAW_STEEL.Item.ability.Keywords.Weapon",
+  },
+};
+
+/**
+ * @typedef AbilityType
+ * @property {string} label
+ * @property {boolean} [triggered]
+ * @property {Reference} reference
+ */
+
+/**
+ * Action types for abilities.
+ * @type {Record<string, AbilityType>}
+ */
+const abilityTypes = {
+  main: {
+    label: "DRAW_STEEL.Item.ability.Type.Main",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.EexO0KXlTFmMvdrB",
+      identifier: "mainAction",
+    },
+  },
+  maneuver: {
+    label: "DRAW_STEEL.Item.ability.Type.Maneuver",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.WyefvD846iMEuENJ",
+    },
+  },
+  freeManeuver: {
+    label: "DRAW_STEEL.Item.ability.Type.FreeManeuver",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.xGfhqjb3wv43hiCA",
+    },
+  },
+  triggered: {
+    label: "DRAW_STEEL.Item.ability.Type.Triggered",
+    triggered: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.nSU3m3Myo1yx7G13",
+      identifier: "triggeredAction",
+    },
+  },
+  freeTriggered: {
+    label: "DRAW_STEEL.Item.ability.Type.FreeTriggered",
+    triggered: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.9rdat4y1avRydTf5",
+      identifier: "freeTriggeredAction",
+    },
+  },
+  move: {
+    label: "DRAW_STEEL.Item.ability.Type.Move",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.omTjeQTTXHHbYufA",
+      identifier: "moveAction",
+    },
+  },
+  none: {
+    label: "DRAW_STEEL.Item.ability.Type.None",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.vhf6gnFhT6bx2Jd1",
+      identifier: "noAction",
+    },
+  },
+  villain: {
+    label: "DRAW_STEEL.Item.ability.Type.Villain",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.yfhZHK53v6X2ErLb",
+    },
+  },
+};
+
+/**
+ * @typedef AbilityCategory
+ * @property {string} label
+ * @property {Reference} [reference]
+ */
+
+/**
+ * Ability category, e.g. "Villain Action".
+ * @type {Record<string, AbilityCategory>}
+ */
+const abilityCategories = {
+  heroic: {
+    label: "DRAW_STEEL.Item.ability.Category.Heroic",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Lw9vC2gBXkLjwdCV",
+      identifier: "heroicAbility",
+    },
+  },
+  freeStrike: {
+    label: "DRAW_STEEL.Item.ability.Category.FreeStrike",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.lhVGS0ukgIhWcQVt",
+    },
+  },
+  signature: {
+    label: "DRAW_STEEL.Item.ability.Category.Signature",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.FZ2BN6XJYnvaxx2v",
+      identifier: "signatureAbility",
+    },
+  },
+  villain: {
+    label: "DRAW_STEEL.Item.ability.Category.Villain",
+  },
+  maliceAncestry: {
+    label: "DRAW_STEEL.Item.ability.Category.MaliceAncestry",
+  },
+};
+
+/**
+ * Non-type keys of Distance.
+ * @typedef {"primary"|"secondary"|"tertiary"} Measurement
+ */
+
+/**
+ * @typedef AreaInfo
+ * @property {keyof foundry.data.BaseShapeData.TYPES} type
+ * @property {Measurement} [count]    Number of shapes to place.
+ * @property {Measurement} [height]   Shape height.
+ * @property {Measurement} [length]   Shape length.
+ * @property {Measurement} [radius]   Shape radius.
+ * @property {Measurement} [width]    Shape width.
+ */
+
+/**
+ * @typedef AbilityDistance
+ * @property {string} label
+ * @property {string} [primary]     Distance measurement label.
+ * @property {string} [secondary]   Distance measurement label.
+ * @property {string} [tertiary]    Distance measurement label.
+ * @property {AreaInfo} [area]      Does this count as an area measurement?
+ * @property {string} embedLabel    Format string for the display in the ability embed.
+ * @property {Reference} [reference]
+ */
+
+/**
+ * Valid distances.
+ * @type {Record<string, AbilityDistance>}
+ */
+const abilityDistances = {
+  melee: {
+    label: "DRAW_STEEL.Item.ability.Distance.Melee",
+    primary: "DRAW_STEEL.Item.ability.Distance.Melee",
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Melee",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.8EAIUfdZl1OOtd0J",
+    },
+  },
+  ranged: {
+    label: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    primary: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Ranged",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.20QU1D6xNfsdVxhr",
+    },
+  },
+  meleeRanged: {
+    label: "DRAW_STEEL.Item.ability.Distance.MeleeRanged",
+    primary: "DRAW_STEEL.Item.ability.Distance.Melee",
+    secondary: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.MeleeRanged",
+  },
+  aura: {
+    label: "DRAW_STEEL.Item.ability.Distance.Aura",
+    primary: "DRAW_STEEL.Item.ability.Distance.Aura",
+    area: {
+      type: "emanation",
+      radius: "primary",
+    },
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Aura",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.3IzfAxqODmxTQGXm",
+    },
+  },
+  burst: {
+    label: "DRAW_STEEL.Item.ability.Distance.Burst",
+    primary: "DRAW_STEEL.Item.ability.Distance.Burst",
+    area: {
+      type: "emanation",
+      radius: "primary",
+    },
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Burst",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.fRRL0LxYTLYDjI2l",
+    },
+  },
+  cube: {
+    label: "DRAW_STEEL.Item.ability.Distance.Cube",
+    primary: "DRAW_STEEL.Item.ability.Distance.Length",
+    secondary: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    area: {
+      type: "rectangle",
+      width: "primary",
+      height: "primary",
+    },
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Cube",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.NM5mRQoFz11PuS3N",
+    },
+  },
+  line: {
+    label: "DRAW_STEEL.Item.ability.Distance.Line",
+    primary: "DRAW_STEEL.Item.ability.Distance.Length",
+    secondary: "DRAW_STEEL.Item.ability.Distance.Width",
+    tertiary: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    area: {
+      type: "line",
+      length: "primary",
+      width: "secondary",
+    },
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Line",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.F81fUHvZswIgxONN",
+    },
+  },
+  wall: {
+    label: "DRAW_STEEL.Item.ability.Distance.Wall",
+    primary: "DRAW_STEEL.Item.ability.Distance.Squares",
+    secondary: "DRAW_STEEL.Item.ability.Distance.Ranged",
+    area: {
+      type: "rectangle",
+      count: "primary",
+    },
+    embedLabel: "DRAW_STEEL.Item.ability.DistanceEmbed.Wall",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.yoPRPFENNuODlmpT",
+    },
+  },
+  special: {
+    label: "DRAW_STEEL.Item.ability.Distance.Special",
+    area: true,
+    embedLabel: "DRAW_STEEL.Item.ability.Distance.Special",
+  },
+  self: {
+    label: "DRAW_STEEL.Item.ability.Distance.Self",
+    embedLabel: "DRAW_STEEL.Item.ability.Distance.Self",
+  },
+};
+
+/**
+ * @typedef AbilityTarget
+ * @property {string} label
+ * @property {string} [all]       I18n key for an ability that targets everything within an area.
+ * @property {string} embedLabel  Format string for display in the ability embed. Can point to a plural object.
+ * @property {Reference} [reference] An optional UUID with a description of the ability targets.
+ * @property {Set<"ally" | "enemy" | "self" | "object">} targetOptions Target options.
+ */
+
+/**
+ * Valid targeting categories.
+ * @type {Record<string, AbilityTarget>}
+ */
+const abilityTargets = {
+  creature: {
+    label: "DRAW_STEEL.Item.ability.Target.Creature",
+    all: "DRAW_STEEL.Item.ability.Target.AllCreatures",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.CreatureEmbed",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.jddHzKU7bglBs7HT",
+    },
+    targetOptions: new Set(["ally", "enemy"]),
+  },
+  object: {
+    label: "DRAW_STEEL.Item.ability.Target.Object",
+    all: "DRAW_STEEL.Item.ability.Target.AllObjects",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.ObjectEmbed",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.RxEqh3LC1WvIdPs0",
+    },
+    targetOptions: new Set(["object"]),
+  },
+  creatureObject: {
+    label: "DRAW_STEEL.Item.ability.Target.CreatureObject",
+    all: "DRAW_STEEL.Item.ability.Target.AllCreatureObject",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.CreatureObjectEmbed",
+    targetOptions: new Set(["ally", "enemy", "object"]),
+  },
+  enemy: {
+    label: "DRAW_STEEL.Item.ability.Target.Enemy",
+    all: "DRAW_STEEL.Item.ability.Target.AllEnemies",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.EnemyEmbed",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Yqr9RRDEeyf5mD2n",
+    },
+    targetOptions: new Set(["enemy"]),
+  },
+  enemyObject: {
+    label: "DRAW_STEEL.Item.ability.Target.EnemyObject",
+    all: "DRAW_STEEL.Item.ability.Target.AllEnemyObject",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.EnemyObjectEmbed",
+    targetOptions: new Set(["enemy", "object"]),
+  },
+  ally: {
+    label: "DRAW_STEEL.Item.ability.Target.Ally",
+    all: "DRAW_STEEL.Item.ability.Target.AllAllies",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.AllyEmbed",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.xX77jHOwOS8XTJS7",
+    },
+    targetOptions: new Set(["ally"]),
+  },
+  self: {
+    label: "DRAW_STEEL.Item.ability.Target.Self",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.Self",
+    targetOptions: new Set(["self"]),
+  },
+  selfOrAlly: {
+    label: "DRAW_STEEL.Item.ability.Target.SelfOrAlly",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.SelfOrAlly",
+    targetOptions: new Set(["ally", "self"]),
+  },
+  selfOrCreature: {
+    label: "DRAW_STEEL.Item.ability.Target.SelfOrCreature",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.SelfOrCreature",
+    targetOptions: new Set(["ally", "enemy", "self"]),
+  },
+  selfAlly: {
+    label: "DRAW_STEEL.Item.ability.Target.SelfAlly",
+    all: "DRAW_STEEL.Item.ability.Target.AllSelfAllies",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.SelfAllyEmbed",
+    targetOptions: new Set(["ally", "self"]),
+  },
+  special: {
+    label: "DRAW_STEEL.Item.ability.Target.Special",
+    embedLabel: "DRAW_STEEL.Item.ability.Target.Special",
+    targetOptions: new Set(["ally", "self", "enemy", "object"]),
+  },
+};
+
+/**
+ * @typedef ForcedMovement
+ * @property {string} label
+ * @property {string} vertical I18n key for the vertical version of this movement.
+ * @property {Reference} reference
+ */
+
+/**
+ * Forced movement categories.
+ * @type {Record<string, ForcedMovement>}
+ */
+const abilityForcedMovement = {
+  push: {
+    label: "DRAW_STEEL.Item.ability.ForcedMovement.Push",
+    vertical: "DRAW_STEEL.Item.ability.ForcedMovement.VerticalPush",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.hZRwTDdML8T3YFhG",
+    },
+  },
+  pull: {
+    label: "DRAW_STEEL.Item.ability.ForcedMovement.Pull",
+    vertical: "DRAW_STEEL.Item.ability.ForcedMovement.VerticalPull",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.KwEkfYGKGkg28cXx",
+    },
+  },
+  slide: {
+    label: "DRAW_STEEL.Item.ability.ForcedMovement.Slide",
+    vertical: "DRAW_STEEL.Item.ability.ForcedMovement.VerticalSlide",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bjIBJMnPnfXZBOmj",
+    },
+  },
+};
+
+/**
+ * Configuration information for Ability items.
+ */
+export const abilities = {
+  keywords: abilityKeywords,
+  /**
+   * A convenient helper to prepare the ability keyword list & groups for display.
+   * @type {FormSelectOption[]}
+   */
+  get keywordOptions() {
+    const sortedKeywords = Object.entries(ds.CONFIG.abilities.keywords).sort(([keyA, valueA], [keyB, valueB]) => {
+      // When no group, sort between their keys
+      if ((valueA.group === undefined) && (valueB.group === undefined)) return keyA.localeCompare(keyB);
+
+      // When or the other, but not both have a group, the one without a group comes first
+      if ((valueA.group === undefined) && (valueB.group !== undefined)) return -1;
+      if ((valueA.group !== undefined) && (valueB.group === undefined)) return 1;
+
+      // When they both have a group and they are equal, sort between their keys
+      if (valueA.group === valueB.group) return keyA.localeCompare(keyB);
+
+      // When they both have a group and are not equal, sort between their groups
+      return valueA.group.localeCompare(valueB.group);
+    });
+    return sortedKeywords.reduce((arr, [value, { label, group }]) => {
+      arr.push({ label, group, value });
+      return arr;
+    }, []);
+  },
+  types: abilityTypes,
+  categories: abilityCategories,
+  distances: abilityDistances,
+  targets: abilityTargets,
+  forcedMovement: abilityForcedMovement,
+};
+preLocalize("abilities.keywords", { keys: ["label", "group"] });
+preLocalize("abilities.types", { key: "label" });
+preLocalize("abilities.categories", { key: "label" });
+// Embed labels intentionally not pre-localized because they rely on `format` instead of `localize`
+preLocalize("abilities.distances", { keys: ["label", "primary", "secondary", "tertiary"] });
+preLocalize("abilities.targets", { keys: ["label", "all"] });
+preLocalize("abilities.forcedMovement", { keys: ["label", "vertical"] });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef PowerRollEffectProperty
+ * @property {string} label
+ */
+
+/**
+ * @typedef PowerRollEffectType
+ * @property {string} label                                                         Human-readable label.
+ * @property {string} defaultImage                                                  The default image for PowerRollEffects of this type.
+ * @property {pseudoDocuments.powerRollEffects.BasePowerRollEffect} documentClass   The pseudo-document class.
+ * @property {Record<string, PowerRollEffectProperty>} [properties]
+ */
+
+/**
+ * Valid types for the PowerRollEffect pseudo-document.
+ * @type {Record<string, PowerRollEffectType>}
+ */
+export const PowerRollEffect = {
+  damage: {
+    label: "TYPES.PowerRollEffect.damage",
+    defaultImage: "icons/svg/fire.svg",
+    documentClass: pseudoDocuments.powerRollEffects.DamagePowerRollEffect,
+  },
+  applied: {
+    label: "TYPES.PowerRollEffect.applied",
+    defaultImage: "icons/svg/paralysis.svg",
+    documentClass: pseudoDocuments.powerRollEffects.AppliedPowerRollEffect,
+    properties: {
+      stacking: {
+        label: "DRAW_STEEL.POWER_ROLL_EFFECT.APPLIED.Properties.stacking",
+      },
+      originDuration: {
+        label: "DRAW_STEEL.POWER_ROLL_EFFECT.APPLIED.Properties.originDuration",
+      },
+    },
+  },
+  forced: {
+    label: "TYPES.PowerRollEffect.forced",
+    defaultImage: "icons/svg/portal.svg",
+    documentClass: pseudoDocuments.powerRollEffects.ForcedMovementPowerRollEffect,
+    properties: {
+      ignoresImmunity: {
+        label: "DRAW_STEEL.POWER_ROLL_EFFECT.FORCED.Properties.IgnoresStability",
+      },
+      vertical: {
+        label: "DRAW_STEEL.POWER_ROLL_EFFECT.FORCED.Properties.Vertical",
+      },
+    },
+  },
+  resource: {
+    label: "TYPES.PowerRollEffect.resource",
+    defaultImage: "icons/svg/lightning.svg",
+    documentClass: pseudoDocuments.powerRollEffects.GainResourcePowerRollEffect,
+  },
+  other: {
+    label: "TYPES.PowerRollEffect.other",
+    defaultImage: "icons/svg/sun.svg",
+    documentClass: pseudoDocuments.powerRollEffects.OtherPowerRollEffect,
+  },
+};
+preLocalize("PowerRollEffect", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef AdvancementType
+ * @property {string} label                                                 Human-readable label.
+ * @property {string} defaultImage                                          Default image used by documents of this type.
+ * @property {Set<string>} itemTypes                                        Item types that can hold this advancement type.
+ * @property {pseudoDocuments.advancements.BaseAdvancement} documentClass   The pseudo-document class.
+ */
+
+/** @type {Record<string, AdvancementType>} */
+export const Advancement = {
+  characteristic: {
+    label: "TYPES.Advancement.characteristic",
+    defaultImage: "icons/svg/upgrade.svg",
+    itemTypes: new Set(["class", "title"]),
+    documentClass: pseudoDocuments.advancements.CharacteristicAdvancement,
+  },
+  itemGrant: {
+    label: "TYPES.Advancement.itemGrant",
+    defaultImage: "icons/svg/item-bag.svg",
+    itemTypes: new Set(["ancestry", "ancestryTrait", "career", "class", "complication", "feature", "kit", "perk", "subclass", "title"]),
+    documentClass: pseudoDocuments.advancements.ItemGrantAdvancement,
+  },
+  effectGrant: {
+    label: "TYPES.Advancement.effectGrant",
+    defaultImage: "icons/svg/aura.svg",
+    itemTypes: new Set(["ancestry", "ancestryTrait", "career", "class", "complication", "feature", "perk", "subclass", "title"]),
+    documentClass: pseudoDocuments.advancements.EffectGrantAdvancement,
+  },
+  skill: {
+    label: "TYPES.Advancement.skill",
+    defaultImage: "icons/svg/hanging-sign.svg",
+    itemTypes: new Set(["career", "ancestryTrait", "class", "complication", "culture", "feature", "subclass", "title"]),
+    documentClass: pseudoDocuments.advancements.SkillAdvancement,
+  },
+  language: {
+    label: "TYPES.Advancement.language",
+    defaultImage: "icons/svg/village.svg",
+    itemTypes: new Set(["career", "class", "complication", "culture", "feature", "subclass", "title"]),
+    documentClass: pseudoDocuments.advancements.LanguageAdvancement,
+  },
+};
+preLocalize("Advancement", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef MessagePartType
+ * @property {pseudoDocuments.messageParts.BaseMessagePart} documentClass   The pseudo-document class.
+ */
+
+/** @type {Record<string, MessagePartType>} */
+export const MessagePart = {
+  abilityResult: {
+    documentClass: pseudoDocuments.messageParts.AbilityResult,
+  },
+  abilityUse: {
+    documentClass: pseudoDocuments.messageParts.AbilityUse,
+  },
+  content: {
+    documentClass: pseudoDocuments.messageParts.ContentPart,
+  },
+  heroToken: {
+    documentClass: pseudoDocuments.messageParts.HeroTokenPart,
+  },
+  roll: {
+    documentClass: pseudoDocuments.messageParts.RollPart,
+  },
+  savingThrow: {
+    documentClass: pseudoDocuments.messageParts.SavingThrowPart,
+  },
+  test: {
+    documentClass: pseudoDocuments.messageParts.TestPart,
+  },
+  testRequest: {
+    documentClass: pseudoDocuments.messageParts.TestRequestPart,
+  },
+  project: {
+    documentClass: pseudoDocuments.messageParts.ProjectPart,
+  },
+};
+preLocalize("MessagePart", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef SpecialEffectType
+ * @property {string} label                                                     Human-readable label.
+ * @property {string} defaultImage                                              The default image for PowerRollEffects of this type.
+ * @property {pseudoDocuments.specialEffects.BaseSpecialEffect} documentClass   The pseudo-document class.
+ */
+
+/**
+ * Valid types for the SpecialEffect pseudo-document.
+ * @type {Record<string, SpecialEffectType>}
+ */
+export const SpecialEffect = {
+  base: {
+    label: "TYPES.SpecialEffect.base",
+    defaultImage: "icons/svg/book.svg",
+    documentClass: pseudoDocuments.specialEffects.BaseSpecialEffect,
+  },
+  persistent: {
+    label: "TYPES.SpecialEffect.persistent",
+    defaultImage: "icons/svg/fire-shield.svg",
+    documentClass: pseudoDocuments.specialEffects.PersistentSpecialEffect,
+  },
+  spend: {
+    label: "TYPES.SpecialEffect.spend",
+    defaultImage: "icons/svg/coins.svg",
+    documentClass: pseudoDocuments.specialEffects.SpendSpecialEffect,
+  },
+  strained: {
+    label: "TYPES.SpecialEffect.strained",
+    defaultImage: "icons/svg/anchor.svg",
+    documentClass: pseudoDocuments.specialEffects.StrainedSpecialEffect,
+  },
+};
+preLocalize("SpecialEffect", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef CultureAspect
+ * @property {string} label         Human-readable label.
+ * @property {string} skillGroups   A set of skill groups this aspect gives access to.
+ * @property {Set<string>} skillChoices  A set of skills this aspect gives access to.
+ * @property {Set<string>} group         An entry in culture.groups
+ * TODO: Description as a uuid reference.
+ */
+
+/**
+ * Configuration details for Culture items.
+ */
+export const culture = {
+  /**  @type {Record<string, CultureAspect>} */
+  aspects: {
+    nomadic: {
+      label: "DRAW_STEEL.Item.culture.Environment.Nomadic",
+      skillGroups: new Set(["exploration", "interpersonal"]),
+      skillChoices: new Set(),
+      group: "environment",
+    },
+    rural: {
+      label: "DRAW_STEEL.Item.culture.Environment.Rural",
+      skillGroups: new Set(["crafting", "lore"]),
+      skillChoices: new Set(),
+      group: "environment",
+    },
+    secluded: {
+      label: "DRAW_STEEL.Item.culture.Environment.Secluded",
+      skillGroups: new Set(["interpersonal", "lore"]),
+      skillChoices: new Set(),
+      group: "environment",
+    },
+    urban: {
+      label: "DRAW_STEEL.Item.culture.Environment.Urban",
+      skillGroups: new Set(["interpersonal", "intrigue"]),
+      skillChoices: new Set(),
+      group: "environment",
+    },
+    wilderness: {
+      label: "DRAW_STEEL.Item.culture.Environment.Wilderness",
+      skillGroups: new Set(["crafting", "exploration"]),
+      skillChoices: new Set(),
+      group: "environment",
+    },
+    bureaucratic: {
+      label: "DRAW_STEEL.Item.culture.Organization.Bureaucratic",
+      skillGroups: new Set(["interpersonal", "intrigue"]),
+      skillChoices: new Set(),
+      group: "organization",
+    },
+    communal: {
+      label: "DRAW_STEEL.Item.culture.Organization.Communal",
+      skillGroups: new Set(["crafting", "exploration"]),
+      skillChoices: new Set(),
+      group: "organization",
+    },
+    academic: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Academic",
+      skillGroups: new Set(["lore"]),
+      skillChoices: new Set(),
+      group: "upbringing",
+    },
+    creative: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Creative",
+      skillGroups: new Set(["crafting"]),
+      skillChoices: new Set(["music", "perform"]),
+      group: "upbringing",
+    },
+    lawless: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Lawless",
+      skillGroups: new Set(["intrigue"]),
+      skillChoices: new Set(),
+      group: "upbringing",
+    },
+    labor: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Labor",
+      skillGroups: new Set(["exploration"]),
+      skillChoices: new Set(["blacksmithing", "handleAnimals"]),
+      group: "upbringing",
+    },
+    martial: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Martial",
+      skillGroups: new Set(),
+      skillChoices: new Set(["blacksmithing", "fletching", "climb", "endurance", "ride", "intimidate", "alertness", "track", "monsters", "strategy"]),
+      group: "upbringing",
+    },
+    noble: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.Noble",
+      skillGroups: new Set(["interpersonal"]),
+      skillChoices: new Set(),
+      group: "upbringing",
+    },
+  },
+  /** @type {Record<string, { label: string }>} */
+  group: {
+    environment: {
+      label: "DRAW_STEEL.Item.culture.Environment.label",
+    },
+    organization: {
+      label: "DRAW_STEEL.Item.culture.Organization.label",
+    },
+    upbringing: {
+      label: "DRAW_STEEL.Item.culture.Upbringing.label",
+    },
+  },
+};
+preLocalize("culture.aspects", { key: "label" });
+preLocalize("culture.group", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Keywords available to all treasure types.
+ * @type {Record<string, {label: string}>}
+ */
+const treasureKeywords = {
+  magic: {
+    label: "DRAW_STEEL.Item.treasure.Keywords.Magic",
+  },
+  psionic: {
+    label: "DRAW_STEEL.Item.treasure.Keywords.Psionic",
+  },
+};
+
+/**
+ * @typedef TreasureCategory
+ * @property {string} label
+ * @property {Reference} reference
+ * @property {FormSelectOption[]} keywords
+ */
+
+/**
+ * Core types of treasures.
+ * @type {Record<string, TreasureCategory>}
+ */
+const treasureCategories = {
+  consumable: {
+    label: "DRAW_STEEL.Item.treasure.Categories.Consumable",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.jsnsMsppMUA49aHD",
+    },
+    get keywords() {
+      return Object.entries(ds.CONFIG.equipment.consumables)
+        .map(([value, { label }]) => ({ label, value, group: ds.CONFIG.equipment.categories.consumable.label }));
+    },
+  },
+  trinket: {
+    label: "DRAW_STEEL.Item.treasure.Categories.Trinket",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.b3YQXonGmCHa3ywO",
+    },
+    get keywords() {
+      return Object.entries(ds.CONFIG.equipment.other)
+        .map(([value, { label }]) => ({ label, value, group: ds.CONFIG.equipment.categories.trinket.label }));
+    },
+  },
+  leveled: {
+    label: "DRAW_STEEL.Item.treasure.Categories.Leveled",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.yuFjNCvJTmXsuzkc",
+      identifier: "leveledTreasure",
+    },
+    get keywords() {
+      return [];
+    },
+  },
+  artifact: {
+    label: "DRAW_STEEL.Item.treasure.Categories.Artifact",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.vuRZz2hSIZPFvL1W",
+    },
+    get keywords() {
+      return [];
+    },
+  },
+};
+
+/**
+ * Used by Leveled Treasures and Artifacts.
+ * @type {Record<string, {label: string, icon: string}>}
+ */
+const equipmentKinds = {
+  other: {
+    label: "DRAW_STEEL.Item.treasure.Kinds.Other",
+    icon: "fa-solid fa-suitcase",
+  },
+  armor: {
+    label: "DRAW_STEEL.Item.treasure.Kinds.Armor",
+    icon: "fa-solid fa-shield",
+  },
+  implement: {
+    label: "DRAW_STEEL.Item.treasure.Kinds.Implement",
+    icon: "fa-solid fa-wand-sparkles",
+  },
+  weapon: {
+    label: "DRAW_STEEL.Item.treasure.Kinds.Weapon",
+    icon: "fa-solid fa-sword",
+  },
+};
+
+/**
+ * @typedef ArmorType
+ * @property {string} label
+ * @property {boolean} kitEquipment Is this an eligible choice for a kit's equipment.
+ * @property {Reference} reference     A UUID with a description for the armor type.
+ */
+
+/**
+ * Also used by kits.
+ * @type {Record<string, ArmorType>}
+ */
+const armorTypes = {
+  none: {
+    label: "DRAW_STEEL.Item.treasure.Armor.None",
+    kitEquipment: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.0GzLdGji9ovF4JWf",
+      identifier: "noArmor",
+    },
+  },
+  light: {
+    label: "DRAW_STEEL.Item.treasure.Armor.Light",
+    kitEquipment: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Nnmlc3flHHU6SDZt",
+      identifier: "lightArmor",
+    },
+  },
+  medium: {
+    label: "DRAW_STEEL.Item.treasure.Armor.Medium",
+    kitEquipment: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.ZLP8WyWXfzN0OHgF",
+      identifier: "mediumArmor",
+    },
+  },
+  heavy: {
+    label: "DRAW_STEEL.Item.treasure.Armor.Heavy",
+    kitEquipment: true,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.8RaSYcVxJzhTt57f",
+      identifier: "heavyArmor",
+    },
+  },
+  shield: {
+    label: "DRAW_STEEL.Item.treasure.Armor.Shield",
+    kitEquipment: false,
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.6ZROuBoDEhIFQVN0",
+    },
+  },
+};
+
+/**
+ * @typedef WeaponType
+ * @property {string} label
+ * @property {Reference} reference
+ */
+
+/**
+ * Also used by kits.
+ * @type {Record<string, WeaponType>}
+ */
+const weaponTypes = {
+  none: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.None",
+  },
+  bow: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Bow",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.DWmnPd9SaN1cjuHg",
+    },
+  },
+  ensnaring: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Ensnaring",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.dIJ0FFC63E2F9KQf",
+    },
+  },
+  heavy: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Heavy",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2g9hH726tlyxT1DI",
+      identifier: "heavyWeapon",
+    },
+  },
+  light: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Light",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Gyf2GDvwohFqmJNm",
+      identifier: "lightWeapon",
+    },
+  },
+  medium: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Medium",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.8P0vOtoGSvWeaedd",
+      identifier: "mediumWeapon",
+    },
+  },
+  polearm: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Polearm",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.PCrfsqn61L7ZavdX",
+    },
+  },
+  unarmed: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Unarmed",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.nK8t3y38hbGsvp1d",
+    },
+  },
+  whip: {
+    label: "DRAW_STEEL.Item.treasure.Weapons.Whip",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CYKzqzDMQjJCq0c1",
+    },
+  },
+};
+
+/**
+ * Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power.
+ * @type {Record<string, {label: string}>}
+ */
+const implementTypes = {
+  implement: {
+    label: "DRAW_STEEL.Item.treasure.Kinds.Implement",
+  },
+  orb: {
+    label: "DRAW_STEEL.Item.treasure.Implements.Orb",
+  },
+  wand: {
+    label: "DRAW_STEEL.Item.treasure.Implements.Wand",
+  },
+};
+
+/**
+ * Used by "Other Leveled Treasures" and trinkets.
+ * @type {Record<string, {label: string}>}
+ */
+const otherTypes = {
+  arms: {
+    label: "DRAW_STEEL.Item.treasure.Other.Arms",
+  },
+  feet: {
+    label: "DRAW_STEEL.Item.treasure.Other.Feet",
+  },
+  hands: {
+    label: "DRAW_STEEL.Item.treasure.Other.Hands",
+  },
+  head: {
+    label: "DRAW_STEEL.Item.treasure.Other.Head",
+  },
+  neck: {
+    label: "DRAW_STEEL.Item.treasure.Other.Neck",
+  },
+  ring: {
+    label: "DRAW_STEEL.Item.treasure.Other.Ring",
+  },
+  waist: {
+    label: "DRAW_STEEL.Item.treasure.Other.Waist",
+  },
+};
+
+/**
+ * Valid keywords for consumables.
+ * @type {Record<string, {label: string}>}
+ */
+const consumableTypes = {
+  oil: {
+    label: "DRAW_STEEL.Item.treasure.Consumable.Oil",
+  },
+  potion: {
+    label: "DRAW_STEEL.Item.treasure.Consumable.Potion",
+  },
+  scroll: {
+    label: "DRAW_STEEL.Item.treasure.Consumable.Scroll",
+  },
+};
+
+/**
+ * Configuration details for Treasure items
+ * Also used by Kits.
+ */
+export const equipment = {
+  keywords: treasureKeywords,
+  categories: treasureCategories,
+  kinds: equipmentKinds,
+  armor: armorTypes,
+  weapon: weaponTypes,
+  implement: implementTypes,
+  other: otherTypes,
+  consumables: consumableTypes,
+};
+preLocalize("equipment.keywords", { key: "label" });
+preLocalize("equipment.categories", { key: "label" });
+preLocalize("equipment.kinds", { key: "label" });
+preLocalize("equipment.armor", { key: "label" });
+preLocalize("equipment.weapon", { key: "label" });
+preLocalize("equipment.implement", { key: "label" });
+preLocalize("equipment.other", { key: "label" });
+preLocalize("equipment.consumables", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration details for Feature items.
+ */
+export const features = { };
+
+/* -------------------------------------------------- */
+
+/**
+ * Configuration details for perk items.
+ */
+export const perks = {
+  /**
+   * Types of perks in addition to the available skill groups.
+   * Heroes pg 227, "Five of those [perk] types reflect the setup of the five skill groups.".
+   * @type {Record<string, {label: string}>}
+   */
+  types: {
+    supernatural: {
+      label: "DRAW_STEEL.Item.perk.Types.Supernatural",
+    },
+  },
+  /**
+   * All perk type options.
+   * @type {FormSelectOption[]}
+   */
+  get typeOptions() {
+    const skillGroups = Object.entries(ds.CONFIG.skills.groups).map(([value, entry]) => ({ value, label: entry.label }));
+    return skillGroups.concat(
+      Object.entries(ds.CONFIG.perks.types).map(([value, entry]) => ({ value, label: entry.label })),
+    );
+  },
+};
+preLocalize("perks.types", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef ProjectType
+ * @property {string} label
+ * @property {Reference} [reference]
+ */
+
+/** @type {Record<string, ProjectType>} */
+const projectTypes = {
+  crafting: {
+    label: "DRAW_STEEL.Item.project.Types.Crafting",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.HIy61CmVxJIIT4n8",
+      identifier: "craftingProject",
+    },
+  },
+  research: {
+    label: "DRAW_STEEL.Item.project.Types.Research",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.DvrfyW0kGqPdihlV",
+      identifier: "researchProject",
+    },
+  },
+  other: {
+    label: "DRAW_STEEL.Item.project.Types.Other",
+    reference: {
+      uuid: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7sibcPI0V1rBrEyy",
+      identifier: "otherProject",
+    },
+  },
+};
+
+/**
+ * @typedef ProjectMilestone
+ * @property {number} min
+ * @property {number} max
+ * @property {number} events
+ */
+
+/** @type {ProjectMilestone[]} */
+const projectMilestones = [
+  {
+    min: 0,
+    max: 30,
+    events: 0,
+  },
+  {
+    min: 31,
+    max: 200,
+    events: 1,
+  },
+  {
+    min: 201,
+    max: 999,
+    events: 2,
+  },
+  {
+    min: 1000,
+    max: Infinity,
+    events: 3,
+  },
+];
+
+/**
+ * Configuration details for project items.
+ */
+export const projects = {
+  types: projectTypes,
+  milestones: projectMilestones,
+};
+preLocalize("projects.types", { key: "label" });
+
+/* -------------------------------------------------- */
+
+/**
+ * @typedef SourceBook
+ * @property {string} label   An i18n key for the label that will show in sheet headers.
+ * @property {string} title   An i18n key for the longer title that will display in the Compendium Browser.
+ */
+
+/**
+ * Source books provided in the data list for the Document Source Input.
+ * @type {Record<string, SourceBook>}
+ */
+const sourceBooks = {
+  Heroes: {
+    label: "DRAW_STEEL.SOURCE.Books.Heroes.Label",
+    title: "DRAW_STEEL.SOURCE.Books.Heroes.Title",
+  },
+  Monsters: {
+    label: "DRAW_STEEL.SOURCE.Books.Monsters.Label",
+    title: "DRAW_STEEL.SOURCE.Books.Monsters.Title",
+  },
+};
+
+/**
+ * @typedef ContentLicense
+ * @property {string} [label] An i18n key pointing to longer version of the name of the license.
+ */
+
+/**
+ * Licenses for Draw Steel content.
+ * The keys are human readable in the sources panel.
+ * @type {Record<string, ContentLicense>}
+ */
+const sourceLicenses = {
+  "Draw Steel Creator License": {
+    label: "DRAW_STEEL.SOURCE.Licenses.DSCL",
+  },
+};
+
+export const sourceInfo = {
+  books: sourceBooks,
+  licenses: sourceLicenses,
+};
+preLocalize("sourceInfo.books", { keys: ["label", "title"] });
+preLocalize("sourceInfo.licenses", { keys: ["label"] });
+
+/* -------------------------------------------------- */
+
+/**
+ * Record of journal entry pages of type `reference` that help display tooltips
+ * throughout the system.
+ * @type {Record<string, string>}
+ */
+export const references = {
+  ability: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.mpZrEjKwJEKiHKnE",
+  abilityRoll: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.DsHzsC9xbS2uDTVd",
+  adjacent: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.wJYPNIX6735qkPya",
+  ancestry: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.aVnI025dpWjuH3ml",
+  areaOfEffect: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2969TZTDE177bvEi",
+  argument: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.btoOIJijDdahjW47",
+  artisan: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.RUXQtabdFwfZ3Cqq",
+  background: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.etUcPDck6u9QGpxW",
+  bane: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.OMD0y7dhERvBNGZn",
+  bonus: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Et7Kc1K01334FrFn",
+  breakthrough: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Ig1sdMNjMKoGQR8y",
+  burrow: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.AE2vkxT9b1ANbiGb",
+  capital: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.AJBZ3SHfk4u8JhEP",
+  career: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.hqIKryhimYWVXWdS",
+  characteristic: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.wbCPqatk0kRgrZpy",
+  ceiling: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.JqAbBfoDGtTwBS5M",
+  class: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.35bgy4LHXxNDb4xf",
+  climb: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.8yxvhLIHv4c92JGN",
+  combatRound: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.56zpHZlFOoks6gPG",
+  complication: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.NMTQLGpxld1a5Q49",
+  concealment: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.nTrMD37fKAeaEXgY",
+  condition: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CkH8EP72hbU3xpOl",
+  consequence: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.kRP7SF8IRlYQ9jJ0",
+  cover: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tZijAdiP2MTufnxN",
+  crawl: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.1nPJzq3cwbfbmK8u",
+  criticalHit: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Q5IZwIm77iJGo2nV",
+  culture: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.zhflZyFDgpdNZS5U",
+  damage: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bfG60g27N8dqhflP",
+  damageImmunity: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.KPBkV0ro8TfGPaR1",
+  damageType: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.hCeqwvSs9l0UrfYB",
+  damageWeakness: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Xh4PXtAjp4iQbwXP",
+  damagingTerrain: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.R324d9C3YljkvIi4",
+  difficultTerrain: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.w5Sn4PgcM7obsJkQ",
+  director: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.K6vOKWzkGH6LKsO1",
+  distance: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.0cFtrWemTUgTaDWE",
+  doubleBane: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.T4GKo5WfRsdXvKFq",
+  doubleEdge: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.U4L4Tj7VIiDkWXnn",
+  downtimeProject: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.F7QYa1BTKiqBTFWB",
+  dying: "Compendium.draw-steel.journals.JournalEntry.hDhdILCi65wpBgPZ.JournalEntryPage.FllqqqqI9t6TROIb",
+  echelon: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.iB8wcLPrm1W02K5O",
+  edge: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.fLPZTVQavFcvsMu1",
+  enhancement: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.L556gYnuPWRnyKyK",
+  experience: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Cni7beYU3RiHtUgC",
+  falling: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.PwSDdsWPxNWn4Mkb",
+  flanking: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.gmQaZ7gHLi1T4Akr",
+  fly: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.1nxJIITOBSRF5gI5",
+  forcedMovement: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.79MpnUhrFec8nwIr",
+  follower: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.dfCVx6WAQh3XM9Qs",
+  god: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.P1yZPeXbIYAFzzv8",
+  ground: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.hLQ8JM9PjCMZ365u",
+  groupTest: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2vketYyQ9Cfox3id",
+  guide: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.3Lj2wPOqHtxx5lBn",
+  hero: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.yjGyjvC6eSl00RXA",
+  heroTokens: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.XF6tQR1SHB38D5Cr",
+  heroicResource: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.lo64C7BlS2U8rHaV",
+  highGround: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.s2xSRFejmKTa9M35",
+  hover: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.HWEhkXO9s4cWMDV1",
+  implement: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bDpFehUdTzGYyMnz",
+  interest: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.VGmXTbAX3nVMawMM",
+  itemPrerequisite: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.I0CtWzEx44EmZUTU",
+  jump: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2hNwwBDSeUfLeMNT",
+  kit: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7m5yUiDD1lTIsAQy",
+  level: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.szpWmmIY3RBH8Ipx",
+  lineOfEffect: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.lzZVp1FIRH1pKAT5",
+  malice: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.1yjvW12GBRAaS9IS",
+  manifold: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.REoiWLkGfsIJ3kGs",
+  montageTest: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bBCThFlh8jjcOBmv",
+  motivation: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.j2ISMUzfW4oVCaHA",
+  mountedCombat: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.1SCQCicL4p8W32rc",
+  movement: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.XnAtxT9FyoWATIvC",
+  mundane: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.lA1kHSbWBPGGVleM",
+  natural19or20: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.OcLqFSB09akohGIJ",
+  naturalRoll: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tr3Q480PGe3EcajE",
+  negotiation: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.GfBH1R15Hd9cZ8pR",
+  npc: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.ev77z5spRkN9mtyt",
+  objective: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.ksGQW1KbmjIcyrTb",
+  opportunityAttack: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.R3Sr30gYIXDPdJOE",
+  opposedPowerRoll: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.mZFykFpHHA6163oM",
+  orden: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.rWtr8bWXK5m9ONFE",
+  patience: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.eGQSTJgRAgsf0p0Z",
+  penalty: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.qVQDG0VW2TTS0htf",
+  perk: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CCRzLSwHAVau9dY9",
+  pitfall: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.g3QgeAQPTqu6iVTS",
+  potency: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.TDEeoUAJRUSBkByN",
+  powerRoll: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tpLzfZEnAg3WAc8J",
+  projectEvent: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.HwxCxsNpMzq9vw1d",
+  projectGoal: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.STr5UWnRuKIfBHXn",
+  projectPoints: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.fF3CidDoduJELnpQ",
+  projectRoll: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.IPE03FIRSs3V5NjB",
+  projectSource: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.4Ozm88BhFHnPiiqS",
+  reactiveTest: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.9ZaqWf1gp8n6y2MW",
+  recoveries: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.2aw9RElnooTeijZg",
+  recoveryValue: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CYk2f4tkLLnjjumL",
+  renown: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.giBu4UK72WIVBzoD",
+  respiteActivity: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7LVSCAHmijsizKn5",
+  retainer: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.IDvqMphx0udqu23W",
+  reward: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.LXb50KAP8hZPEOZM",
+  rolledDamage: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.iAYD7xxy2EROwdPm",
+  sage: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bVEYPvw7e8qLxixj",
+  saint: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.k2TUmCkww9SQfnsv",
+  savingThrow: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.11khJcyvnmjuiU4U",
+  shift: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.utgas5Ats20VVTW0",
+  side: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.edaBmtLojhTHFkUY",
+  size: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.HvSsGodgpSoFjWxn",
+  skill: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.eZOaW5PCNJDAXmxr",
+  space: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Zr1tdD36iSwMyK9h",
+  speed: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.f9YJdUh1G1tnNboS",
+  square: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.nLFMqW5fuDZz8Vms",
+  stability: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.G4LTt1rxIqm5Mra2",
+  stamina: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.bffOnlbZJsabEc6u",
+  strained: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.xpFxdGVSAEmvzbBz",
+  strike: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7towKMysvzPRfnez",
+  subclass: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.CiJ6kVZO65Kix0C1",
+  suffocating: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.IHCGlMTK7be4Ms83",
+  supernatural: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.0c0vJzSQHdPih3O9",
+  surge: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.7nRwRfVm16OBVz9S",
+  swim: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.XO7TAsQjiiTzo41J",
+  target: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.FgypcTRmYmK3H7KT",
+  teleport: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.1G4GugFrzz9fykjw",
+  temporaryStamina: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.RnkEFwU4x6SMfHaP",
+  test: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Oc6920rU3ucsKZSm",
+  tierOutcome: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.93uRnoeiQGnly0GL",
+  tier1: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.0u1DzQMh9lDTiBYa",
+  tier2: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.P4GJ9QDbzeccNtM1",
+  tier3: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.PDx2MP6Gq6EqLpMR",
+  title: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tWSIF6S2QC7YuAzU",
+  timescape: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.MSDL5m5CrIVVigS8",
+  treasure: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.tA2DsdbVy91uiSV3",
+  turn: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.zTqK9wHFLpoJ4Rly",
+  unattendedObject: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.cebUz2NCtgyZ98Wb",
+  underwaterCombat: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.zXABpFEQFq2cXotM",
+  untypedDamage: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.moCvomf9JgtINifU",
+  vasloria: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.Kg051ORcHptPRcw3",
+  vertical: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.XDLVPefPqfzM8CmK",
+  victories: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.SC9i7tyTg1jKl4vr",
+  walk: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.kXZbGJmK6Lp9tFOD",
+  wealth: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.I38Puf98ti2zZbiz",
+  winded: "Compendium.draw-steel.journals.JournalEntry.f8eNK5Pte4CSdex0.JournalEntryPage.3yd9XsnxkDbR7Ywd",
+};
+
+/* -------------------------------------------------- */
+
+/**
+ * Default formula editor context for autocompletion.
+ * @type {Record<string, { label: string }>}    A record of roll data paths to labels.
+ */
+export const formulaEditorContexts = {
+  default: {
+    M: {
+      label: "DRAW_STEEL.Actor.characteristics.might.full",
+    },
+    A: {
+      label: "DRAW_STEEL.Actor.characteristics.agility.full",
+    },
+    R: {
+      label: "DRAW_STEEL.Actor.characteristics.reason.full",
+    },
+    I: {
+      label: "DRAW_STEEL.Actor.characteristics.intuition.full",
+    },
+    P: {
+      label: "DRAW_STEEL.Actor.characteristics.presence.full",
+    },
+    chr: {
+      label: "DRAW_STEEL.FormulaEditor.Chr",
+    },
+    level: {
+      label: "DRAW_STEEL.FormulaEditor.Level",
+    },
+    echelon: {
+      label: "DRAW_STEEL.FormulaEditor.Echelon",
+    },
+    "potency.weak": {
+      label: "DRAW_STEEL.FormulaEditor.Potency.Weak",
+    },
+    "potency.average": {
+      label: "DRAW_STEEL.FormulaEditor.Potency.Average",
+    },
+    "potency.strong": {
+      label: "DRAW_STEEL.FormulaEditor.Potency.Strong",
+    },
+  },
+};
+preLocalize("formulaEditorContexts.default", { key: "label" });
