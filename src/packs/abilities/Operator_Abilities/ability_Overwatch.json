@@ -1,8 +1,8 @@
 {
   "folder": null,
-  "name": "Suppressing Burst",
+  "name": "Overwatch",
   "type": "ability",
-  "_id": "UeYiysMpM1SGpLgh",
+  "_id": "oIS1qu8irs7XdrOO",
   "img": "systems/draw-steel/assets/classes/operator.png",
   "system": {
     "source": {
@@ -10,43 +10,44 @@
       "page": "",
       "license": "Draw Steel Creator License"
     },
-    "_dsid": "suppressing-burst",
-    "story": "Trigger discipline: a measured burst that pins them and feeds your Adrenaline.",
+    "_dsid": "overwatch",
+    "story": "Everything the training built toward: total fire control of a zone.",
     "keywords": [
       "ranged",
-      "strike",
+      "area",
       "weapon"
     ],
     "type": "main",
-    "category": "signature",
-    "resource": null,
+    "category": "heroic",
+    "resource": 3,
     "trigger": "",
     "distance": {
-      "type": "ranged",
-      "primary": 10
+      "type": "line",
+      "primary": 10,
+      "secondary": 1
     },
-    "damageDisplay": "ranged",
+    "damageDisplay": "line",
     "target": {
-      "type": "creature",
+      "type": "special",
       "value": 1,
-      "custom": "One creature"
+      "custom": "Each enemy in the chosen line/area (first time each)"
     },
     "power": {
       "roll": {
         "formula": "@chr",
         "characteristics": [
-          "might"
+          "agility"
         ]
       },
       "effects": {
-        "e8bATej3gMj1Amvx": {
+        "TMfJMzMKtaNqyDkY": {
           "name": "Damage",
           "img": null,
           "type": "damage",
-          "_id": "e8bATej3gMj1Amvx",
+          "_id": "TMfJMzMKtaNqyDkY",
           "damage": {
             "tier1": {
-              "value": "2 + @chr",
+              "value": "3 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -55,7 +56,7 @@
               }
             },
             "tier2": {
-              "value": "5 + @chr",
+              "value": "6 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -64,7 +65,7 @@
               }
             },
             "tier3": {
-              "value": "7 + @chr",
+              "value": "9 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -77,11 +78,11 @@
       }
     },
     "effect": {
-      "before": "",
-      "after": "<p>On any hit, gain 1 Adrenaline (trigger discipline). <em>(Canon: the Operator's Suppressing Fire control signature.)</em></p>"
+      "before": "<p>Spend 3 Adrenaline. Set a stance until your next turn: the first time each enemy enters or acts within a chosen line or area, make a free Strike against them (one per enemy). The designated-marksman / held-corner fantasy - Longshot and Saturation Kits love this.</p>",
+      "after": ""
     },
     "spend": {
-      "text": "",
+      "text": "3 Adrenaline",
       "value": null
     }
   },
@@ -92,5 +93,5 @@
     "systemVersion": "1.1.2",
     "coreVersion": "13.348"
   },
-  "_key": "!items!UeYiysMpM1SGpLgh"
+  "_key": "!items!oIS1qu8irs7XdrOO"
 }

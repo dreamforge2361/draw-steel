@@ -11,7 +11,7 @@
       "license": "Draw Steel Creator License"
     },
     "_dsid": "breaching-volley",
-    "story": "Dump the mag. You spend banked Adrenaline to open up - a devastating full-auto burst.",
+    "story": "Cross the gap and hit hard - explosive forward aggression on the professional's terms.",
     "keywords": [
       "ranged",
       "strike",
@@ -35,7 +35,7 @@
       "roll": {
         "formula": "@chr",
         "characteristics": [
-          "might"
+          "agility"
         ]
       },
       "effects": {
@@ -78,7 +78,7 @@
     },
     "effect": {
       "before": "",
-      "after": "<p>Spend 3 Adrenaline. This attack ignores the target's cover.</p>"
+      "after": "<p>Spend 3 Adrenaline. Before the attack you may move up to your Speed, ignoring the first opportunity attack; you attack with an edge, and this attack ignores the target's cover. On Tier 1 the target is also knocked Prone. <em>(Canon: Breach &amp; Clear.)</em></p>"
     },
     "spend": {
       "text": "3 Adrenaline",

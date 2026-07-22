@@ -16,10 +16,10 @@
       "ranged",
       "area"
     ],
-    "type": "main",
+    "type": "triggered",
     "category": "heroic",
     "resource": 2,
-    "trigger": "",
+    "trigger": "When an enemy moves within your reach, or a nearby ally is attacked.",
     "distance": {
       "type": "self",
       "primary": 0

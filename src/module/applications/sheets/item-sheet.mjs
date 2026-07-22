@@ -221,7 +221,7 @@ export default class DrawSteelItemSheet extends DSDocumentSheet {
     for (const model of models) {
       if (!advs[model.requirements.level]) {
         const section = Number.isNumeric(model.requirements.level) ?
-          _loc("DRAW_STEEL.ADVANCEMENT.HEADERS.level", { level: model.requirements.level }) :
+          _loc("DRAW_STEEL.ADVANCEMENT.HEADERS.level", { level: Math.min(5, Math.max(1, 6 - Number(model.requirements.level))) }) :
           _loc("DRAW_STEEL.ADVANCEMENT.HEADERS.null");
         advs[model.requirements.level] = {
           section,

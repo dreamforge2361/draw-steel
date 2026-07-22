@@ -1,8 +1,8 @@
 {
   "folder": null,
-  "name": "Suppressing Burst",
+  "name": "Adrenaline Dump",
   "type": "ability",
-  "_id": "UeYiysMpM1SGpLgh",
+  "_id": "5pKx5ZqCQi3l07n8",
   "img": "systems/draw-steel/assets/classes/operator.png",
   "system": {
     "source": {
@@ -10,16 +10,16 @@
       "page": "",
       "license": "Draw Steel Creator License"
     },
-    "_dsid": "suppressing-burst",
-    "story": "Trigger discipline: a measured burst that pins them and feeds your Adrenaline.",
+    "_dsid": "adrenaline-dump",
+    "story": "The moment the professional stops holding back. The sam goes hot.",
     "keywords": [
       "ranged",
       "strike",
       "weapon"
     ],
     "type": "main",
-    "category": "signature",
-    "resource": null,
+    "category": "heroic",
+    "resource": 5,
     "trigger": "",
     "distance": {
       "type": "ranged",
@@ -27,26 +27,26 @@
     },
     "damageDisplay": "ranged",
     "target": {
-      "type": "creature",
-      "value": 1,
-      "custom": "One creature"
+      "type": "special",
+      "value": 3,
+      "custom": "Up to three Strikes, distributed as you choose"
     },
     "power": {
       "roll": {
         "formula": "@chr",
         "characteristics": [
-          "might"
+          "agility"
         ]
       },
       "effects": {
-        "e8bATej3gMj1Amvx": {
+        "Vo2d7tB30X7U1S9I": {
           "name": "Damage",
           "img": null,
           "type": "damage",
-          "_id": "e8bATej3gMj1Amvx",
+          "_id": "Vo2d7tB30X7U1S9I",
           "damage": {
             "tier1": {
-              "value": "2 + @chr",
+              "value": "4 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -55,7 +55,7 @@
               }
             },
             "tier2": {
-              "value": "5 + @chr",
+              "value": "7 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -64,7 +64,7 @@
               }
             },
             "tier3": {
-              "value": "7 + @chr",
+              "value": "11 + @chr",
               "types": [],
               "properties": [],
               "potency": {
@@ -78,10 +78,10 @@
     },
     "effect": {
       "before": "",
-      "after": "<p>On any hit, gain 1 Adrenaline (trigger discipline). <em>(Canon: the Operator's Suppressing Fire control signature.)</em></p>"
+      "after": "<p>Spend 5 Adrenaline. Make THREE weapon Strikes distributed as you choose; each Tier-1 hit refunds 1 Adrenaline. For the rest of the turn you cannot be Slowed or knocked Prone. Pairs with combat-drug and adrenal-pump chrome.</p>"
     },
     "spend": {
-      "text": "",
+      "text": "5 Adrenaline",
       "value": null
     }
   },
@@ -92,5 +92,5 @@
     "systemVersion": "1.1.2",
     "coreVersion": "13.348"
   },
-  "_key": "!items!UeYiysMpM1SGpLgh"
+  "_key": "!items!5pKx5ZqCQi3l07n8"
 }
