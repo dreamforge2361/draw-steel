@@ -1,0 +1,169 @@
+{
+    "folder":  "cAbsAm5rVtfeybHl",
+    "name":  "GHOSTWIRE Culture",
+    "type":  "culture",
+    "_id":  "SqoLcyGkaH4O6Srb",
+    "img":  "icons/environment/settlement/city.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003e\u003cem\u003eEvery Edgerunner\u0027s upbringing is described by three Culture aspects - Habitat, Order, and Formation. Each grants one trained skill (choose below), and together they grant a cultural language and a cultural edge.\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTwo-group cap:\u003c/strong\u003e no more than two of your three Culture skills may come from the same skill group; if your picks would give three from one group, choose a different skill for the third aspect.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eHabitat\u003c/strong\u003e - where in the vertical hive you were raised (Halo/Spire, Grid, Flats, Sinks, Off-Grid).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eOrder\u003c/strong\u003e - who governed your daily life (Corporate or Communal).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFormation\u003c/strong\u003e - the training or trade that formed you (Academic, Devout, Laboring, Lawless, Martial, Privileged).\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eCultural edge:\u003c/strong\u003e an edge on Power Rolls to recall lore about your own culture, or to trade on your standing inside it.\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-culture",
+                   "advancements":  {
+                                        "WGLZILNeUOE94ZEd":  {
+                                                                 "type":  "skill",
+                                                                 "name":  "Habitat (where you were raised)",
+                                                                 "img":  null,
+                                                                 "_id":  "WGLZILNeUOE94ZEd",
+                                                                 "chooseN":  1,
+                                                                 "skills":  {
+                                                                                "groups":  [
+
+                                                                                           ],
+                                                                                "choices":  [
+                                                                                                "corporate",
+                                                                                                "readIntent",
+                                                                                                "electronics",
+                                                                                                "securitySystems",
+                                                                                                "streetwise",
+                                                                                                "stealth",
+                                                                                                "perception",
+                                                                                                "survival",
+                                                                                                "navigation",
+                                                                                                "xenology"
+                                                                                            ]
+                                                                            },
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             },
+                                        "MI0FhgJaceavx1vj":  {
+                                                                 "type":  "skill",
+                                                                 "name":  "Order (who governed your life)",
+                                                                 "img":  null,
+                                                                 "_id":  "MI0FhgJaceavx1vj",
+                                                                 "chooseN":  1,
+                                                                 "skills":  {
+                                                                                "groups":  [
+
+                                                                                           ],
+                                                                                "choices":  [
+                                                                                                "corporate",
+                                                                                                "negotiation",
+                                                                                                "securitySystems",
+                                                                                                "streetwise",
+                                                                                                "contacts",
+                                                                                                "intimidation"
+                                                                                            ]
+                                                                            },
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             },
+                                        "WzKGbH8qyaWuw5Oh":  {
+                                                                 "type":  "skill",
+                                                                 "name":  "Formation (how you were shaped)",
+                                                                 "img":  null,
+                                                                 "_id":  "WzKGbH8qyaWuw5Oh",
+                                                                 "chooseN":  1,
+                                                                 "skills":  {
+                                                                                "groups":  [
+                                                                                               "knowledge"
+                                                                                           ],
+                                                                                "choices":  [
+                                                                                                "matrixTheory",
+                                                                                                "religion",
+                                                                                                "occult",
+                                                                                                "medicine",
+                                                                                                "repair",
+                                                                                                "engineering",
+                                                                                                "athletics",
+                                                                                                "stealth",
+                                                                                                "deception",
+                                                                                                "streetwise",
+                                                                                                "firearms",
+                                                                                                "brawl",
+                                                                                                "melee",
+                                                                                                "persuasion",
+                                                                                                "readIntent",
+                                                                                                "negotiation"
+                                                                                            ]
+                                                                            },
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             },
+                                        "nerI0Ghj5XwvbYT8":  {
+                                                                 "type":  "language",
+                                                                 "_id":  "nerI0Ghj5XwvbYT8",
+                                                                 "name":  "Cultural Language",
+                                                                 "img":  null,
+                                                                 "chooseN":  1,
+                                                                 "languages":  [
+                                                                                   "reachspeak",
+                                                                                   "highwire",
+                                                                                   "grindtalk",
+                                                                                   "static",
+                                                                                   "sinkcant",
+                                                                                   "ashmouth",
+                                                                                   "deeptongue",
+                                                                                   "highform",
+                                                                                   "ironjaw",
+                                                                                   "packsign",
+                                                                                   "gravecant"
+                                                                               ],
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             }
+                                    }
+               },
+    "effects":  [
+
+                ],
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784725692982,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "_key":  "!items!SqoLcyGkaH4O6Srb"
+}

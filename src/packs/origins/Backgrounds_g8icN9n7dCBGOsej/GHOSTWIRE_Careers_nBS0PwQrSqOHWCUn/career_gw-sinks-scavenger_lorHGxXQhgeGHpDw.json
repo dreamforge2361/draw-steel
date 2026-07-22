@@ -1,0 +1,143 @@
+{
+    "folder":  "nBS0PwQrSqOHWCUn",
+    "name":  "Sinks Scavenger",
+    "type":  "career",
+    "_id":  "lorHGxXQhgeGHpDw",
+    "img":  "icons/tools/scribal/magnifying-glass.webp",
+    "system":  {
+                   "description":  {
+                                       "value":  "\u003cp\u003eSalvage diver in the flooded dead levels.\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eSkills:\u003c/strong\u003e choose 2 of: Survival, Perception, Repair.\u003c/p\u003e\u003cp\u003e\u003cstrong\u003ePerk:\u003c/strong\u003e one Perk (suggested: exploration).\u003c/p\u003e\u003ch5\u003eInciting Incident\u003c/h5\u003e\u003cp\u003eRoll or choose a d6 Inciting Incident - the event that pushed you into the run economy:\u003c/p\u003e\u003col\u003e\u003cli\u003e1 - A run went wrong: you were the one who got out, or the one who got blamed.\u003c/li\u003e\u003cli\u003e2 - A corp betrayal: the employer you trusted sold you out or cut you loose.\u003c/li\u003e\u003cli\u003e3 - A debt came due: a favor, a loan, or a mistake put you on the hook.\u003c/li\u003e\u003cli\u003e4 - The Veil touched you: a brush with the Dark One\u0027s agents, a haunting, a mark.\u003c/li\u003e\u003cli\u003e5 - The body changed: a mutation surfaced, chrome rejected, or a decay set in.\u003c/li\u003e\u003cli\u003e6 - Someone was taken: a person you loved vanished, was killed, or was disappeared.\u003c/li\u003e\u003c/ol\u003e\u003cp\u003e\u003cem\u003eIf your rolled incident predates this Career, treat it as the break that ended your old life and started the one this Career describes.\u003c/em\u003e\u003c/p\u003e",
+                                       "director":  ""
+                                   },
+                   "source":  {
+                                  "book":  "GHOSTWIRE Core",
+                                  "page":  "",
+                                  "license":  "Draw Steel Creator License"
+                              },
+                   "_dsid":  "gw-sinks-scavenger",
+                   "advancements":  {
+                                        "ICCkRyb8CyBhj9Ir":  {
+                                                                 "type":  "skill",
+                                                                 "name":  "Career Skills (choose 2)",
+                                                                 "img":  null,
+                                                                 "_id":  "ICCkRyb8CyBhj9Ir",
+                                                                 "chooseN":  2,
+                                                                 "skills":  {
+                                                                                "groups":  [
+
+                                                                                           ],
+                                                                                "choices":  [
+                                                                                                "survival",
+                                                                                                "perception",
+                                                                                                "repair"
+                                                                                            ]
+                                                                            },
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             },
+                                        "1TwpPM0GSybnbawQ":  {
+                                                                 "type":  "language",
+                                                                 "_id":  "1TwpPM0GSybnbawQ",
+                                                                 "name":  "Career Language",
+                                                                 "img":  null,
+                                                                 "chooseN":  1,
+                                                                 "languages":  [
+                                                                                   "sinkcant",
+                                                                                   "ashmouth"
+                                                                               ],
+                                                                 "description":  "",
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             },
+                                        "1y9KfTfQXIoj8bwK":  {
+                                                                 "type":  "itemGrant",
+                                                                 "_id":  "1y9KfTfQXIoj8bwK",
+                                                                 "name":  "Career Perk",
+                                                                 "img":  "icons/magic/symbols/fleur-de-lis-yellow.webp",
+                                                                 "chooseN":  1,
+                                                                 "pool":  [
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.1Es8dcwd6NEPs7rE"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.1vnP3kE9B9TlsaOm"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.AIqig0hlgxCMJjPP"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.cNzrqq1TA8ZKqxRr"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.G0cVu761zcZK4Ugx"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.jwEjhK8PLA9NmX1e"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.j7gkE9zhNdrlXwrh"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.lr6TaPqgJS94fVW2"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.DlvvaWyw5ZTGv2mP"
+                                                                              },
+                                                                              {
+                                                                                  "uuid":  "Compendium.draw-steel.character-options.Item.XyfdvvIab5yzLmy3"
+                                                                              }
+                                                                          ],
+                                                                 "description":  "\u003cp\u003eOne Perk (suggested family: exploration - guidance, not a restriction). You may also drop any other perk here.\u003c/p\u003e",
+                                                                 "additional":  {
+                                                                                    "type":  "perk",
+                                                                                    "perkType":  [
+                                                                                                     "exploration"
+                                                                                                 ]
+                                                                                },
+                                                                 "requirements":  {
+                                                                                      "level":  null
+                                                                                  },
+                                                                 "sort":  0,
+                                                                 "repick":  {
+
+                                                                            }
+                                                             }
+                                    },
+                   "projectPoints":  0,
+                   "renown":  0,
+                   "wealth":  1
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "compendiumSource":  null,
+                   "duplicateSource":  null,
+                   "exportSource":  null,
+                   "coreVersion":  "14.361",
+                   "systemId":  "draw-steel",
+                   "systemVersion":  "1.1.0",
+                   "createdTime":  1784725693132,
+                   "modifiedTime":  null,
+                   "lastModifiedBy":  null
+               },
+    "ownership":  {
+                      "default":  0
+                  },
+    "sort":  0,
+    "_key":  "!items!lorHGxXQhgeGHpDw"
+}

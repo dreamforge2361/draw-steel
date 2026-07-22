@@ -1,4 +1,4 @@
-import { preLocalize } from "./helpers/localization.mjs";
+﻿import { preLocalize } from "./helpers/localization.mjs";
 import { pseudoDocuments } from "./data/_module.mjs";
 import { systemID } from "./constants.mjs";
 
@@ -346,23 +346,20 @@ preLocalize("effectEnds", { keys: ["label", "abbreviation"] });
  * @type {Record<string, {label: string}>}
  */
 const skillGroups = {
-  action: {
-    label: "DRAW_STEEL.SKILL.Group.Action",
+  crafting: {
+    label: "DRAW_STEEL.SKILL.Group.Crafting",
   },
-  technical: {
-    label: "DRAW_STEEL.SKILL.Group.Technical",
+  exploration: {
+    label: "DRAW_STEEL.SKILL.Group.Exploration",
   },
-  knowledge: {
-    label: "DRAW_STEEL.SKILL.Group.Knowledge",
+  interpersonal: {
+    label: "DRAW_STEEL.SKILL.Group.Interpersonal",
   },
-  social: {
-    label: "DRAW_STEEL.SKILL.Group.Social",
+  intrigue: {
+    label: "DRAW_STEEL.SKILL.Group.Intrigue",
   },
-  vehicle: {
-    label: "DRAW_STEEL.SKILL.Group.VehicleDrone",
-  },
-  arcane: {
-    label: "DRAW_STEEL.SKILL.Group.MagicSupernatural",
+  lore: {
+    label: "DRAW_STEEL.SKILL.Group.Lore",
   },
 };
 
@@ -371,177 +368,233 @@ const skillGroups = {
  * @type {Record<string, {label: string, group: string}>}
  */
 const skillList = {
-  athletics: {
-    label: "DRAW_STEEL.SKILL.List.Athletics",
-    group: "action",
+  alchemy: {
+    label: "DRAW_STEEL.SKILL.List.Alchemy",
+    group: "crafting",
   },
-  brawl: {
-    label: "DRAW_STEEL.SKILL.List.Brawl",
-    group: "action",
+  architecture: {
+    label: "DRAW_STEEL.SKILL.List.Architecture",
+    group: "crafting",
   },
-  melee: {
-    label: "DRAW_STEEL.SKILL.List.Melee",
-    group: "action",
+  blacksmithing: {
+    label: "DRAW_STEEL.SKILL.List.Blacksmithing",
+    group: "crafting",
   },
-  firearms: {
-    label: "DRAW_STEEL.SKILL.List.Firearms",
-    group: "action",
+  carpentry: {
+    label: "DRAW_STEEL.SKILL.List.Carpentry",
+    group: "crafting",
   },
-  heavyWeapons: {
-    label: "DRAW_STEEL.SKILL.List.HeavyWeapons",
-    group: "action",
+  cooking: {
+    label: "DRAW_STEEL.SKILL.List.Cooking",
+    group: "crafting",
   },
-  stealth: {
-    label: "DRAW_STEEL.SKILL.List.Stealth",
-    group: "action",
+  fletching: {
+    label: "DRAW_STEEL.SKILL.List.Fletching",
+    group: "crafting",
   },
-  acrobatics: {
-    label: "DRAW_STEEL.SKILL.List.Acrobatics",
-    group: "action",
+  forgery: {
+    label: "DRAW_STEEL.SKILL.List.Forgery",
+    group: "crafting",
   },
-  perception: {
-    label: "DRAW_STEEL.SKILL.List.Perception",
-    group: "action",
+  jewelry: {
+    label: "DRAW_STEEL.SKILL.List.Jewelry",
+    group: "crafting",
   },
-  survival: {
-    label: "DRAW_STEEL.SKILL.List.Survival",
-    group: "action",
+  mechanics: {
+    label: "DRAW_STEEL.SKILL.List.Mechanics",
+    group: "crafting",
   },
-  hacking: {
-    label: "DRAW_STEEL.SKILL.List.Hacking",
-    group: "technical",
+  tailoring: {
+    label: "DRAW_STEEL.SKILL.List.Tailoring",
+    group: "crafting",
   },
-  electronics: {
-    label: "DRAW_STEEL.SKILL.List.Electronics",
-    group: "technical",
+  climb: {
+    label: "DRAW_STEEL.SKILL.List.Climb",
+    group: "exploration",
   },
-  engineering: {
-    label: "DRAW_STEEL.SKILL.List.Engineering",
-    group: "technical",
+  drive: {
+    label: "DRAW_STEEL.SKILL.List.Drive",
+    group: "exploration",
   },
-  repair: {
-    label: "DRAW_STEEL.SKILL.List.Repair",
-    group: "technical",
+  endurance: {
+    label: "DRAW_STEEL.SKILL.List.Endurance",
+    group: "exploration",
   },
-  cybertech: {
-    label: "DRAW_STEEL.SKILL.List.Cybertech",
-    group: "technical",
+  gymnastics: {
+    label: "DRAW_STEEL.SKILL.List.Gymnastics",
+    group: "exploration",
   },
-  medicine: {
-    label: "DRAW_STEEL.SKILL.List.Medicine",
-    group: "technical",
+  heal: {
+    label: "DRAW_STEEL.SKILL.List.Heal",
+    group: "exploration",
   },
-  demolitions: {
-    label: "DRAW_STEEL.SKILL.List.Demolitions",
-    group: "technical",
+  jump: {
+    label: "DRAW_STEEL.SKILL.List.Jump",
+    group: "exploration",
   },
-  securitySystems: {
-    label: "DRAW_STEEL.SKILL.List.SecuritySystems",
-    group: "technical",
+  lift: {
+    label: "DRAW_STEEL.SKILL.List.Lift",
+    group: "exploration",
   },
-  streetwise: {
-    label: "DRAW_STEEL.SKILL.List.Streetwise",
-    group: "knowledge",
+  navigate: {
+    label: "DRAW_STEEL.SKILL.List.Navigate",
+    group: "exploration",
   },
-  corporate: {
-    label: "DRAW_STEEL.SKILL.List.Corporate",
-    group: "knowledge",
+  ride: {
+    label: "DRAW_STEEL.SKILL.List.Ride",
+    group: "exploration",
+  },
+  swim: {
+    label: "DRAW_STEEL.SKILL.List.Swim",
+    group: "exploration",
+  },
+  brag: {
+    label: "DRAW_STEEL.SKILL.List.Brag",
+    group: "interpersonal",
+  },
+  empathize: {
+    label: "DRAW_STEEL.SKILL.List.Empathize",
+    group: "interpersonal",
+  },
+  flirt: {
+    label: "DRAW_STEEL.SKILL.List.Flirt",
+    group: "interpersonal",
+  },
+  gamble: {
+    label: "DRAW_STEEL.SKILL.List.Gamble",
+    group: "interpersonal",
+  },
+  handleAnimals: {
+    label: "DRAW_STEEL.SKILL.List.HandleAnimals",
+    group: "interpersonal",
+  },
+  interrogate: {
+    label: "DRAW_STEEL.SKILL.List.Interrogate",
+    group: "interpersonal",
+  },
+  intimidate: {
+    label: "DRAW_STEEL.SKILL.List.Intimidate",
+    group: "interpersonal",
+  },
+  lead: {
+    label: "DRAW_STEEL.SKILL.List.Lead",
+    group: "interpersonal",
+  },
+  lie: {
+    label: "DRAW_STEEL.SKILL.List.Lie",
+    group: "interpersonal",
+  },
+  music: {
+    label: "DRAW_STEEL.SKILL.List.Music",
+    group: "interpersonal",
+  },
+  perform: {
+    label: "DRAW_STEEL.SKILL.List.Perform",
+    group: "interpersonal",
+  },
+  persuade: {
+    label: "DRAW_STEEL.SKILL.List.Persuade",
+    group: "interpersonal",
+  },
+  readPerson: {
+    label: "DRAW_STEEL.SKILL.List.ReadPerson",
+    group: "interpersonal",
+  },
+  alertness: {
+    label: "DRAW_STEEL.SKILL.List.Alertness",
+    group: "intrigue",
+  },
+  concealObject: {
+    label: "DRAW_STEEL.SKILL.List.ConcealObject",
+    group: "intrigue",
+  },
+  disguise: {
+    label: "DRAW_STEEL.SKILL.List.Disguise",
+    group: "intrigue",
+  },
+  eavesdrop: {
+    label: "DRAW_STEEL.SKILL.List.Eavesdrop",
+    group: "intrigue",
+  },
+  escapeArtist: {
+    label: "DRAW_STEEL.SKILL.List.EscapeArtist",
+    group: "intrigue",
+  },
+  hide: {
+    label: "DRAW_STEEL.SKILL.List.Hide",
+    group: "intrigue",
+  },
+  pickLock: {
+    label: "DRAW_STEEL.SKILL.List.PickLock",
+    group: "intrigue",
+  },
+  pickPocket: {
+    label: "DRAW_STEEL.SKILL.List.PickPocket",
+    group: "intrigue",
+  },
+  sabotage: {
+    label: "DRAW_STEEL.SKILL.List.Sabotage",
+    group: "intrigue",
+  },
+  search: {
+    label: "DRAW_STEEL.SKILL.List.Search",
+    group: "intrigue",
+  },
+  sneak: {
+    label: "DRAW_STEEL.SKILL.List.Sneak",
+    group: "intrigue",
+  },
+  track: {
+    label: "DRAW_STEEL.SKILL.List.Track",
+    group: "intrigue",
+  },
+  culture: {
+    label: "DRAW_STEEL.SKILL.List.Culture",
+    group: "lore",
+  },
+  criminalUnderworld: {
+    label: "DRAW_STEEL.SKILL.List.CriminalUnderworld",
+    group: "lore",
   },
   history: {
     label: "DRAW_STEEL.SKILL.List.History",
-    group: "knowledge",
+    group: "lore",
   },
-  occult: {
-    label: "DRAW_STEEL.SKILL.List.Occult",
-    group: "knowledge",
+  magic: {
+    label: "DRAW_STEEL.SKILL.List.Magic",
+    group: "lore",
+  },
+  monsters: {
+    label: "DRAW_STEEL.SKILL.List.Monsters",
+    group: "lore",
+  },
+  nature: {
+    label: "DRAW_STEEL.SKILL.List.Nature",
+    group: "lore",
+  },
+  psionics: {
+    label: "DRAW_STEEL.SKILL.List.Psionics",
+    group: "lore",
   },
   religion: {
     label: "DRAW_STEEL.SKILL.List.Religion",
-    group: "knowledge",
+    group: "lore",
   },
-  matrixTheory: {
-    label: "DRAW_STEEL.SKILL.List.MatrixTheory",
-    group: "knowledge",
+  rumors: {
+    label: "DRAW_STEEL.SKILL.List.Rumors",
+    group: "lore",
   },
-  medicineLore: {
-    label: "DRAW_STEEL.SKILL.List.MedicineLore",
-    group: "knowledge",
+  society: {
+    label: "DRAW_STEEL.SKILL.List.Society",
+    group: "lore",
   },
-  xenology: {
-    label: "DRAW_STEEL.SKILL.List.Xenology",
-    group: "knowledge",
+  strategy: {
+    label: "DRAW_STEEL.SKILL.List.Strategy",
+    group: "lore",
   },
-  negotiation: {
-    label: "DRAW_STEEL.SKILL.List.Negotiation",
-    group: "social",
-  },
-  persuasion: {
-    label: "DRAW_STEEL.SKILL.List.Persuasion",
-    group: "social",
-  },
-  deception: {
-    label: "DRAW_STEEL.SKILL.List.Deception",
-    group: "social",
-  },
-  intimidation: {
-    label: "DRAW_STEEL.SKILL.List.Intimidation",
-    group: "social",
-  },
-  command: {
-    label: "DRAW_STEEL.SKILL.List.Command",
-    group: "social",
-  },
-  readIntent: {
-    label: "DRAW_STEEL.SKILL.List.ReadIntent",
-    group: "social",
-  },
-  performance: {
-    label: "DRAW_STEEL.SKILL.List.Performance",
-    group: "social",
-  },
-  contacts: {
-    label: "DRAW_STEEL.SKILL.List.Contacts",
-    group: "social",
-  },
-  piloting: {
-    label: "DRAW_STEEL.SKILL.List.Piloting",
-    group: "vehicle",
-  },
-  rigging: {
-    label: "DRAW_STEEL.SKILL.List.Rigging",
-    group: "vehicle",
-  },
-  gunnery: {
-    label: "DRAW_STEEL.SKILL.List.Gunnery",
-    group: "vehicle",
-  },
-  navigation: {
-    label: "DRAW_STEEL.SKILL.List.Navigation",
-    group: "vehicle",
-  },
-  spellcraft: {
-    label: "DRAW_STEEL.SKILL.List.Spellcraft",
-    group: "arcane",
-  },
-  rituals: {
-    label: "DRAW_STEEL.SKILL.List.Rituals",
-    group: "arcane",
-  },
-  warding: {
-    label: "DRAW_STEEL.SKILL.List.Warding",
-    group: "arcane",
-  },
-  resonance: {
-    label: "DRAW_STEEL.SKILL.List.Resonance",
-    group: "arcane",
-  },
-  corruption: {
-    label: "DRAW_STEEL.SKILL.List.Corruption",
-    group: "arcane",
-  },
-  summoning: {
-    label: "DRAW_STEEL.SKILL.List.Summoning",
-    group: "arcane",
+  timescape: {
+    label: "DRAW_STEEL.SKILL.List.Timescape",
+    group: "lore",
   },
 };
 
@@ -579,20 +632,133 @@ preLocalize("skills.list", { key: "label" });
  * @type {Record<string, DSLanguage>}
  */
 export const languages = {
-    reachspeak: { label: "Reachspeak" },
-    highwire: { label: "Highwire" },
-    grindtalk: { label: "Grindtalk" },
-    static: { label: "Static" },
-    sinkcant: { label: "Sinkcant" },
-    ashmouth: { label: "Ashmouth" },
-    deeptongue: { label: "Deeptongue" },
-    highform: { label: "Highform" },
-    ironjaw: { label: "Ironjaw" },
-    packsign: { label: "Packsign" },
-    gravecant: { label: "Gravecant" },
-    firstWord: { label: "The First Word" },
-    signalcant: { label: "Signalcant" },
-  };
+  // ancestry languages
+  anjali: {
+    label: "DRAW_STEEL.LANGUAGE.Anjali",
+  },
+  axiomatic: {
+    label: "DRAW_STEEL.LANGUAGE.Axiomatic",
+  },
+  caelian: {
+    label: "DRAW_STEEL.LANGUAGE.Caelian",
+  },
+  filliaric: {
+    label: "DRAW_STEEL.LANGUAGE.Filliaric",
+  },
+  highKuric: {
+    label: "DRAW_STEEL.LANGUAGE.HighKuric",
+  },
+  hyrallic: {
+    label: "DRAW_STEEL.LANGUAGE.Hyrallic",
+  },
+  illyvric: {
+    label: "DRAW_STEEL.LANGUAGE.Illyvric",
+  },
+  kalliak: {
+    label: "DRAW_STEEL.LANGUAGE.Kalliak",
+  },
+  kethaic: {
+    label: "DRAW_STEEL.LANGUAGE.Kethaic",
+  },
+  khelt: {
+    label: "DRAW_STEEL.LANGUAGE.Khelt",
+  },
+  khoursirian: {
+    label: "DRAW_STEEL.LANGUAGE.Khoursirian",
+  },
+  lowKuric: {
+    label: "DRAW_STEEL.LANGUAGE.LowKuric",
+  },
+  mindspeech: {
+    label: "DRAW_STEEL.LANGUAGE.Mindspeech",
+  },
+  protoCtholl: {
+    label: "DRAW_STEEL.LANGUAGE.ProtoCtholl",
+  },
+  szetch: {
+    label: "DRAW_STEEL.LANGUAGE.Szetch",
+  },
+  theFirstLanguage: {
+    label: "DRAW_STEEL.LANGUAGE.TheFirstLanguage",
+  },
+  tholl: {
+    label: "DRAW_STEEL.LANGUAGE.Tholl",
+  },
+  urollialic: {
+    label: "DRAW_STEEL.LANGUAGE.Urollialic",
+  },
+  variac: {
+    label: "DRAW_STEEL.LANGUAGE.Variac",
+  },
+  vastariax: {
+    label: "DRAW_STEEL.LANGUAGE.Vastariax",
+  },
+  vhoric: {
+    label: "DRAW_STEEL.LANGUAGE.Vhoric",
+  },
+  voll: {
+    label: "DRAW_STEEL.LANGUAGE.Voll",
+  },
+  yllyric: {
+    label: "DRAW_STEEL.LANGUAGE.Yllyric",
+  },
+  zahariax: {
+    label: "DRAW_STEEL.LANGUAGE.Zahariax",
+  },
+  zaliac: {
+    label: "DRAW_STEEL.LANGUAGE.Zaliac",
+  },
+  // Human languages. Khoursirian already covered
+  higaran: {
+    label: "DRAW_STEEL.LANGUAGE.Higaran",
+  },
+  khemharic: {
+    label: "DRAW_STEEL.LANGUAGE.Khemharic",
+  },
+  oaxuatl: {
+    label: "DRAW_STEEL.LANGUAGE.Oaxuatl",
+  },
+  phaedran: {
+    label: "DRAW_STEEL.LANGUAGE.Phaedran",
+  },
+  riojan: {
+    label: "DRAW_STEEL.LANGUAGE.Riojan",
+  },
+  uvalic: {
+    label: "DRAW_STEEL.LANGUAGE.Uvalic",
+  },
+  vaniric: {
+    label: "DRAW_STEEL.LANGUAGE.Vaniric",
+  },
+  vasloria: {
+    label: "DRAW_STEEL.LANGUAGE.Vasloria",
+  },
+  // Dead languages
+  highRhyvian: {
+    label: "DRAW_STEEL.LANGUAGE.HighRhyvian",
+  },
+  khamish: {
+    label: "DRAW_STEEL.LANGUAGE.Khamish",
+  },
+  kheltivari: {
+    label: "DRAW_STEEL.LANGUAGE.Kheltivari",
+  },
+  lowRhivian: {
+    label: "DRAW_STEEL.LANGUAGE.LowRhivian",
+  },
+  oldVariac: {
+    label: "DRAW_STEEL.LANGUAGE.OldVariac",
+  },
+  phorialtic: {
+    label: "DRAW_STEEL.LANGUAGE.Phorialtic",
+  },
+  rallarian: {
+    label: "DRAW_STEEL.LANGUAGE.Rallarian",
+  },
+  ullorvic: {
+    label: "DRAW_STEEL.LANGUAGE.Ullorvic",
+  },
+};
 preLocalize("languages", { key: "label" });
 
 /* -------------------------------------------------- */
