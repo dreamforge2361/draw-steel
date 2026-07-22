@@ -1,0 +1,372 @@
+{
+  "folder": "ScoutFldr0000001",
+  "name": "Scout",
+  "type": "class",
+  "_id": "ScoutClass000001",
+  "img": "icons/skills/ranged/target-bullseye-arrow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The knife in the dark and the marksman who ends a fight before it starts. You study the target, choose the ground, strike the one exposed moment, then are gone before the counterattack. On a run you are the legwork and recon specialist; in a fight you are the precision striker and skirmisher who deals disproportionate damage to Marked or unaware foes while staying mobile.</p><p>Your engine is <strong>Advantage</strong>: banked positional and informational leverage - being one step ahead, spent to make decisive action. The loop is <strong>Mark, strike from advantage, bank more advantage</strong>. You are the Operator's clean counterpart: fully mundane, casting nothing, edge earned from skill, Kit doctrine, and chrome.</p><h3>The Advantage Engine</h3><ul><li><strong>First blood / surprise:</strong> at encounter start gain Advantage equal to your Victories; +1 more if you begin hidden or with surprise.</li><li><strong>Steady read (+1/turn):</strong> gain 1 Advantage at the start of each of your turns.</li><li><strong>Exploit the Mark (+1):</strong> the first time each round you damage a Marked target - or any target unaware of you / that you are hidden from.</li><li><strong>Reposition (+1):</strong> the first time each round you end a Hide/Disengage/shift and then strike (fade-and-strike).</li></ul><p><strong>Cap by Hero Tier (T5 to T1): 8 / 11 / 14 / 18 / 22.</strong> Unspent Advantage is lost at the end of the encounter. Signatures cost no Advantage; heroics spend it. <em>House discount:</em> a Power-Roll heroic costs 1 less Advantage when made with an edge or double edge. Advantage is class power and never bought or fed by nuyen or Body Integrity.</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> (start) you choose your Method subclass, your three signatures, and your first heroic ability. Every Tier after, you pick a new Advantage ability, your cap rises, and your characteristics sharpen. The ladder caps at <strong>Tier 1</strong>.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout",
+    "primary": "Advantage",
+    "epic": "Killshot",
+    "turnGain": "1",
+    "minimum": "0",
+    "characteristics": {
+      "core": [
+        "agility"
+      ]
+    },
+    "stamina": {
+      "starting": 30,
+      "level": 8
+    },
+    "recoveries": 8,
+    "level": 0,
+    "advancements": {
+      "ScoutAdvKeySkl01": {
+        "name": "Key Skills (skill-rich)",
+        "img": null,
+        "type": "skill",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "ScoutAdvKeySkl01",
+        "description": "<p>The Scout is the skill-rich class. Choose your trained key skills. (<em>Quick Build:</em> Stealth, Perception, Firearms.)</p>",
+        "chooseN": 3,
+        "sort": -89998
+      },
+      "ScoutAdvSigns001": {
+        "name": "Signature Abilities",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "ScoutAdvSigns001",
+        "chooseN": null,
+        "description": "<p>You gain all three Scout signatures: <strong>Mark a Target</strong>, <strong>Precision Strike</strong>, and <strong>Fade</strong>. None cost Advantage.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutSigMark0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutSigPrec0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutSigFade0001"
+          }
+        ],
+        "sort": 4000
+      },
+      "ScoutAdvMethod01": {
+        "name": "Method (choose your subclass)",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "ScoutAdvMethod01",
+        "chooseN": 1,
+        "description": "<p>Choose how you disappear. Your Method grants a first-tier feature, a bonus skill, and a signature contact. This is your subclass.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutSubGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutSubHunt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutSubFace0001"
+          }
+        ],
+        "sort": 3000
+      },
+      "ScoutAdvHeroic01": {
+        "name": "Starting Advantage Ability",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "ScoutAdvHeroic01",
+        "chooseN": 1,
+        "description": "<p>Pick your first Advantage-spend heroic ability.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerCall0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerAmbu0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerOvwt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerKill0001"
+          }
+        ],
+        "sort": 5000
+      },
+      "ScoutAdvCharL201": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "ScoutAdvCharL201",
+        "description": "<p>Your Reflex increases. (Tier 4.)</p>",
+        "characteristics": {
+          "agility": 1
+        },
+        "sort": 2
+      },
+      "ScoutAdvHeroL201": {
+        "name": "New Advantage Ability",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "ScoutAdvHeroL201",
+        "chooseN": 1,
+        "description": "<p>Pick a new Advantage-spend ability. (Tier 4.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerCall0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerAmbu0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerOvwt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerKill0001"
+          }
+        ],
+        "sort": 5002
+      },
+      "ScoutAdvCapL2001": {
+        "name": "Advantage Capacity (Tier 4)",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "ScoutAdvCapL2001",
+        "chooseN": null,
+        "description": "<p>Your Advantage cap rises to 11 at Tier 4.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutCapT4000001"
+          }
+        ],
+        "sort": 102
+      },
+      "ScoutAdvCharL301": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "ScoutAdvCharL301",
+        "description": "<p>Your Insight increases. (Tier 3.)</p>",
+        "characteristics": {
+          "intuition": 1
+        },
+        "sort": 3
+      },
+      "ScoutAdvHeroL301": {
+        "name": "New Advantage Ability",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "ScoutAdvHeroL301",
+        "chooseN": 1,
+        "description": "<p>Pick a new Advantage-spend ability. (Tier 3.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerCall0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerAmbu0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerOvwt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerKill0001"
+          }
+        ],
+        "sort": 5003
+      },
+      "ScoutAdvCapL3001": {
+        "name": "Advantage Capacity (Tier 3)",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "ScoutAdvCapL3001",
+        "chooseN": null,
+        "description": "<p>Your Advantage cap rises to 14 at Tier 3.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutCapT3000001"
+          }
+        ],
+        "sort": 103
+      },
+      "ScoutAdvCharL401": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "ScoutAdvCharL401",
+        "description": "<p>Your Reflex increases. (Tier 2.)</p>",
+        "characteristics": {
+          "agility": 1
+        },
+        "sort": 4
+      },
+      "ScoutAdvHeroL401": {
+        "name": "New Advantage Ability",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "ScoutAdvHeroL401",
+        "chooseN": 1,
+        "description": "<p>Pick a new Advantage-spend ability. (Tier 2.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerCall0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerAmbu0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerOvwt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerKill0001"
+          }
+        ],
+        "sort": 5004
+      },
+      "ScoutAdvCapL4001": {
+        "name": "Advantage Capacity (Tier 2)",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "ScoutAdvCapL4001",
+        "chooseN": null,
+        "description": "<p>Your Advantage cap rises to 18 at Tier 2.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutCapT2000001"
+          }
+        ],
+        "sort": 104
+      },
+      "ScoutAdvCharL501": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "ScoutAdvCharL501",
+        "description": "<p>Your Reflex and Insight increase. (Tier 1.)</p>",
+        "characteristics": {
+          "agility": 1,
+          "intuition": 1
+        },
+        "sort": 5
+      },
+      "ScoutAdvHeroL501": {
+        "name": "New Advantage Ability",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "ScoutAdvHeroL501",
+        "chooseN": 1,
+        "description": "<p>Pick a new Advantage-spend ability. (Tier 1.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerCall0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerAmbu0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerGhst0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerOvwt0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.ScoutHerKill0001"
+          }
+        ],
+        "sort": 5005
+      },
+      "ScoutAdvCapL5001": {
+        "name": "Advantage Capacity (Tier 1)",
+        "img": "systems/draw-steel/assets/ghostwire/classes/scout.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "ScoutAdvCapL5001",
+        "chooseN": null,
+        "description": "<p>Your Advantage cap rises to 22 at Tier 1.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.ScoutCapT1000001"
+          }
+        ],
+        "sort": 105
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!ScoutClass000001"
+}

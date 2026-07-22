@@ -1,0 +1,16 @@
+{
+  "name": "Scout",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "ScoutFldr0000001",
+  "sort": 200000,
+  "color": "#2b6f6f",
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!folders!ScoutFldr0000001"
+}

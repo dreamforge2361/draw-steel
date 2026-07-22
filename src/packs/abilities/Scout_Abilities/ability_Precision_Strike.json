@@ -1,0 +1,97 @@
+{
+  "folder": null,
+  "name": "Precision Strike",
+  "type": "ability",
+  "_id": "ScoutSigPrec0001",
+  "img": "icons/skills/ranged/target-bullseye-arrow-blue.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-precision",
+    "story": "Bread-and-butter shot or knife-work; higher against a Marked or unaware target.",
+    "keywords": [
+      "ranged",
+      "melee",
+      "strike",
+      "weapon"
+    ],
+    "type": "main",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "agility"
+        ]
+      },
+      "effects": {
+        "PwrDmgEffect0001": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "PwrDmgEffect0001",
+          "damage": {
+            "tier1": {
+              "value": "9 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "3 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p>Power Roll + Reflex, melee or ranged. Damage by tier uses the wielded weapon's band (values shown are the Medium marksman-rifle band, sec A2). Higher against a <strong>Marked</strong> or <strong>unaware</strong> target.</p><p><strong>Tier 1:</strong> full damage plus a precision rider - +50% base (round up) OR a named condition (Bleeding/Weakened/Slowed).</p><p><strong>Hunter:</strong> your first strike against a Marked target each round gains extra reach or a damage bump.</p><p><em>Enhance - spend 1 Advantage:</em> add a surge die, or apply the Tier-1 rider one tier earlier.</p>"
+    },
+    "spend": {
+      "text": "Enhance: 1 Advantage (optional)",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!ScoutSigPrec0001"
+}

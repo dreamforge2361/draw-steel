@@ -1,0 +1,49 @@
+{
+  "folder": null,
+  "name": "Mark a Target",
+  "type": "ability",
+  "_id": "ScoutSigMark0001",
+  "img": "icons/skills/ranged/target-bullseye-arrow-glowing.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-mark",
+    "story": "Study and tag one enemy; the study-and-tag her whole trade turns on.",
+    "keywords": [
+      "ranged"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "effect": {
+      "before": "",
+      "after": "<p>Choose one enemy in line of sight. You gain an <strong>edge</strong> on Power Rolls against that target and treat yourself as knowing its weaknesses. One Marked target at a time (raised at higher tiers). Lasts until the target drops, you re-Mark, or the encounter ends.</p><p><em>Enhance - spend 1 Advantage:</em> also reveal a defensive weakness allies can exploit against the same target.</p><p><strong>Hunter (Quarry):</strong> your Mark also tracks - you always know a Marked target's direction and distance.</p>"
+    },
+    "spend": {
+      "text": "Enhance: 1 Advantage (optional)",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!ScoutSigMark0001"
+}

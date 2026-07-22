@@ -1,0 +1,49 @@
+{
+  "folder": null,
+  "name": "Ghost Step",
+  "type": "ability",
+  "_id": "ScoutHerGhst0001",
+  "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-ghost-step",
+    "story": "Her survival reflex; pairs with the free duress Shift.",
+    "keywords": [
+      "self"
+    ],
+    "type": "triggered",
+    "category": "heroic",
+    "resource": 2,
+    "trigger": "You are targeted, or an enemy moves adjacent to you.",
+    "distance": {
+      "type": "self",
+      "primary": 0
+    },
+    "damageDisplay": "melee",
+    "target": {
+      "type": "self",
+      "value": 1,
+      "custom": "Self"
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Cost 2 Advantage.</strong> <em>Trigger:</em> you are targeted, or an enemy moves adjacent to you. Take <strong>half</strong> the triggering damage, <strong>shift</strong> a good distance, and if you end in cover you <strong>Hide even if observed</strong>.</p>"
+    },
+    "spend": {
+      "text": "Cost: 2 Advantage",
+      "value": 2
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!ScoutHerGhst0001"
+}

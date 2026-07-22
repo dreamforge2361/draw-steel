@@ -755,7 +755,7 @@
                                                                                              "label":  "Renown"
                                                                                          },
                                                                               "wealth":  {
-                                                                                             "label":  "Wealth"
+                                                                                             "label":  "Nuyen (¥)"
                                                                                          },
                                                                               "followers":  {
                                                                                                 "label":  "Followers",
@@ -1449,7 +1449,7 @@
                                                                                  "label":  "Renown"
                                                                              },
                                                                   "wealth":  {
-                                                                                 "label":  "Wealth"
+                                                                                 "label":  "Nuyen (¥)"
                                                                              }
                                                               }
                                                },
@@ -1572,16 +1572,16 @@
                                                                       "Psionic":  "Psionic"
                                                                   },
                                                      "Categories":  {
-                                                                        "Consumable":  "Consumable",
-                                                                        "Trinket":  "Trinket",
-                                                                        "Leveled":  "Leveled",
-                                                                        "Artifact":  "Artifact"
+                                                                        "Consumable":  "Consumables",
+                                                                        "Trinket":  "Gear",
+                                                                        "Leveled":  "Cyberware",
+                                                                        "Artifact":  "Relic"
                                                                     },
                                                      "Kinds":  {
                                                                    "Other":  "Other",
                                                                    "Armor":  "Armor",
-                                                                   "Implement":  "Implement",
-                                                                   "Weapon":  "Weapon"
+                                                                   "Implement":  "Cyberdeck",
+                                                                   "Weapon":  "Firearm"
                                                                },
                                                      "Armor":  {
                                                                    "None":  "None",
