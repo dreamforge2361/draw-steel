@@ -1,367 +1,373 @@
 {
-  "folder": "ElemFldrClass001",
-  "name": "Elementalist",
-  "type": "class",
-  "_id": "GWElementalCls01",
-  "img": "systems/draw-steel/assets/classes/conduit.png",
-  "system": {
-    "description": {
-      "value": "<p>You are a working spellcaster of the classical elements - air, water, fire, earth - channeled through study, will, and a bonded focus rather than chrome or prayer. Corp records call you an \"environmental hazard specialist\" when they bother to admit you exist; the street calls you an <strong>Elementalist</strong>, or just points and gets out of the blast radius.</p><p>Your engine is <strong>Essence</strong>: a lean, always-flowing resource. Every turn you gain a free <strong>+1 Essence</strong> with no maneuver spent (the drip). You may also spend a maneuver to <strong>Channel</strong>, ramping your income to +2, then +3, then +4 on consecutive turns (switching your attuned element resets the ramp, not the drip). Landing an elemental hit grants +1 more the first time each round (resonance). You spend Essence on heroic abilities and to sustain ongoing workings (Persist 1 costs 2/turn, Persist 2 costs 4/turn). Unspent Essence is lost at the end of the encounter.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Essence: <strong>Hurl Element</strong> (your core ranged attack, Cognition Power Roll), <strong>Elemental Shaping</strong> (a maneuver-tier follow-up), and <strong>Read the Weave</strong> (your Sense the Veil). At Tier 5 you choose a subclass - Pyromancer, Stormcaller, or Geomancer - that colors your element and grants an identity feature.</p><h3>Kit &amp; Chrome</h3><p>Light or no-Kit class. Foci, not chrome, are your toolkit - chrome erodes the Veil and is strongly discouraged for casters.</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass, gain all three signatures, and pick an opening heroic. Every Tier after, you gain a new heroic ability and your Essence cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
-      "director": ""
+ "folder": "ElemFldrClass001",
+ "name": "Elementalist",
+ "type": "class",
+ "_id": "GWElementalCls01",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "description": {
+   "value": "<p>You are a working spellcaster of the classical elements - air, water, fire, earth - channeled through study, will, and a bonded focus rather than chrome or prayer. Corp records call you an \"environmental hazard specialist\" when they bother to admit you exist; the street calls you an <strong>Elementalist</strong>, or just points and gets out of the blast radius.</p><p>Your engine is <strong>Essence</strong>: a lean, always-flowing resource. Every turn you gain a free <strong>+1 Essence</strong> with no maneuver spent (the drip). You may also spend a maneuver to <strong>Channel</strong>, ramping your income to +2, then +3, then +4 on consecutive turns (switching your attuned element resets the ramp, not the drip). Landing an elemental hit grants +1 more the first time each round (resonance). You spend Essence on heroic abilities and to sustain ongoing workings (Persist 1 costs 2/turn, Persist 2 costs 4/turn). Unspent Essence is lost at the end of the encounter.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Essence: <strong>Hurl Element</strong> (your core ranged attack, Cognition Power Roll), <strong>Elemental Shaping</strong> (a maneuver-tier follow-up), and <strong>Read the Weave</strong> (your Sense the Veil). At Tier 5 you choose a subclass - Pyromancer, Stormcaller, or Geomancer - that colors your element and grants an identity feature.</p><h3>Kit &amp; Chrome</h3><p>Light or no-Kit class. Foci, not chrome, are your toolkit - chrome erodes the Veil and is strongly discouraged for casters.</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass, gain all three signatures, and pick an opening heroic. Every Tier after, you gain a new heroic ability and your Essence cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
+   "director": ""
+  },
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "elementalist",
+  "primary": "Essence",
+  "epic": "Apotheosis",
+  "turnGain": "1",
+  "minimum": "0",
+  "characteristics": {
+   "core": [
+    "reason",
+    "resolve"
+   ]
+  },
+  "stamina": {
+   "starting": 16,
+   "level": 4
+  },
+  "recoveries": 8,
+  "level": 0,
+  "advancements": {
+   "ElmAdvKeySkill01": {
+    "name": "Key Skill",
+    "img": null,
+    "type": "skill",
+    "requirements": {
+     "level": 1
     },
-    "source": {
-      "book": "GHOSTWIRE",
-      "page": "",
-      "license": "Draw Steel Creator License"
+    "_id": "ElmAdvKeySkill01",
+    "description": "<p>You gain an arcane/knowledge key skill. (<em>Quick Build:</em> Spellcraft.)</p>",
+    "chooseN": 1,
+    "sort": -89999
+   },
+   "ElmAdvSigsGrnt01": {
+    "name": "Signature Abilities",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
     },
-    "_dsid": "elementalist",
-    "primary": "Essence",
-    "epic": "Apotheosis",
-    "turnGain": "1",
-    "minimum": "0",
+    "_id": "ElmAdvSigsGrnt01",
+    "chooseN": null,
+    "description": "<p>You gain all three Elementalist signatures: <strong>Hurl Element</strong>, <strong>Elemental Shaping</strong>, and <strong>Read the Weave</strong>. None cost Essence.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmSigHurlElm001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmSigShaping001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmSigReadWvE001"
+     }
+    ],
+    "sort": 4000
+   },
+   "ElmAdvSubclass01": {
+    "name": "Origin (choose your subclass)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
+    },
+    "_id": "ElmAdvSubclass01",
+    "chooseN": 1,
+    "description": "<p>Choose your element: <strong>Pyromancer</strong>, <strong>Stormcaller</strong>, or <strong>Geomancer</strong>. Your subclass grants a feature and colors your workings.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmSubStormcl001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmSubPyromnc001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmSubGeomanc001"
+     }
+    ],
+    "sort": 3000
+   },
+   "ElmAdvStartHer01": {
+    "name": "Starting Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
+    },
+    "_id": "ElmAdvStartHer01",
+    "chooseN": 1,
+    "description": "<p>Pick your first Essence-spend heroic ability.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
+     }
+    ],
+    "sort": 5000
+   },
+   "ElmAdvCharT40001": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 2
+    },
+    "_id": "ElmAdvCharT40001",
+    "description": "<p>Your Resolve increases. (Tier 4.)</p>",
     "characteristics": {
-      "core": [
-        "reason",
-        "resolve"
-      ]
+     "resolve": 1
     },
-    "stamina": {
-      "starting": 16,
-      "level": 4
+    "sort": 2
+   },
+   "ElmAdvHerT400001": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 2
     },
-    "recoveries": 8,
-    "level": 0,
-    "advancements": {
-      "ElmAdvKeySkill01": {
-        "name": "Key Skill",
-        "img": null,
-        "type": "skill",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "ElmAdvKeySkill01",
-        "description": "<p>You gain an arcane/knowledge key skill. (<em>Quick Build:</em> Spellcraft.)</p>",
-        "chooseN": 1,
-        "sort": -89999
-      },
-      "ElmAdvSigsGrnt01": {
-        "name": "Signature Abilities",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "ElmAdvSigsGrnt01",
-        "chooseN": null,
-        "description": "<p>You gain all three Elementalist signatures: <strong>Hurl Element</strong>, <strong>Elemental Shaping</strong>, and <strong>Read the Weave</strong>. None cost Essence.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmSigHurlElm001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmSigShaping001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmSigReadWvE001"
-          }
-        ],
-        "sort": 4000
-      },
-      "ElmAdvSubclass01": {
-        "name": "Origin (choose your subclass)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "ElmAdvSubclass01",
-        "chooseN": 1,
-        "description": "<p>Choose your element: <strong>Pyromancer</strong>, <strong>Stormcaller</strong>, or <strong>Geomancer</strong>. Your subclass grants a feature and colors your workings.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.ElmSubStormcl001"
-          }
-        ],
-        "sort": 3000
-      },
-      "ElmAdvStartHer01": {
-        "name": "Starting Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "ElmAdvStartHer01",
-        "chooseN": 1,
-        "description": "<p>Pick your first Essence-spend heroic ability.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
-          }
-        ],
-        "sort": 5000
-      },
-      "ElmAdvCharT40001": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "ElmAdvCharT40001",
-        "description": "<p>Your Resolve increases. (Tier 4.)</p>",
-        "characteristics": {
-          "resolve": 1
-        },
-        "sort": 2
-      },
-      "ElmAdvHerT400001": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "ElmAdvHerT400001",
-        "chooseN": 1,
-        "description": "<p>Pick a new Essence-spend heroic ability. (Tier 4.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
-          }
-        ],
-        "sort": 5002
-      },
-      "ElmAdvCapT400001": {
-        "name": "Essence Capacity (Tier 4)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "ElmAdvCapT400001",
-        "chooseN": null,
-        "description": "<p>Your Essence cap rises to 12 at Tier 4.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT400001"
-          }
-        ],
-        "sort": 102
-      },
-      "ElmAdvCharT30001": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "ElmAdvCharT30001",
-        "description": "<p>Your Insight increases. (Tier 3.)</p>",
-        "characteristics": {
-          "intuition": 1
-        },
-        "sort": 3
-      },
-      "ElmAdvHerT300001": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "ElmAdvHerT300001",
-        "chooseN": 1,
-        "description": "<p>Pick a new Essence-spend heroic ability. (Tier 3.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
-          }
-        ],
-        "sort": 5003
-      },
-      "ElmAdvCapT300001": {
-        "name": "Essence Capacity (Tier 3)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "ElmAdvCapT300001",
-        "chooseN": null,
-        "description": "<p>Your Essence cap rises to 16 at Tier 3.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT300001"
-          }
-        ],
-        "sort": 103
-      },
-      "ElmAdvCharT20001": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "ElmAdvCharT20001",
-        "description": "<p>Your Cognition increases. (Tier 2.)</p>",
-        "characteristics": {
-          "reason": 1
-        },
-        "sort": 4
-      },
-      "ElmAdvHerT200001": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "ElmAdvHerT200001",
-        "chooseN": 1,
-        "description": "<p>Pick a new Essence-spend heroic ability. (Tier 2.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
-          }
-        ],
-        "sort": 5004
-      },
-      "ElmAdvCapT200001": {
-        "name": "Essence Capacity (Tier 2)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "ElmAdvCapT200001",
-        "chooseN": null,
-        "description": "<p>Your Essence cap rises to 20 at Tier 2.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT200001"
-          }
-        ],
-        "sort": 104
-      },
-      "ElmAdvCharT10001": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "ElmAdvCharT10001",
-        "description": "<p>Your Cognition and Resolve increase. (Tier 1.)</p>",
-        "characteristics": {
-          "reason": 1,
-          "resolve": 1
-        },
-        "sort": 5
-      },
-      "ElmAdvHerT100001": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "ElmAdvHerT100001",
-        "chooseN": 1,
-        "description": "<p>Pick a new Essence-spend heroic ability. (Tier 1.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
-          }
-        ],
-        "sort": 5005
-      },
-      "ElmAdvCapT100001": {
-        "name": "Essence Capacity (Tier 1)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "ElmAdvCapT100001",
-        "chooseN": null,
-        "description": "<p>Your Essence cap rises to 24 at Tier 1.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT100001"
-          }
-        ],
-        "sort": 105
-      }
-    }
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "draw-steel",
-    "systemVersion": "1.1.2",
-    "coreVersion": "14.365"
-  },
-  "_key": "!items!GWElementalCls01"
+    "_id": "ElmAdvHerT400001",
+    "chooseN": 1,
+    "description": "<p>Pick a new Essence-spend heroic ability. (Tier 4.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
+     }
+    ],
+    "sort": 5002
+   },
+   "ElmAdvCapT400001": {
+    "name": "Essence Capacity (Tier 4)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 2
+    },
+    "_id": "ElmAdvCapT400001",
+    "chooseN": null,
+    "description": "<p>Your Essence cap rises to 12 at Tier 4.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT400001"
+     }
+    ],
+    "sort": 102
+   },
+   "ElmAdvCharT30001": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "ElmAdvCharT30001",
+    "description": "<p>Your Insight increases. (Tier 3.)</p>",
+    "characteristics": {
+     "intuition": 1
+    },
+    "sort": 3
+   },
+   "ElmAdvHerT300001": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "ElmAdvHerT300001",
+    "chooseN": 1,
+    "description": "<p>Pick a new Essence-spend heroic ability. (Tier 3.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
+     }
+    ],
+    "sort": 5003
+   },
+   "ElmAdvCapT300001": {
+    "name": "Essence Capacity (Tier 3)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "ElmAdvCapT300001",
+    "chooseN": null,
+    "description": "<p>Your Essence cap rises to 16 at Tier 3.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT300001"
+     }
+    ],
+    "sort": 103
+   },
+   "ElmAdvCharT20001": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "ElmAdvCharT20001",
+    "description": "<p>Your Cognition increases. (Tier 2.)</p>",
+    "characteristics": {
+     "reason": 1
+    },
+    "sort": 4
+   },
+   "ElmAdvHerT200001": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "ElmAdvHerT200001",
+    "chooseN": 1,
+    "description": "<p>Pick a new Essence-spend heroic ability. (Tier 2.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
+     }
+    ],
+    "sort": 5004
+   },
+   "ElmAdvCapT200001": {
+    "name": "Essence Capacity (Tier 2)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "ElmAdvCapT200001",
+    "chooseN": null,
+    "description": "<p>Your Essence cap rises to 20 at Tier 2.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT200001"
+     }
+    ],
+    "sort": 104
+   },
+   "ElmAdvCharT10001": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "ElmAdvCharT10001",
+    "description": "<p>Your Cognition and Resolve increase. (Tier 1.)</p>",
+    "characteristics": {
+     "reason": 1,
+     "resolve": 1
+    },
+    "sort": 5
+   },
+   "ElmAdvHerT100001": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "ElmAdvHerT100001",
+    "chooseN": 1,
+    "description": "<p>Pick a new Essence-spend heroic ability. (Tier 1.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerBoltBar001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerDiffGrd001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerElemWal001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerTempest001"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.ElmHerSummonEl01"
+     }
+    ],
+    "sort": 5005
+   },
+   "ElmAdvCapT100001": {
+    "name": "Essence Capacity (Tier 1)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "ElmAdvCapT100001",
+    "chooseN": null,
+    "description": "<p>Your Essence cap rises to 24 at Tier 1.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.ElmCapEssT100001"
+     }
+    ],
+    "sort": 105
+   }
+  }
+ },
+ "effects": [],
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!GWElementalCls01"
 }

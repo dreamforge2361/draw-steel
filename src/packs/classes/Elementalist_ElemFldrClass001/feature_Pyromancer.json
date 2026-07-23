@@ -1,0 +1,30 @@
+{
+ "folder": "ElemFldrClass001",
+ "name": "Pyromancer - the Blaze",
+ "type": "feature",
+ "_id": "ElmSubPyromnc001",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "pyromancer",
+  "story": "The archetypal blaster - a living blaze that burns everything it touches.",
+  "description": {
+   "value": "<p><strong>Subclass: Pyromancer (Fire &amp; destruction).</strong> The archetypal blaster and the most aggressive, lowest-control Elementalist.</p><h3>Role Feature - Burn On</h3><p>Bonus to rolled <strong>fire/energy</strong> damage; your signatures lean toward raw damage and area, and your fire abilities <strong>burn on</strong> - a small lingering-damage rider on targets you hit.</p><h3>Signature Summon</h3><p>A <strong>fire elemental</strong> - a living blaze: high damage, fragile.</p><h3>Corp Records</h3><p><em>Combustion-thaumic specialist.</em></p>",
+   "director": ""
+  },
+  "advancements": {}
+ },
+ "effects": [],
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!ElmSubPyromnc001"
+}

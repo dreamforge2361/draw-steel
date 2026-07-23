@@ -1,0 +1,30 @@
+{
+ "folder": "SprFldrClass0000",
+ "name": "Templar - the Smiter",
+ "type": "feature",
+ "_id": "SprSubTemplar000",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "templar",
+  "story": "The holy warrior - the second front-liner, and the only ministry that carries Judgment.",
+  "description": {
+   "value": "<p><strong>Subclass: Templar (the smiter / frontline lean - and the Judgment order).</strong> The holy warrior, the most durable of the three ministries.</p><h3>Role Feature - Judgment</h3><p>Bonus to <strong>smiting damage and frontline durability</strong> (higher Stamina than the other ministries, better melee/forced-movement). <strong>Judgment</strong> (a Presence-based mark, Templar-only): mark one enemy as <strong>anathema</strong> - while marked it takes holy/corruption damage or a bane when it acts within line of effect, and the first time each round you damage or are damaged by the marked foe you <strong>bank bonus Conviction</strong>, tying the mark into the resource engine.</p><h3>Signature Pact-Summon</h3><p>An <strong>angelic/infernal warrior</strong> - a combatant.</p><h3>Corp Records</h3><p><em>Militant-order asset.</em></p>",
+   "director": ""
+  },
+  "advancements": {}
+ },
+ "effects": [],
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!SprSubTemplar000"
+}

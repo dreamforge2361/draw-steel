@@ -1,0 +1,16 @@
+{
+ "name": "Medic",
+ "sorting": "a",
+ "folder": null,
+ "type": "Item",
+ "_id": "MedFldrClass0000",
+ "sort": 0,
+ "color": "",
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!MedFldrClass0000"
+}

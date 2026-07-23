@@ -1,367 +1,373 @@
 {
-  "folder": "TcnFldrClass0000",
-  "name": "Technomancer",
-  "type": "class",
-  "_id": "GWTechnomancrCl0",
-  "img": "systems/draw-steel/assets/classes/conduit.png",
-  "system": {
-    "description": {
-      "value": "<p>You are a shaman of the machine world - you touch the Wired directly, through living <strong>Resonance</strong>, with no deck and no rig between you and the net. Your power flows from a bond with <strong>sprites</strong>: living code-spirits conjured out of the net itself, a congregation that acts as your board presence and your damage. The corp records call it a mental-health flag; the street calls you a <strong>Technomancer</strong>, ghost-shaman of the machine world.</p><p>Your engine is <strong>Resonance</strong>: communion with machine-spirits, deepening as your congregation of sprites grows and works. At the start of each of your turns, gain Resonance for each sprite currently compiled and under your command (up to a cap). Compiling a <strong>new</strong> sprite banks compile momentum (+2); the first time each round one of your sprites lands an effect, bank a harmonic echo (+1). You spend Resonance on heroic abilities and on compiling/sustaining sprites. Unspent Resonance is lost at the end of the encounter, and any sprites still compiled decompile.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Resonance: <strong>Compile Sprite</strong> (call and command your congregation), <strong>Resonance Strike</strong> (your core attack, Cognition Power Roll), and <strong>Resonance Mending</strong> (the unique niche - the only healing in the game that works on machines, drones, chrome, and Cyborgs). At Tier 5 you choose a subclass - Sprite-Weaver, Machine-Whisperer, or Resonance-Warrior - that colors your congregation and grants an identity feature.</p><h3>Kit &amp; Chrome</h3><p>Half-caster with light chrome tolerance - techno-magic is friendlier to hardware than blood-magic, but the Sprite-Weaver stays nearly pure (deepest Resonance).</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass, gain all three signatures, and pick an opening heroic. Every Tier after, you gain a new heroic ability and your Resonance cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
-      "director": ""
+ "folder": "TcnFldrClass0000",
+ "name": "Technomancer",
+ "type": "class",
+ "_id": "GWTechnomancrCl0",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "description": {
+   "value": "<p>You are a shaman of the machine world - you touch the Wired directly, through living <strong>Resonance</strong>, with no deck and no rig between you and the net. Your power flows from a bond with <strong>sprites</strong>: living code-spirits conjured out of the net itself, a congregation that acts as your board presence and your damage. The corp records call it a mental-health flag; the street calls you a <strong>Technomancer</strong>, ghost-shaman of the machine world.</p><p>Your engine is <strong>Resonance</strong>: communion with machine-spirits, deepening as your congregation of sprites grows and works. At the start of each of your turns, gain Resonance for each sprite currently compiled and under your command (up to a cap). Compiling a <strong>new</strong> sprite banks compile momentum (+2); the first time each round one of your sprites lands an effect, bank a harmonic echo (+1). You spend Resonance on heroic abilities and on compiling/sustaining sprites. Unspent Resonance is lost at the end of the encounter, and any sprites still compiled decompile.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Resonance: <strong>Compile Sprite</strong> (call and command your congregation), <strong>Resonance Strike</strong> (your core attack, Cognition Power Roll), and <strong>Resonance Mending</strong> (the unique niche - the only healing in the game that works on machines, drones, chrome, and Cyborgs). At Tier 5 you choose a subclass - Sprite-Weaver, Machine-Whisperer, or Resonance-Warrior - that colors your congregation and grants an identity feature.</p><h3>Kit &amp; Chrome</h3><p>Half-caster with light chrome tolerance - techno-magic is friendlier to hardware than blood-magic, but the Sprite-Weaver stays nearly pure (deepest Resonance).</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass, gain all three signatures, and pick an opening heroic. Every Tier after, you gain a new heroic ability and your Resonance cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
+   "director": ""
+  },
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "technomancer",
+  "primary": "Resonance",
+  "epic": "Apotheosis",
+  "turnGain": "0",
+  "minimum": "0",
+  "characteristics": {
+   "core": [
+    "reason",
+    "resolve"
+   ]
+  },
+  "stamina": {
+   "starting": 26,
+   "level": 4
+  },
+  "recoveries": 7,
+  "level": 0,
+  "advancements": {
+   "TcnAdvKeySkill00": {
+    "name": "Key Skill",
+    "img": null,
+    "type": "skill",
+    "requirements": {
+     "level": 1
     },
-    "source": {
-      "book": "GHOSTWIRE",
-      "page": "",
-      "license": "Draw Steel Creator License"
+    "_id": "TcnAdvKeySkill00",
+    "description": "<p>You gain a matrix/knowledge key skill. (<em>Quick Build:</em> Resonance.)</p>",
+    "chooseN": 1,
+    "sort": -89999
+   },
+   "TcnAdvSigsGrant0": {
+    "name": "Signature Abilities",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
     },
-    "_dsid": "technomancer",
-    "primary": "Resonance",
-    "epic": "Apotheosis",
-    "turnGain": "0",
-    "minimum": "0",
+    "_id": "TcnAdvSigsGrant0",
+    "chooseN": null,
+    "description": "<p>You gain all three Technomancer signatures: <strong>Compile Sprite</strong>, <strong>Resonance Strike</strong>, and <strong>Resonance Mending</strong>. None cost Resonance.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnSigCompile000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnSigStrike0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnSigMending000"
+     }
+    ],
+    "sort": 4000
+   },
+   "TcnAdvSubclass00": {
+    "name": "Origin (choose your subclass)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
+    },
+    "_id": "TcnAdvSubclass00",
+    "chooseN": 1,
+    "description": "<p>Choose your discipline: <strong>Sprite-Weaver</strong>, <strong>Machine-Whisperer</strong>, or <strong>Resonance-Warrior</strong>. Your subclass grants a feature and colors your congregation.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnSubWeaver0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnSubWhisperer0"
+     },
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnSubWarrior000"
+     }
+    ],
+    "sort": 3000
+   },
+   "TcnAdvStartHer00": {
+    "name": "Starting Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 1
+    },
+    "_id": "TcnAdvStartHer00",
+    "chooseN": 1,
+    "description": "<p>Pick your first Resonance-spend heroic ability.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
+     }
+    ],
+    "sort": 5000
+   },
+   "TcnAdvCharT40000": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 2
+    },
+    "_id": "TcnAdvCharT40000",
+    "description": "<p>Your Resolve increases. (Tier 4.)</p>",
     "characteristics": {
-      "core": [
-        "reason",
-        "resolve"
-      ]
+     "resolve": 1
     },
-    "stamina": {
-      "starting": 26,
-      "level": 4
+    "sort": 2
+   },
+   "TcnAdvHerT400000": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 2
     },
-    "recoveries": 7,
-    "level": 0,
-    "advancements": {
-      "TcnAdvKeySkill00": {
-        "name": "Key Skill",
-        "img": null,
-        "type": "skill",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "TcnAdvKeySkill00",
-        "description": "<p>You gain a matrix/knowledge key skill. (<em>Quick Build:</em> Resonance.)</p>",
-        "chooseN": 1,
-        "sort": -89999
-      },
-      "TcnAdvSigsGrant0": {
-        "name": "Signature Abilities",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "TcnAdvSigsGrant0",
-        "chooseN": null,
-        "description": "<p>You gain all three Technomancer signatures: <strong>Compile Sprite</strong>, <strong>Resonance Strike</strong>, and <strong>Resonance Mending</strong>. None cost Resonance.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnSigCompile000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnSigStrike0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnSigMending000"
-          }
-        ],
-        "sort": 4000
-      },
-      "TcnAdvSubclass00": {
-        "name": "Origin (choose your subclass)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "TcnAdvSubclass00",
-        "chooseN": 1,
-        "description": "<p>Choose your discipline: <strong>Sprite-Weaver</strong>, <strong>Machine-Whisperer</strong>, or <strong>Resonance-Warrior</strong>. Your subclass grants a feature and colors your congregation.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.TcnSubWeaver0000"
-          }
-        ],
-        "sort": 3000
-      },
-      "TcnAdvStartHer00": {
-        "name": "Starting Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 1
-        },
-        "_id": "TcnAdvStartHer00",
-        "chooseN": 1,
-        "description": "<p>Pick your first Resonance-spend heroic ability.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
-          }
-        ],
-        "sort": 5000
-      },
-      "TcnAdvCharT40000": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "TcnAdvCharT40000",
-        "description": "<p>Your Resolve increases. (Tier 4.)</p>",
-        "characteristics": {
-          "resolve": 1
-        },
-        "sort": 2
-      },
-      "TcnAdvHerT400000": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "TcnAdvHerT400000",
-        "chooseN": 1,
-        "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 4.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
-          }
-        ],
-        "sort": 5002
-      },
-      "TcnAdvCapT400000": {
-        "name": "Resonance Capacity (Tier 4)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 2
-        },
-        "_id": "TcnAdvCapT400000",
-        "chooseN": null,
-        "description": "<p>Your Resonance cap rises to 9 at Tier 4.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT400000"
-          }
-        ],
-        "sort": 102
-      },
-      "TcnAdvCharT30000": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "TcnAdvCharT30000",
-        "description": "<p>Your Insight increases. (Tier 3.)</p>",
-        "characteristics": {
-          "intuition": 1
-        },
-        "sort": 3
-      },
-      "TcnAdvHerT300000": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "TcnAdvHerT300000",
-        "chooseN": 1,
-        "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 3.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
-          }
-        ],
-        "sort": 5003
-      },
-      "TcnAdvCapT300000": {
-        "name": "Resonance Capacity (Tier 3)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 3
-        },
-        "_id": "TcnAdvCapT300000",
-        "chooseN": null,
-        "description": "<p>Your Resonance cap rises to 12 at Tier 3.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT300000"
-          }
-        ],
-        "sort": 103
-      },
-      "TcnAdvCharT20000": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "TcnAdvCharT20000",
-        "description": "<p>Your Cognition increases. (Tier 2.)</p>",
-        "characteristics": {
-          "reason": 1
-        },
-        "sort": 4
-      },
-      "TcnAdvHerT200000": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "TcnAdvHerT200000",
-        "chooseN": 1,
-        "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 2.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
-          }
-        ],
-        "sort": 5004
-      },
-      "TcnAdvCapT200000": {
-        "name": "Resonance Capacity (Tier 2)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 4
-        },
-        "_id": "TcnAdvCapT200000",
-        "chooseN": null,
-        "description": "<p>Your Resonance cap rises to 15 at Tier 2.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT200000"
-          }
-        ],
-        "sort": 104
-      },
-      "TcnAdvCharT10000": {
-        "name": "",
-        "img": null,
-        "type": "characteristic",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "TcnAdvCharT10000",
-        "description": "<p>Your Cognition and Resolve increase. (Tier 1.)</p>",
-        "characteristics": {
-          "reason": 1,
-          "resolve": 1
-        },
-        "sort": 5
-      },
-      "TcnAdvHerT100000": {
-        "name": "New Heroic Ability",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "TcnAdvHerT100000",
-        "chooseN": 1,
-        "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 1.)</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
-          },
-          {
-            "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
-          }
-        ],
-        "sort": 5005
-      },
-      "TcnAdvCapT100000": {
-        "name": "Resonance Capacity (Tier 1)",
-        "img": "systems/draw-steel/assets/classes/conduit.png",
-        "type": "itemGrant",
-        "requirements": {
-          "level": 5
-        },
-        "_id": "TcnAdvCapT100000",
-        "chooseN": null,
-        "description": "<p>Your Resonance cap rises to 18 at Tier 1.</p>",
-        "pool": [
-          {
-            "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT100000"
-          }
-        ],
-        "sort": 105
-      }
-    }
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "draw-steel",
-    "systemVersion": "1.1.2",
-    "coreVersion": "14.365"
-  },
-  "_key": "!items!GWTechnomancrCl0"
+    "_id": "TcnAdvHerT400000",
+    "chooseN": 1,
+    "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 4.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
+     }
+    ],
+    "sort": 5002
+   },
+   "TcnAdvCapT400000": {
+    "name": "Resonance Capacity (Tier 4)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 2
+    },
+    "_id": "TcnAdvCapT400000",
+    "chooseN": null,
+    "description": "<p>Your Resonance cap rises to 9 at Tier 4.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT400000"
+     }
+    ],
+    "sort": 102
+   },
+   "TcnAdvCharT30000": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "TcnAdvCharT30000",
+    "description": "<p>Your Insight increases. (Tier 3.)</p>",
+    "characteristics": {
+     "intuition": 1
+    },
+    "sort": 3
+   },
+   "TcnAdvHerT300000": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "TcnAdvHerT300000",
+    "chooseN": 1,
+    "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 3.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
+     }
+    ],
+    "sort": 5003
+   },
+   "TcnAdvCapT300000": {
+    "name": "Resonance Capacity (Tier 3)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 3
+    },
+    "_id": "TcnAdvCapT300000",
+    "chooseN": null,
+    "description": "<p>Your Resonance cap rises to 12 at Tier 3.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT300000"
+     }
+    ],
+    "sort": 103
+   },
+   "TcnAdvCharT20000": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "TcnAdvCharT20000",
+    "description": "<p>Your Cognition increases. (Tier 2.)</p>",
+    "characteristics": {
+     "reason": 1
+    },
+    "sort": 4
+   },
+   "TcnAdvHerT200000": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "TcnAdvHerT200000",
+    "chooseN": 1,
+    "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 2.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
+     }
+    ],
+    "sort": 5004
+   },
+   "TcnAdvCapT200000": {
+    "name": "Resonance Capacity (Tier 2)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 4
+    },
+    "_id": "TcnAdvCapT200000",
+    "chooseN": null,
+    "description": "<p>Your Resonance cap rises to 15 at Tier 2.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT200000"
+     }
+    ],
+    "sort": 104
+   },
+   "TcnAdvCharT10000": {
+    "name": "",
+    "img": null,
+    "type": "characteristic",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "TcnAdvCharT10000",
+    "description": "<p>Your Cognition and Resolve increase. (Tier 1.)</p>",
+    "characteristics": {
+     "reason": 1,
+     "resolve": 1
+    },
+    "sort": 5
+   },
+   "TcnAdvHerT100000": {
+    "name": "New Heroic Ability",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "TcnAdvHerT100000",
+    "chooseN": 1,
+    "description": "<p>Pick a new Resonance-spend heroic ability. (Tier 1.)</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerRecomp0000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerSwarmSig00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerDeepCom000"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerResoWard00"
+     },
+     {
+      "uuid": "Compendium.draw-steel.abilities.Item.TcnHerTotalRes00"
+     }
+    ],
+    "sort": 5005
+   },
+   "TcnAdvCapT100000": {
+    "name": "Resonance Capacity (Tier 1)",
+    "img": "systems/draw-steel/assets/classes/conduit.png",
+    "type": "itemGrant",
+    "requirements": {
+     "level": 5
+    },
+    "_id": "TcnAdvCapT100000",
+    "chooseN": null,
+    "description": "<p>Your Resonance cap rises to 18 at Tier 1.</p>",
+    "pool": [
+     {
+      "uuid": "Compendium.draw-steel.classes.Item.TcnCapResT100000"
+     }
+    ],
+    "sort": 105
+   }
+  }
+ },
+ "effects": [],
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!GWTechnomancrCl0"
 }

@@ -1,0 +1,30 @@
+{
+ "folder": "TcnFldrClass0000",
+ "name": "Machine-Whisperer - the Healer/Interface",
+ "type": "feature",
+ "_id": "TcnSubWhisperer0",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "machine-whisperer",
+  "story": "The mender and deep-communion specialist - the tech-side medic.",
+  "description": {
+   "value": "<p><strong>Subclass: Machine-Whisperer - the Healer/Interface.</strong> The mender and deep-communion specialist: the tech-side medic and the one who Jumps-In gearlessly.</p><h3>Role Feature - Laying On of Code</h3><p>Your <strong>Resonance Mending</strong> restores more and works at range freely, and your <strong>Deep Communion</strong> costs less and grants a larger buffer; you are the premier healer of machines, drones, chrome, <strong>and Cyborgs</strong>.</p><h3>Signature Tweak</h3><p><strong>Resonance Mending</strong> can mend two targets at once, or split a heal into a heal-over-time.</p><h3>Bonus Skill &amp; Contact</h3><p><strong>Mechanics / medtech</strong>, plus a <strong>street-doc, rigger, or Cyborg-clinic</strong> contact.</p><h3>Chrome Flavor</h3><p>The most chrome-tolerant of the three - a resonance-tuned datajack that deepens communion without breaking the half-caster fence.</p>",
+   "director": ""
+  },
+  "advancements": {}
+ },
+ "effects": [],
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!TcnSubWhisperer0"
+}

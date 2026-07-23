@@ -1,0 +1,30 @@
+{
+ "folder": "MedFldrClass0000",
+ "name": "Corp-Medtech - the Clean Professional",
+ "type": "feature",
+ "_id": "MedSubCorpMed000",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "corp-medtech",
+  "story": "Corporate-trained, licensed, with access to high-grade pharmaceuticals and cutting-edge protocols.",
+  "description": {
+   "value": "<p><strong>Subclass: Corp-Medtech.</strong> Precise, well-supplied, expensive - quality over quantity.</p><h3>Role Feature - Pharmaceutical Grade</h3><p>Your <strong>compounds are more potent and cleaner</strong> - bigger heals, stronger stims with lighter crashes, more reliable toxins. The medic with the best product, when they can afford it.</p><h3>Signature Tweak</h3><p><strong>Combat Stims / Administer Dose</strong> compounds last longer or carry a reduced downside.</p><h3>Bonus Skill &amp; Contact</h3><p>A <strong>corporate/pharma-science</strong> skill, plus a <strong>corp-clinic, pharma-supplier, or medical-datahaus</strong> contact.</p><h3>Corp Records</h3><p><em>Licensed medical contractor - in good standing.</em></p>",
+   "director": ""
+  },
+  "advancements": {}
+ },
+ "effects": [],
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!MedSubCorpMed000"
+}

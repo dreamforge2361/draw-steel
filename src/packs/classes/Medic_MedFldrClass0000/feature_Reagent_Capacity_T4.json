@@ -1,0 +1,30 @@
+{
+ "folder": "MedFldrClass0000",
+ "name": "Reagent Capacity (Tier 4)",
+ "type": "feature",
+ "_id": "MedCapReagT40000",
+ "img": "systems/draw-steel/assets/classes/conduit.png",
+ "system": {
+  "source": {
+   "book": "GHOSTWIRE",
+   "page": "",
+   "license": "Draw Steel Creator License"
+  },
+  "_dsid": "reagent-capacity-tier-4",
+  "story": "",
+  "description": {
+   "value": "<p>Your Reagent kit capacity rises to <strong>12</strong> at Tier 4. Reagents are banked on a respite and persist between encounters, but the kit only refills in downtime.</p>",
+   "director": ""
+  },
+  "advancements": {}
+ },
+ "effects": [],
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "draw-steel",
+  "systemVersion": "1.1.2",
+  "coreVersion": "14.365"
+ },
+ "_key": "!items!MedCapReagT40000"
+}
