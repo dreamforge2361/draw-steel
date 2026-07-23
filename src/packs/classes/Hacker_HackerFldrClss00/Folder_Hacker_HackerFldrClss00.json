@@ -1,0 +1,16 @@
+{
+  "name": "Hacker",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "HackerFldrClss00",
+  "sort": 0,
+  "color": "#2f5a58",
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!folders!HackerFldrClss00"
+}

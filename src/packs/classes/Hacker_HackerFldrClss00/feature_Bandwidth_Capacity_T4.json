@@ -1,0 +1,30 @@
+{
+  "folder": "HackerFldrClss00",
+  "name": "Bandwidth Capacity (Tier 4)",
+  "type": "feature",
+  "_id": "HkrCapBwT4000000",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "bandwidth-capacity-tier-4",
+    "story": "",
+    "description": {
+      "value": "<p>Your Bandwidth pool cap rises to <strong>9</strong> at Tier 4.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!HkrCapBwT4000000"
+}

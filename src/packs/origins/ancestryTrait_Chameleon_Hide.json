@@ -1,0 +1,39 @@
+{
+  "folder": "MutFldrOrigins00",
+  "name": "Chameleon Hide",
+  "type": "ancestryTrait",
+  "_id": "MutTrChameleon00",
+  "img": "systems/draw-steel/assets/ghostwire/species/mutant-human.png",
+  "system": {
+    "description": {
+      "value": "<p><strong>Free Minor mutation (Mutant Adaptation, Load 0).</strong> His grey skin shifts color and texture to match its surroundings: <strong>edge on Stealth while stationary or moving slowly</strong>, and he can <strong>suppress a visible-taint tell for one scene</strong>. In play this is the jacked-in body that fades into cover while the mind is away. (Minor mutation - adds 0 Corruption Load.)</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "chameleon-hide",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MutTrChameleon00"
+}

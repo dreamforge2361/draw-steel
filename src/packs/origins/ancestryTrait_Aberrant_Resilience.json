@@ -1,0 +1,39 @@
+{
+  "folder": "MutFldrOrigins00",
+  "name": "Aberrant Resilience",
+  "type": "ancestryTrait",
+  "_id": "MutTrAberrResil0",
+  "img": "systems/draw-steel/assets/ghostwire/species/mutant-human.png",
+  "system": {
+    "description": {
+      "value": "<p><strong>Once per respite</strong>, when a mutation-based ability or a corruption effect (very much including <strong>black-ICE biofeedback</strong>, which bites his aberrant nervous system) would harm him, <strong>reduce that harm by a small fixed amount</strong>. The same wrongness that curses him also armors him against the net's teeth.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "aberrant-resilience",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MutTrAberrResil0"
+}

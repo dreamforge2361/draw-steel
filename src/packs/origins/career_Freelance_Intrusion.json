@@ -1,0 +1,96 @@
+{
+  "folder": "MutFldrOrigins00",
+  "name": "Freelance Intrusion (Security-Penetration Auditor)",
+  "type": "career",
+  "_id": "GWMutantCareer00",
+  "img": "systems/draw-steel/assets/ghostwire/species/mutant-human.png",
+  "system": {
+    "description": {
+      "value": "<p><strong>Freelance Intrusion (Security-Penetration Auditor).</strong> A deniable contractor who sells the one thing corps can never quite buy: proof their walls leak. Kessic runs Mama Cassavir's board in the Grid, gets crews through the door that isn't supposed to open, turns the target's own guns the wrong way, and makes sure they never learn the run happened. Corp paperwork files him as a <em>systems consultant</em>; the street calls him Null.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "freelance-intrusion",
+    "advancements": {
+      "MutCarAdvSkill0": {
+        "type": "skill",
+        "name": "Career Skills",
+        "img": null,
+        "_id": "MutCarAdvSkill00",
+        "chooseN": 2,
+        "skills": {
+          "groups": [],
+          "choices": [
+            "Hacking",
+            "Electronics",
+            "Security Systems",
+            "Streetwise",
+            "Deception",
+            "Corporate"
+          ]
+        },
+        "description": "<p>Choose two skills reflecting a life of freelance intrusion.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "MutCarAdvLang00": {
+        "type": "language",
+        "name": "Career Language",
+        "img": null,
+        "_id": "MutCarAdvLang000",
+        "chooseN": 1,
+        "description": "<p>Choose one language you picked up working the boards.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 1
+      },
+      "MutCarAdvPerk00": {
+        "type": "itemGrant",
+        "name": "Career Perk",
+        "img": null,
+        "_id": "MutCarAdvPerk000",
+        "chooseN": 1,
+        "description": "<p>Choose one exploration or intrigue perk.</p>",
+        "pool": [],
+        "additional": {
+          "perkType": "intrigue",
+          "type": "perk"
+        },
+        "requirements": {
+          "level": null
+        },
+        "sort": 2,
+        "repick": {}
+      }
+    },
+    "projectPoints": 0,
+    "renown": 1,
+    "wealth": 1
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GWMutantCareer00"
+}
