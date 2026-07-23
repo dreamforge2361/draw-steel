@@ -1,0 +1,32 @@
+{
+  "folder": "WrnFldrClass0000",
+  "name": "Fabricator - the Gunsmith/Builder",
+  "type": "feature",
+  "_id": "WrnSubFabricator",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "fabricator",
+    "story": "The bench specialist - the premier gear-mod crafter and field-repair savant.",
+    "description": {
+      "value": "<p><strong>Subclass: Fabricator - the Gunsmith/Builder.</strong> The bench specialist: the premier <strong>gear-mod crafter</strong>, turret-layer, and field-repair savant. Fields fewer machines but the best-built ones, and shines in downtime.</p><h3>Role Feature - Master Workshop</h3><p>You gain <strong>extra mod slots and an edge on gear-mod/repair project rolls</strong>, and your <strong>Field Repair</strong> restores more and can rebuild wrecks faster.</p><h3>Signature Tweak</h3><p><strong>Deploy the Line</strong> raises sturdier turrets (extra Integrity) and can be pre-built during downtime for a discount.</p><h3>Bonus Skill &amp; Contact</h3><p>A <strong>crafting / Security-Systems</strong> bench skill, plus a <strong>parts-supplier or corp-quartermaster</strong> contact.</p><h3>Chrome Flavor</h3><p>A builder's rig with fabrication/diagnostic implants rather than deep Jump-In.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!WrnSubFabricator"
+}

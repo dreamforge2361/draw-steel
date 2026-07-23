@@ -1,0 +1,32 @@
+{
+  "folder": "TcnFldrClass0000",
+  "name": "Sprite-Weaver - the Summoner",
+  "type": "feature",
+  "_id": "TcnSubWeaver0000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "sprite-weaver",
+    "story": "The widest congregation - the purest expression of the Wired pet class.",
+    "description": {
+      "value": "<p><strong>Subclass: Sprite-Weaver.</strong> You run the <strong>widest congregation</strong> of any Technomancer - the purest expression of the Wired \"pet class.\"</p><h3>Identity Feature - Wide Compile</h3><p>You may keep <strong>more sprites compiled at once</strong> than the baseline cap and command them all with a single <strong>Compile Sprite</strong> maneuver; your congregation drip counts <strong>each</strong> sprite (up to 4 at Tier 5). The most conjured bodies on the board.</p><h3>Signature Tweak</h3><p>Your <strong>Swarm the Signal</strong> with three or more sprites adds an automatic Wired-condition rider on the target.</p><h3>Bonus Skill + Contact</h3><p>A second spirit/compiling skill (Rituals), plus a contact: a fellow-technomancer or spirit-broker (a bound sprite as a retainer-style follower).</p><h3>Chrome Flavor</h3><p>Minimal - the Weaver stays nearly pure (deepest Resonance).</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!TcnSubWeaver0000"
+}

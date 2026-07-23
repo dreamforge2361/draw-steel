@@ -1,0 +1,375 @@
+{
+  "folder": "SprFldrClass0000",
+  "name": "Street-Priest",
+  "type": "class",
+  "_id": "GWStreetPrstCl00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "description": {
+      "value": "<p>You are a <strong>vessel for a power on the other side of the Veil</strong> - a believer with a pact, channeling the aid of an angel across the Veil into the prime world through sheer conviction. Your power flows from <strong>Conviction</strong>: the measure of your standing with your patron, spent to call aid. The corp records call it a <em>pastoral-services contractor</em>; the street calls you the <strong>Street-Priest</strong>, a padre, a collar, a saint.</p><p>Your engine is <strong>Conviction</strong>: a steady per-turn drip (+2 at the start of each of your turns), with an optional <strong>prayer gamble</strong> layered on top - spend your maneuver to pray instead of taking the flat drip, then roll 1d6 for a chance at more. The first time each round you heal or protect an ally, you bank a <strong>creed echo</strong> (+1). You spend Conviction on heroic abilities, on Spend X enhancement riders, and on invoking the pact. Unspent Conviction is lost at the end of the encounter.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Conviction: <strong>Lay On Hands</strong> (spend a Recovery to heal), <strong>Smite/Rebuke</strong> (your core attack, a Presence Power Roll), and <strong>Sense the Veil</strong> (read spirits, souls, and corruption). At Tier 5 you choose a subclass ministry - Shepherd, Templar, or Exorcist - that colors your signatures and grants an identity feature.</p><h3>Kit &amp; Chrome</h3><p>A light-Kit class. Foci over chrome: reliquaries, blessed symbols, consecrated censers, warded vestments, bought with nuyen. Chrome is strongly discouraged - a soul cluttered with chrome is a poor vessel, and the Street-Priest guards their Body Integrity to keep the pact open.</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass ministry, gain all three signatures, and pick an opening heroic ability. Every Tier after, you gain a new heroic ability and your Conviction cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "street-priest",
+    "primary": "Conviction",
+    "epic": "Apotheosis",
+    "turnGain": "2",
+    "minimum": "0",
+    "characteristics": {
+      "core": [
+        "presence",
+        "resolve"
+      ]
+    },
+    "stamina": {
+      "starting": 28,
+      "level": 4
+    },
+    "recoveries": 7,
+    "level": 0,
+    "advancements": {
+      "SprAdvKeySkill00": {
+        "name": "Key Skill",
+        "img": null,
+        "type": "skill",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "SprAdvKeySkill00",
+        "description": "<p>You gain a religion/liturgy key skill. (<em>Quick Build:</em> Religion.)</p>",
+        "chooseN": 1,
+        "sort": -89999
+      },
+      "SprAdvSigsGrant0": {
+        "name": "Signature Abilities",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "SprAdvSigsGrant0",
+        "chooseN": null,
+        "description": "<p>You gain all three Street-Priest signatures: <strong>Lay On Hands</strong>, <strong>Smite/Rebuke</strong>, and <strong>Sense the Veil</strong>. None cost Conviction.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprSigLayHnds000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprSigSmite00000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprSigSenseVl000"
+          }
+        ],
+        "sort": 4000
+      },
+      "SprAdvSubclass00": {
+        "name": "Origin (choose your ministry)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "SprAdvSubclass00",
+        "chooseN": 1,
+        "description": "<p>Choose your ministry: <strong>Shepherd</strong>, <strong>Templar</strong>, or <strong>Exorcist</strong>. Your ministry grants a feature and colors your signatures.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprSubShepherd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprSubTemplar000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprSubExorcist00"
+          }
+        ],
+        "sort": 3000
+      },
+      "SprAdvStartHer00": {
+        "name": "Starting Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "SprAdvStartHer00",
+        "chooseN": 1,
+        "description": "<p>Pick your first Conviction-spend heroic ability.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerShldFth000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerHolyRbk000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerMyLife0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerSanctWrd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerInvokePt00"
+          }
+        ],
+        "sort": 5000
+      },
+      "SprAdvCharT40000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "SprAdvCharT40000",
+        "description": "<p>Your Resolve increases. (Tier 4.)</p>",
+        "characteristics": {
+          "resolve": 1
+        },
+        "sort": 2
+      },
+      "SprAdvHerT400000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "SprAdvHerT400000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Conviction-spend heroic ability. (Tier 4.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerShldFth000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerHolyRbk000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerMyLife0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerSanctWrd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerInvokePt00"
+          }
+        ],
+        "sort": 5002
+      },
+      "SprAdvCapT400000": {
+        "name": "Conviction Capacity (Tier 4)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "SprAdvCapT400000",
+        "chooseN": null,
+        "description": "<p>Your Conviction cap rises to 12 at Tier 4.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprCapConvT40000"
+          }
+        ],
+        "sort": 102
+      },
+      "SprAdvCharT30000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "SprAdvCharT30000",
+        "description": "<p>Your Insight increases. (Tier 3.)</p>",
+        "characteristics": {
+          "intuition": 1
+        },
+        "sort": 3
+      },
+      "SprAdvHerT300000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "SprAdvHerT300000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Conviction-spend heroic ability. (Tier 3.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerShldFth000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerHolyRbk000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerMyLife0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerSanctWrd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerInvokePt00"
+          }
+        ],
+        "sort": 5003
+      },
+      "SprAdvCapT300000": {
+        "name": "Conviction Capacity (Tier 3)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "SprAdvCapT300000",
+        "chooseN": null,
+        "description": "<p>Your Conviction cap rises to 16 at Tier 3.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprCapConvT30000"
+          }
+        ],
+        "sort": 103
+      },
+      "SprAdvCharT20000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "SprAdvCharT20000",
+        "description": "<p>Your Presence increases. (Tier 2.)</p>",
+        "characteristics": {
+          "presence": 1
+        },
+        "sort": 4
+      },
+      "SprAdvHerT200000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "SprAdvHerT200000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Conviction-spend heroic ability. (Tier 2.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerShldFth000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerHolyRbk000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerMyLife0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerSanctWrd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerInvokePt00"
+          }
+        ],
+        "sort": 5004
+      },
+      "SprAdvCapT200000": {
+        "name": "Conviction Capacity (Tier 2)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "SprAdvCapT200000",
+        "chooseN": null,
+        "description": "<p>Your Conviction cap rises to 20 at Tier 2.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprCapConvT20000"
+          }
+        ],
+        "sort": 104
+      },
+      "SprAdvCharT10000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "SprAdvCharT10000",
+        "description": "<p>Your Presence and Resolve increase. (Tier 1.)</p>",
+        "characteristics": {
+          "presence": 1,
+          "resolve": 1
+        },
+        "sort": 5
+      },
+      "SprAdvHerT100000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "SprAdvHerT100000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Conviction-spend heroic ability. (Tier 1.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerShldFth000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerHolyRbk000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerMyLife0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerSanctWrd00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.SprHerInvokePt00"
+          }
+        ],
+        "sort": 5005
+      },
+      "SprAdvCapT100000": {
+        "name": "Conviction Capacity (Tier 1)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "SprAdvCapT100000",
+        "chooseN": null,
+        "description": "<p>Your Conviction cap rises to 24 at Tier 1.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.SprCapConvT10000"
+          }
+        ],
+        "sort": 105
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWStreetPrstCl00"
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "ElemFldrClass001",
+  "name": "Geomancer - the Anvil",
+  "type": "feature",
+  "_id": "ElmSubGeomanc001",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "geomancer",
+    "story": "The fortress - earth and void raised as walls, pits, and warding.",
+    "description": {
+      "value": "<p><strong>Subclass: Geomancer (Earth &amp; Void - terrain &amp; defense).</strong> The fortress: the toughest, most defensive Elementalist and the strongest terrain-denial.</p><h3>Role Feature - Standing Stone</h3><p>Favors <strong>acid/corruption</strong> and <strong>terrain shaping</strong> - walls, difficult ground, pillars, pits, and warding. When you raise terrain you also <strong>shield</strong> yourself or an ally (a small stability/defense rider).</p><h3>Signature Summon</h3><p>An <strong>earth/void elemental</strong> - durable: a brute or a warper.</p><h3>Corp Records</h3><p><em>Geo-structural / spatial specialist.</em></p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ElmSubGeomanc001"
+}

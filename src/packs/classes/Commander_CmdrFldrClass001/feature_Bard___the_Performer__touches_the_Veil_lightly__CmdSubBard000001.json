@@ -1,0 +1,32 @@
+{
+  "folder": "CmdrFldrClass001",
+  "name": "Bard - the Performer (touches the Veil lightly)",
+  "type": "feature",
+  "_id": "CmdSubBard000001",
+  "img": "systems/draw-steel/assets/classes/tactician.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "bard",
+    "story": "Art as power: the troubadour, media-face, or street-legend who moves crowds.",
+    "description": {
+      "value": "<p><strong>Origin: Bard.</strong> The heart and the showstopper - best where emotion and spectacle rule.</p><h3>Resonant Performance</h3><p>Your performances (music, oratory, media presence) <strong>inspire allies and sway crowds</strong> (edges to <em>Performance</em> and to mass/crowd influence). Uniquely, a <strong>thin half-caster lane through the Veil</strong>: certain performances carry a faint arcane charge (a rallying song that steels the soul, a dirge that unnerves a spirit), tapping a <em>light</em> set of Veil-flavored effects.</p><h3>Chrome caution</h3><p>The <strong>magic-erosion rule applies</strong> to a Bard - heavy chrome dulls the arcane edge, exactly as it dulls a caster. Guard Body Integrity like a caster.</p><h3>Bonus skill &amp; contact</h3><p><strong>Performance</strong> skill; contact: a <strong>promoter, journalist, or scene-fixer</strong>.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!CmdSubBard000001"
+}

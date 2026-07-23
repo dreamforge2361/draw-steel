@@ -1,0 +1,32 @@
+{
+  "folder": "CmdrFldrClass001",
+  "name": "Street-Fixer - the Underworld Broker",
+  "type": "feature",
+  "_id": "CmdSubStFixer001",
+  "img": "systems/draw-steel/assets/classes/tactician.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "street-fixer",
+    "story": "The whole undercity on speed-dial: deals, favors, and the fixer's web.",
+    "description": {
+      "value": "<p><strong>Origin: Street-Fixer.</strong> The connective tissue of the shadows - best where reputation and relationships rule.</p><h3>The Fixer's Web</h3><p>The <strong>strongest Contacts engine in the game</strong>: you start with <strong>extra contacts</strong>, cultivate them faster, and can <strong>call in a favor mid-run</strong>. You gain <strong>edges</strong> to <em>Streetwise</em> legwork and to negotiations framed around <em>Freedom</em>, <em>Greed</em>, and <em>Vengeance</em>.</p><h3>Bonus skill &amp; contact</h3><p><strong>Streetwise</strong> skill; contact: a <strong>fixer or gang lieutenant</strong>.</p><p><em>Fully mundane</em> - no Veil access, no magic-erosion penalty.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!CmdSubStFixer001"
+}

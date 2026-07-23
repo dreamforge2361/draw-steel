@@ -1,0 +1,32 @@
+{
+  "folder": "ScoutFldr0000001",
+  "name": "Face-in-crowd - the Infiltrator",
+  "type": "feature",
+  "_id": "ScoutSubFace0001",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-face-in-crowd",
+    "story": "Disguise and social cover; the ghost with a face for every door.",
+    "description": {
+      "value": "<p><strong>Method: Face-in-crowd.</strong> You disappear in plain sight.</p><h3>Blend In</h3><p>You can <strong>Fade</strong> via disguise or social cover, gain an <strong>edge</strong> to pass as someone you are not, and may drop an adjacent unaware foe and <strong>take their place</strong>.</p><h3>Bonus skill and contact</h3><p>You gain <strong>Deception</strong> or <strong>Disguise</strong> and a <strong>corp-insider or forger</strong> contact.</p><h3>Pairs with</h3><p>The Face (Commander) for espionage and heist work.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ScoutSubFace0001"
+}

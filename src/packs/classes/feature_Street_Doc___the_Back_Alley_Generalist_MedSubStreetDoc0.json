@@ -1,0 +1,32 @@
+{
+  "folder": "MedFldrClass0000",
+  "name": "Street-Doc - the Back-Alley Generalist",
+  "type": "feature",
+  "_id": "MedSubStreetDoc0",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "street-doc",
+    "story": "The unlicensed neighborhood doctor who patches gangers and edgerunners for cash and favors.",
+    "description": {
+      "value": "<p><strong>Subclass: Street-Doc.</strong> The resourceful, improvisational back-alley generalist - wired into the street.</p><h3>Role Feature - Make Do</h3><p>You <strong>improvise and restock Reagents faster and cheaper</strong> (scavenged materials, black-market stock), and your <strong>Field Synthesis</strong> is stronger - the medic who never quite runs dry. The best kit-economy of the three.</p><h3>Signature Tweak</h3><p><strong>First Aid</strong> works at an edge on the badly wounded - you do your best work when it is worst.</p><h3>Bonus Skill &amp; Contact</h3><p>A <strong>streetwise/contacts</strong> skill, plus a <strong>fixer, ganger-clinic, or black-market-pharma</strong> contact.</p><h3>Corp Records</h3><p><em>Unlicensed - flagged.</em></p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!MedSubStreetDoc0"
+}

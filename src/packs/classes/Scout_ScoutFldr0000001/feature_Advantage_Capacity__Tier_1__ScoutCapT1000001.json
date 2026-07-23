@@ -1,0 +1,32 @@
+{
+  "folder": "ScoutFldr0000001",
+  "name": "Advantage Capacity (Tier 1)",
+  "type": "feature",
+  "_id": "ScoutCapT1000001",
+  "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-adv-cap-22",
+    "story": "Your Advantage cap rises to 22 at Tier 1.",
+    "description": {
+      "value": "<p>Your Advantage cap rises to <strong>22</strong> at Tier 1.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ScoutCapT1000001"
+}

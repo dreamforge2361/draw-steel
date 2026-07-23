@@ -1,0 +1,375 @@
+{
+  "folder": "WrnFldrClass0000",
+  "name": "Wrench",
+  "type": "class",
+  "_id": "GWWrenchClass000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "description": {
+      "value": "<p>You are a <strong>rigger</strong> - you fight through a fielded fleet of machines. Your power flows from <strong>Uptime</strong>: the live, humming link between you and every drone under your command, fed by the fleet you keep online. The corp records call you a <em>freelance drone-tech</em>; the street calls you a <strong>Wrench</strong>, the rigger in the walls.</p><p>Your engine is <strong>Uptime</strong>: at the start of each of your turns, gain Uptime for each drone currently fielded under your command (up to a cap). Deploying a <strong>new</strong> drone banks deploy momentum (+2); the first time each round one of your drones lands an effect, bank a link echo (+1). You spend Uptime on heroic abilities and on deploying/sustaining drones. Unspent Uptime is lost at the end of the encounter, and any drones still fielded power down.</p><h3>Signatures &amp; Subclass</h3><p>Three signatures cost no Uptime: <strong>Deploy &amp; Command</strong> (field and command your fleet), <strong>Rigged Fire</strong> (the drone's mounted attack, a Cognition Power Roll - your only personal damage), and <strong>Field Repair</strong> (restore Integrity to drones, vehicles, chrome, and gear). At Tier 5 you choose a subclass - Drone (Swarm-Master), among others - that colors your fleet and grants an identity feature.</p><h3>Advancement (internal Level 1-5 = player-facing Tier 5-1)</h3><p>At <strong>Tier 5</strong> you choose your subclass, gain all three signatures, and pick an opening heroic. Every Tier after, you gain a new heroic ability and your Uptime cap rises. The ladder caps at <strong>Tier 1</strong>.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "wrench",
+    "primary": "Uptime",
+    "epic": "Apotheosis",
+    "turnGain": "0",
+    "minimum": "0",
+    "characteristics": {
+      "core": [
+        "reason",
+        "agility"
+      ]
+    },
+    "stamina": {
+      "starting": 30,
+      "level": 4
+    },
+    "recoveries": 4,
+    "level": 0,
+    "advancements": {
+      "WrnAdvKeySkill00": {
+        "name": "Key Skill",
+        "img": null,
+        "type": "skill",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "WrnAdvKeySkill00",
+        "description": "<p>You gain a matrix/knowledge key skill. (<em>Quick Build:</em> Uptime.)</p>",
+        "chooseN": 1,
+        "sort": -89999
+      },
+      "WrnAdvSigsGrant0": {
+        "name": "Signature Abilities",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "WrnAdvSigsGrant0",
+        "chooseN": null,
+        "description": "<p>You gain all three Wrench signatures: <strong>Deploy &amp; Command</strong>, <strong>Rigged Fire</strong>, and <strong>Field Repair</strong>. None cost Uptime.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnSigDeployCmd0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnSigRigFire000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnSigFldRepair0"
+          }
+        ],
+        "sort": 4000
+      },
+      "WrnAdvSubclass00": {
+        "name": "Origin (choose your subclass)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "WrnAdvSubclass00",
+        "chooseN": 1,
+        "description": "<p>Choose your discipline: <strong>Swarm-Master</strong>, <strong>Machine-Whisperer</strong>, or <strong>Uptime-Warrior</strong>. Your subclass grants a feature and colors your congregation.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnSubSwarmMst00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnSubVehicle000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnSubFabricator"
+          }
+        ],
+        "sort": 3000
+      },
+      "WrnAdvStartHer00": {
+        "name": "Starting Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 1
+        },
+        "_id": "WrnAdvStartHer00",
+        "chooseN": 1,
+        "description": "<p>Pick your first Uptime-spend heroic ability.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerHotSwap000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFocusFire0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerJumpIn0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerDeployLn00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFullDeploy"
+          }
+        ],
+        "sort": 5000
+      },
+      "WrnAdvCharT40000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "WrnAdvCharT40000",
+        "description": "<p>Your Resolve increases. (Tier 4.)</p>",
+        "characteristics": {
+          "resolve": 1
+        },
+        "sort": 2
+      },
+      "WrnAdvHerT400000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "WrnAdvHerT400000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Uptime-spend heroic ability. (Tier 4.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerHotSwap000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFocusFire0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerJumpIn0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerDeployLn00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFullDeploy"
+          }
+        ],
+        "sort": 5002
+      },
+      "WrnAdvCapT400000": {
+        "name": "Uptime Capacity (Tier 4)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 2
+        },
+        "_id": "WrnAdvCapT400000",
+        "chooseN": null,
+        "description": "<p>Your Uptime cap rises to 9 at Tier 4.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnCapUpT4000000"
+          }
+        ],
+        "sort": 102
+      },
+      "WrnAdvCharT30000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "WrnAdvCharT30000",
+        "description": "<p>Your Insight increases. (Tier 3.)</p>",
+        "characteristics": {
+          "intuition": 1
+        },
+        "sort": 3
+      },
+      "WrnAdvHerT300000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "WrnAdvHerT300000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Uptime-spend heroic ability. (Tier 3.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerHotSwap000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFocusFire0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerJumpIn0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerDeployLn00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFullDeploy"
+          }
+        ],
+        "sort": 5003
+      },
+      "WrnAdvCapT300000": {
+        "name": "Uptime Capacity (Tier 3)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 3
+        },
+        "_id": "WrnAdvCapT300000",
+        "chooseN": null,
+        "description": "<p>Your Uptime cap rises to 12 at Tier 3.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnCapUpT3000000"
+          }
+        ],
+        "sort": 103
+      },
+      "WrnAdvCharT20000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "WrnAdvCharT20000",
+        "description": "<p>Your Cognition increases. (Tier 2.)</p>",
+        "characteristics": {
+          "reason": 1
+        },
+        "sort": 4
+      },
+      "WrnAdvHerT200000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "WrnAdvHerT200000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Uptime-spend heroic ability. (Tier 2.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerHotSwap000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFocusFire0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerJumpIn0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerDeployLn00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFullDeploy"
+          }
+        ],
+        "sort": 5004
+      },
+      "WrnAdvCapT200000": {
+        "name": "Uptime Capacity (Tier 2)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 4
+        },
+        "_id": "WrnAdvCapT200000",
+        "chooseN": null,
+        "description": "<p>Your Uptime cap rises to 15 at Tier 2.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnCapUpT2000000"
+          }
+        ],
+        "sort": 104
+      },
+      "WrnAdvCharT10000": {
+        "name": "",
+        "img": null,
+        "type": "characteristic",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "WrnAdvCharT10000",
+        "description": "<p>Your Cognition and Resolve increase. (Tier 1.)</p>",
+        "characteristics": {
+          "reason": 1,
+          "resolve": 1
+        },
+        "sort": 5
+      },
+      "WrnAdvHerT100000": {
+        "name": "New Heroic Ability",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "WrnAdvHerT100000",
+        "chooseN": 1,
+        "description": "<p>Pick a new Uptime-spend heroic ability. (Tier 1.)</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerHotSwap000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFocusFire0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerJumpIn0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerDeployLn00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.abilities.Item.WrnHerFullDeploy"
+          }
+        ],
+        "sort": 5005
+      },
+      "WrnAdvCapT100000": {
+        "name": "Uptime Capacity (Tier 1)",
+        "img": "systems/draw-steel/assets/classes/conduit.png",
+        "type": "itemGrant",
+        "requirements": {
+          "level": 5
+        },
+        "_id": "WrnAdvCapT100000",
+        "chooseN": null,
+        "description": "<p>Your Uptime cap rises to 18 at Tier 1.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.classes.Item.WrnCapUpT1000000"
+          }
+        ],
+        "sort": 105
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWWrenchClass000"
+}

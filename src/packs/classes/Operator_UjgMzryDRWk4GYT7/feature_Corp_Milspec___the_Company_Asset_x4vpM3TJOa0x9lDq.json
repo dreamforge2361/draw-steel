@@ -1,0 +1,32 @@
+{
+  "folder": "UjgMzryDRWk4GYT7",
+  "name": "Corp-Milspec - the Company Asset",
+  "type": "feature",
+  "_id": "x4vpM3TJOa0x9lDq",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "corp-milspec---the-company-asset",
+    "story": "Trained in a megacorp's black special-forces program; disciplined, networked, and expensive to replace - until you went off-book.",
+    "description": {
+      "value": "<p><strong>Origin: Corp-Milspec.</strong> You were forged in a megacorp's black special-forces program. You fight as part of a machine, and you make the machine better.</p><h3>Fire Team Doctrine</h3><p>When you use the <strong>Aid</strong> action, or when an ally attacks a target you damaged this round, that ally gains an <strong>edge</strong> on the attack. The first time each round an ally lands a <strong>Tier 1</strong> result as a result of this, you gain <strong>2 Adrenaline</strong> (the coordinated-professional loop).</p><h3>Signature tweak</h3><p>Your <strong>Suppressing Burst</strong> also grants one adjacent ally cover while the suppressed area holds.</p><h3>Bonus skill &amp; contact</h3><p>You gain the <strong>Corporate</strong> skill (you know the org that built you) and a <strong>Corp-insider contact</strong> - a former handler, burned or bought.</p><h3>Chrome flavor</h3><p>The cleanest, best-maintained milspec cyberware - reliability-flavored (rerolls, no-glitch). <em>(Benchmark numbers; tuned in the numeric pass.)</em></p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!x4vpM3TJOa0x9lDq"
+}

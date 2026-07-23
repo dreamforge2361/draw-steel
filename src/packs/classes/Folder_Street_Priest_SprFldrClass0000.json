@@ -1,0 +1,18 @@
+{
+  "name": "Street-Priest",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "SprFldrClass0000",
+  "sort": 0,
+  "color": "#8a6d1f",
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!SprFldrClass0000"
+}

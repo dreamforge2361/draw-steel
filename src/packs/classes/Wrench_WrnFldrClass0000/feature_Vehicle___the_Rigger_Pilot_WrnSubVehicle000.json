@@ -1,0 +1,32 @@
+{
+  "folder": "WrnFldrClass0000",
+  "name": "Vehicle - the Rigger/Pilot",
+  "type": "feature",
+  "_id": "WrnSubVehicle000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "vehicle-rigger",
+    "story": "Masters the big machine - often Jumped-In as the deadliest single thing on the field.",
+    "description": {
+      "value": "<p><strong>Subclass: Vehicle - the Rigger/Pilot.</strong> Masters the <strong>big</strong> machine: the armored hauler, the assault bike, the gunship, the sub. Fewer bodies, more mass. The frontline-in-a-vehicle build.</p><h3>Role Feature - One With the Machine</h3><p>Your <strong>Jump-In (Ascendant)</strong> costs 1 less Uptime and grants a larger Integrity buffer; while Jumped-In you count as both pilot and gunner with an extra edge on either.</p><h3>Signature Tweak</h3><p><strong>Rigged Fire</strong> from a Jumped-In vehicle can strike two targets in a line (the vehicle's heavy mount).</p><h3>Bonus Skill &amp; Contact</h3><p><strong>Piloting / vehicle-control</strong>, plus a <strong>chop-shop or transport-fixer</strong> contact.</p><h3>Chrome Flavor</h3><p>A high-bandwidth <strong>control rig</strong> built for deep Jump-In.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!WrnSubVehicle000"
+}

@@ -1,0 +1,32 @@
+{
+  "folder": "ScoutFldr0000001",
+  "name": "Hunter - Tracker and Killing Shot",
+  "type": "feature",
+  "_id": "ScoutSubHunt0001",
+  "img": "icons/creatures/abilities/cougar-pounce-stalk-black.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-hunter",
+    "story": "The tracker and the killing shot; a Wereraven never loses a quarry.",
+    "description": {
+      "value": "<p><strong>Method: Hunter (Quarry).</strong> The tracker and the killing shot.</p><h3>Quarry</h3><p>Your <strong>Mark</strong> also functions as a track: you always know a Marked target's direction and distance. Your <strong>first strike</strong> against a Marked target each round gains extra reach or a damage bump.</p><h3>Bonus skill and contact</h3><p>You gain <strong>Survival</strong> or <strong>Tracking</strong> and a <strong>ganger or street-guide</strong> contact.</p><h3>Favored Kit</h3><p>Longshot (the sniper's Kit; loves Overwatch Shot).</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ScoutSubHunt0001"
+}
