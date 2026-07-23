@@ -1,0 +1,57 @@
+{
+  "folder": null,
+  "name": "Deep Communion",
+  "type": "ability",
+  "_id": "TcnHerDeepCom000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "deep-communion",
+    "story": "Pour yourself into the net - the gearless answer to Jump-In.",
+    "keywords": [
+      "matrix",
+      "utility"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "self",
+      "primary": null
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "self",
+      "value": null,
+      "custom": "Self"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Resonance, main action to enter.</strong> Project fully into the Wired (or into a machine/drone/Cyborg you're attuned to) with edges to your Wired verbs and sprite command, using the system's reach and senses. Your body goes inert/exposed and biofeedback applies - but unlike the Wrench you need no control rig; the communion <em>is</em> the interface.</p>"
+    },
+    "spend": {
+      "text": "3 Resonance",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnHerDeepCom000"
+}

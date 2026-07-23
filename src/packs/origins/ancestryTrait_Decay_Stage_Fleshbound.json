@@ -1,0 +1,39 @@
+{
+  "folder": "RevFldrTraits000",
+  "name": "Decay Stage (Fleshbound)",
+  "type": "ancestryTrait",
+  "_id": "RevFreDecayStage",
+  "img": "icons/magic/death/undead-ghoul-rot-flesh-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Free Trait.</strong> You begin at the <strong>Fleshbound</strong> stage of the Decay ladder: zombie-like, pallid, rotting, slow. Undying Return and your poison/disease/corruption resistance are active. Faint stench and cold flesh are a <strong>light</strong> situational Stealth-by-smell / social flavor bane the Director may invoke, easily masked - no standing penalty. Your Decay stage advances with your character Tier, not with deaths (deaths are pure flavor toward the same destination): Tier 3 brings Withered/Skeletal (damage reduction), Tier 2 brings Spectral/incorporeality, Tier 1 brings full Spectral plus Grave-Cold Resilience.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-species-revenant-fre-decay-fleshbound",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!RevFreDecayStage"
+}

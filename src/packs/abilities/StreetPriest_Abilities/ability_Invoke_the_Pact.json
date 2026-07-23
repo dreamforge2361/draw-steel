@@ -1,0 +1,59 @@
+{
+  "folder": null,
+  "name": "Invoke the Pact",
+  "type": "ability",
+  "_id": "SprHerInvokePt00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "invoke-the-pact",
+    "story": "She opens the door all the way and asks her patron to walk through it.",
+    "keywords": [
+      "holy",
+      "veil",
+      "summon",
+      "pact"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 7,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "self",
+      "value": null,
+      "custom": "Your pact patron / guardian spirit"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>7 Conviction, main action; Veil working (Pact + Summon/Bind).</strong> Call the Light patron to send aid across the Veil under the agreed terms. <strong>As an extension</strong> (lower investment) the patron's aid manifests briefly and acts on her turn - a light-band smiting hand or a warding aegis, using her action economy. <strong>As an independent guardian/warding spirit</strong> (higher investment; needs a Tier 1-2 Bind at summon-Tier 3+), it becomes its own figure on the map with <strong>Stamina 20</strong> (the T3 independent threshold) - protective, and it sticks close to allies. <strong>Persistent 2+</strong> to sustain the manifestation (4 Conviction/turn). <strong>The Price always applies:</strong> her Light patron exacts a task aligned to mercy and the protection of innocents.</p>"
+    },
+    "spend": {
+      "text": "7 Conviction (Sustain 2, Persistent 2+)",
+      "value": 7
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!SprHerInvokePt00"
+}

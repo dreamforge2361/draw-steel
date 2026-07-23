@@ -1,0 +1,58 @@
+{
+  "folder": null,
+  "name": "Compile Sprite",
+  "type": "ability",
+  "_id": "TcnSigCompile000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "compile-sprite",
+    "story": "He hums a dead frequency and something answers - a code-spirit rising to his call.",
+    "keywords": [
+      "matrix",
+      "summon",
+      "resonance"
+    ],
+    "type": "main",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 5
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "self",
+      "value": null,
+      "custom": "Your compiled sprites / the net"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Main action to compile, maneuver to command; no Resonance cost.</strong> <strong>Compile</strong> a sprite (Sprite Integrity 12 at Tier 5; it manifests under your command), or <strong>Command</strong> your already-compiled sprites to move and act (they act on your turn - the extension model). On <strong>Outcome Tier 1</strong> you compile <em>and</em> issue a free command in the same action; on Tier 3 the sprite manifests unstable (acts next turn) or a command garbles.</p><p><strong>Enhance - Spend Resonance:</strong> compile a second sprite in the same action, or command the whole congregation at once.</p>"
+    },
+    "spend": {
+      "text": "No Resonance cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnSigCompile000"
+}

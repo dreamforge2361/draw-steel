@@ -1,0 +1,95 @@
+{
+  "folder": null,
+  "name": "Elemental Wall",
+  "type": "ability",
+  "_id": "ElmHerElemWal001",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "elemental-wall",
+    "story": "A standing barrier of storm-stuff - Kais's signature defensive working, pairing with his Riverstone focus.",
+    "keywords": [
+      "magic",
+      "area"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 5,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "area",
+    "target": {
+      "type": "square",
+      "value": null,
+      "custom": "An area you can see"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "reason"
+        ]
+      },
+      "effects": {
+        "ElmDmgElemWal001": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "ElmDmgElemWal001",
+          "damage": {
+            "tier1": {
+              "value": "13",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "9",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "5",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>5 Essence, main action, Persist 1 (-2 Essence/turn to sustain).</strong> Raise a wall of your attuned element (water, ice, storm-charged air) across a line you can see. Creatures that try to force their way through it take Heavy-band damage (<strong>13/9/5</strong> at Tier 5); the wall blocks line of sight and movement until you stop sustaining it.</p>"
+    },
+    "spend": {
+      "text": "5 Essence, Persist 1",
+      "value": 5
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!ElmHerElemWal001"
+}

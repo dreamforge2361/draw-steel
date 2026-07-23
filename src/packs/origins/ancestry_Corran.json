@@ -1,0 +1,75 @@
+{
+  "folder": "CorFldrOrigins00",
+  "name": "Corran",
+  "type": "ancestry",
+  "_id": "GWCorranAncstry0",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>The engineered underclass - short, sturdy, unbreakable, and done being looked down on. Centuries ago the megacorps engineered the <strong>Corran</strong> (<em>Homo sapiens fossor</em>) as a laborer breed - compact, immensely strong and hardy, built to work the deep mines and cramped service crawls no baseline human could survive. Hundreds of years on they are a fully distinct species with their own communities, dialects, guild-clans, and culture. The corps still read them as \"just labor\"; the Corran repay it with deep solidarity, long memory, and a chip on the shoulder the size of a mine cart. Slang: <em>Squats, Deepers, dust-eaters.</em></p><p><strong>Attribute Profile:</strong> +1 Physique, +1 Resolve, -1 Reflex.</p><p><strong>Signature Trait - Unyielding:</strong> the iconic, always-on Corran trait - the immovable laborer who does not budge (encoded below as two linked traits: Footing and Refusal).</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "corran",
+    "advancements": {
+      "CorAncAdvFree000": {
+        "type": "itemGrant",
+        "name": "Corran Traits (Free)",
+        "img": "icons/environment/people/cleric-orange.webp",
+        "_id": "CorAncAdvFree000",
+        "chooseN": null,
+        "description": "<p>You gain all seven Corran traits below.</p>",
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrUnyldFoot00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrUnyldRefu00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrHardyCon000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrDeepsight00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrCramped0000"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrLaborRead00"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.CorTrUnbrkWill00"
+          }
+        ],
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      }
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GWCorranAncstry0"
+}

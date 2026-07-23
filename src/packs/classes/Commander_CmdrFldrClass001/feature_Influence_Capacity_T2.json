@@ -1,0 +1,30 @@
+{
+  "folder": "CmdrFldrClass001",
+  "name": "Influence Capacity (Tier 2)",
+  "type": "feature",
+  "_id": "CmdCapInflT20001",
+  "img": "systems/draw-steel/assets/classes/tactician.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "influence-capacity-tier-2",
+    "story": "",
+    "description": {
+      "value": "<p>Your Influence pool cap rises to <strong>10</strong> at Tier 2.</p>",
+      "director": ""
+    },
+    "advancements": {}
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!CmdCapInflT20001"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Corran",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "CorFldrOrigins00",
+  "sort": 0,
+  "color": "#6d4a1f",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!CorFldrOrigins00"
+}

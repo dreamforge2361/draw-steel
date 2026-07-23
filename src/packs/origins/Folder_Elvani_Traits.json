@@ -1,0 +1,23 @@
+{
+  "name": "Elvani Traits",
+  "sorting": "a",
+  "folder": "GWOrgFldrSpec001",
+  "type": "Item",
+  "_id": "GWOrgFldrElvTr01",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!GWOrgFldrElvTr01"
+}

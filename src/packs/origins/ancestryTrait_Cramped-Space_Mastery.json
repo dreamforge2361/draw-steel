@@ -1,0 +1,39 @@
+{
+  "folder": "CorFldrOrigins00",
+  "name": "Cramped-Space Mastery",
+  "type": "ancestryTrait",
+  "_id": "CorTrCramped0000",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You suffer no penalties for fighting, moving, or working in tight or confined spaces, and you gain an <strong>edge</strong> on Power Rolls to squeeze through, brace within, or navigate tunnels, ducts, wreckage, and machinery.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "cramped-space-mastery",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CorTrCramped0000"
+}

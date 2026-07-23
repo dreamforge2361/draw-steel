@@ -1,0 +1,95 @@
+{
+  "folder": null,
+  "name": "Bolt Barrage",
+  "type": "ability",
+  "_id": "ElmHerBoltBar001",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "bolt-barrage",
+    "story": "A second bolt riding the first - Kais's cheapest way to threaten two targets at once.",
+    "keywords": [
+      "magic",
+      "ranged"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 2,
+      "custom": "Up to two creatures"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "reason"
+        ]
+      },
+      "effects": {
+        "ElmDmgBoltBar001": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "ElmDmgBoltBar001",
+          "damage": {
+            "tier1": {
+              "value": "6",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "4",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "2",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Essence, main action.</strong> Make a Cognition Power Roll against <strong>up to two creatures</strong> in range. Each hit deals Light-band damage (<strong>6/4/2</strong> at Tier 5, tier bonus included) of your attuned element.</p>"
+    },
+    "spend": {
+      "text": "3 Essence",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!ElmHerBoltBar001"
+}

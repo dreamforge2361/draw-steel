@@ -1,0 +1,95 @@
+{
+  "folder": "CorFldrOrigins00",
+  "name": "Street Ministry (Pastoral Services Contractor)",
+  "type": "career",
+  "_id": "GWCorranCareer00",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Street Ministry (Pastoral Services Contractor).</strong> Before the collar, before the Veil opened for her, Vessa Corran-Dov worked the undercity the way her guild-clan always had - with her hands, her back, and her word kept. Now she works it as a pastor: tending the sick, burying the dead, keeping the peace between crews who would otherwise bleed each other dry over turf. Corp paperwork files her as a <em>pastoral-care specialist</em>; the Ninth Ward calls her the Preacher.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "street-ministry",
+    "advancements": {
+      "CorCarAdvSkill00": {
+        "type": "skill",
+        "name": "Career Skills",
+        "img": null,
+        "_id": "CorCarAdvSkill00",
+        "chooseN": 2,
+        "skills": {
+          "groups": [],
+          "choices": [
+            "Religion",
+            "Persuasion",
+            "Medicine",
+            "Streetwise",
+            "Insight"
+          ]
+        },
+        "description": "<p>Choose two skills reflecting street ministry.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "CorCarAdvLang000": {
+        "type": "language",
+        "name": "Career Language",
+        "img": null,
+        "_id": "CorCarAdvLang000",
+        "chooseN": 1,
+        "description": "<p>Choose one language you picked up ministering to the ward.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 1
+      },
+      "CorCarAdvPerk000": {
+        "type": "itemGrant",
+        "name": "Career Perk",
+        "img": null,
+        "_id": "CorCarAdvPerk000",
+        "chooseN": 1,
+        "description": "<p>Choose one social or exploration perk.</p>",
+        "pool": [],
+        "additional": {
+          "perkType": "social",
+          "type": "perk"
+        },
+        "requirements": {
+          "level": null
+        },
+        "sort": 2,
+        "repick": {}
+      }
+    },
+    "projectPoints": 0,
+    "renown": 1,
+    "wealth": 1
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GWCorranCareer00"
+}

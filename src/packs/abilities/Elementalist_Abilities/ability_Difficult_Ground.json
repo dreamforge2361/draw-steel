@@ -1,0 +1,95 @@
+{
+  "folder": null,
+  "name": "Difficult Ground",
+  "type": "ability",
+  "_id": "ElmHerDiffGrd001",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "difficult-ground",
+    "story": "The storm reshapes the field - Kais's control option, holding an area against pursuit.",
+    "keywords": [
+      "magic",
+      "area"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "area",
+    "target": {
+      "type": "square",
+      "value": null,
+      "custom": "An area you can see"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "reason"
+        ]
+      },
+      "effects": {
+        "ElmDmgDiffGrd001": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "ElmDmgDiffGrd001",
+          "damage": {
+            "tier1": {
+              "value": "9",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "3",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Essence, main action, Persist 1 (-2 Essence/turn to sustain).</strong> Make a Cognition Power Roll against creatures in the area. On a hit, deal Medium-band damage (<strong>9/6/3</strong> at Tier 5) and the area becomes difficult terrain shaped by your element (ice, mud, jagged stone) until you stop sustaining it.</p>"
+    },
+    "spend": {
+      "text": "3 Essence, Persist 1",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!ElmHerDiffGrd001"
+}

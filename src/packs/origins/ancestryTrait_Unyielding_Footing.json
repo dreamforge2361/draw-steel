@@ -1,0 +1,39 @@
+{
+  "folder": "CorFldrOrigins00",
+  "name": "Unyielding - Footing",
+  "type": "ancestryTrait",
+  "_id": "CorTrUnyldFoot00",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Deep-hive stock plants its feet. You gain a bonus to <strong>stability</strong> and an <strong>edge</strong> on Power Rolls to resist being forcibly moved (pushed, pulled, slid, or knocked prone by an effect).</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "unyielding-footing",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": 1784753227140,
+    "lastModifiedBy": "EioFqN04vbaaUXhh",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CorTrUnyldFoot00"
+}

@@ -1,0 +1,54 @@
+{
+  "folder": null,
+  "name": "Summon Elemental",
+  "type": "ability",
+  "_id": "ElmHerSummonEl01",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "summon-elemental",
+    "story": "The Stormcaller's signature payoff - a spirit of air or water fighting at Kais's side.",
+    "keywords": [
+      "magic",
+      "summon"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 5,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "square",
+      "value": null,
+      "custom": "An area you can see"
+    },
+    "power": {
+      "roll": null,
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>5 Essence, main action, Persist 2 upkeep (-4 Essence/turn to sustain).</strong> Summon an <strong>air or water elemental</strong> (20 Stamina) into an unoccupied square you can see. It acts on your turn under your direction, using its own attacks, until it drops to 0 Stamina or you stop sustaining it. Stormcaller identity feature: the summoned elemental's forced movement is enlarged.</p>"
+    },
+    "spend": {
+      "text": "5 Essence, Persist 2 upkeep",
+      "value": 5
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!ElmHerSummonEl01"
+}

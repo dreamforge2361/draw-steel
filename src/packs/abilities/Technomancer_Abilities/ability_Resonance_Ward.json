@@ -1,0 +1,94 @@
+{
+  "folder": null,
+  "name": "Resonance Ward",
+  "type": "ability",
+  "_id": "TcnHerResoWard00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "resonance-ward",
+    "story": "Sanctify the signal - the tech-side sanctuary, a shield-wall of ghosts.",
+    "keywords": [
+      "matrix",
+      "protection",
+      "zone"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 5,
+    "trigger": "",
+    "distance": {
+      "type": "burst",
+      "primary": 3
+    },
+    "damageDisplay": "area",
+    "target": {
+      "type": "creature",
+      "value": null,
+      "custom": "Each creature in area"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {
+        "TcnDmgResoWardX0": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "TcnDmgResoWardX0",
+          "damage": {
+            "tier1": {
+              "value": "6",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "4",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "2",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>5 Resonance, main action (sets a stance until your next turn).</strong> Weave a zone of resonant protection - deploy Ward-sprites and a standing harmonic that grants allies within it bane-avoidance vs. Wired/EW attacks, screens the crew's devices and chrome from hijack, and lets you counter hostile intrusion in the area.</p>"
+    },
+    "spend": {
+      "text": "5 Resonance (Sustain 2)",
+      "value": 5
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnHerResoWard00"
+}

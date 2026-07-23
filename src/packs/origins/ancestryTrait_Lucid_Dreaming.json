@@ -1,0 +1,39 @@
+{
+  "folder": "GWOrgFldrElvTr01",
+  "name": "Lucid Dreaming",
+  "type": "ancestryTrait",
+  "_id": "GWElvOptLucid001",
+  "img": "icons/magic/perception/orb-crystal-ball-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>(Utility - 2 BP, Tier 5.)</em> You sleep lightly and remember your dreams with unnatural clarity. You need less rest to gain the benefits of a respite, and you have an edge on tests to recall something you dreamed about.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-elvani-opt-lucid",
+    "advancements": {},
+    "points": 2
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWElvOptLucid001"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Revenant Traits",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "RevFldrTraits000",
+  "sort": 0,
+  "color": "#3a5f3a",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!RevFldrTraits000"
+}

@@ -1,0 +1,58 @@
+{
+  "folder": null,
+  "name": "Lay On Hands (Word of Comfort)",
+  "type": "ability",
+  "_id": "SprSigLayHnds000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "lay-on-hands",
+    "story": "She takes a hand, or simply speaks - and the Light answers with mercy before it ever answers with fire.",
+    "keywords": [
+      "holy",
+      "heal",
+      "veil"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 5
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "ally",
+      "value": 1,
+      "custom": "Self or one ally"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Maneuver, ranged (self or one ally); no Conviction cost.</strong> The target may <strong>spend a Recovery</strong> (heals <strong>7</strong>, her Recovery value). <strong>Shepherd rider:</strong> the heal also grants the target a <strong>surge, or a save against an ongoing effect</strong>.</p><p><strong>Enhance - Spend X Conviction:</strong> target an additional ally, end a save-ends/end-of-turn effect on the target, let a prone target stand, or grant a small amount of temporary Stamina.</p>"
+    },
+    "spend": {
+      "text": "No Conviction cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!SprSigLayHnds000"
+}

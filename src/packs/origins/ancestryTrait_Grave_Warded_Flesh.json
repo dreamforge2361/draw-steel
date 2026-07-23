@@ -1,0 +1,39 @@
+{
+  "folder": "RevFldrTraits000",
+  "name": "Grave-Warded Flesh",
+  "type": "ancestryTrait",
+  "_id": "RevFreGraveWard0",
+  "img": "icons/magic/death/skull-poison-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Free Trait (part 2 of 2 - Deathless Physiology).</strong> You gain <strong>resistance to poison and disease and to raw corruption effects</strong> - you are already dead, and the Dark One's rot has little new purchase on you. You take a <strong>bane</strong> on tests to pass as a living person under close scrutiny.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-species-revenant-fre-graveward",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!RevFreGraveWard0"
+}
