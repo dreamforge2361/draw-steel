@@ -1,0 +1,59 @@
+{
+  "folder": "FYg2eJaasmtVyotG",
+  "name": "Sanctuary Ward",
+  "type": "ability",
+  "_id": "SprHerSanctWrd00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "sanctuary-ward",
+    "story": "A line she will not let the dark cross - consecrated ground, drawn in a breath.",
+    "keywords": [
+      "holy",
+      "protection",
+      "veil",
+      "zone"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 5,
+    "trigger": "",
+    "distance": {
+      "type": "burst",
+      "primary": 3
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "creature",
+      "value": null,
+      "custom": "Each creature in area"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>5 Conviction, main action (sets a stance until her next turn).</strong> Raise a consecrated warded zone - enemy attacks made against targets inside it take a <strong>bane</strong>, and the ward pushes back corruption and possession attempting to cross it. <strong>Persistent 1</strong> - sustain (2 Conviction/turn) to keep it standing.</p>"
+    },
+    "spend": {
+      "text": "5 Conviction (Sustain 2)",
+      "value": 5
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!SprHerSanctWrd00"
+}

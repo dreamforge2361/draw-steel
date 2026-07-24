@@ -1,0 +1,94 @@
+{
+  "folder": "8B5Y13AYOm72bgVT",
+  "name": "Trigger Cadence",
+  "type": "ability",
+  "_id": "OBtdCrS5SKdgIRA2",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "trigger-cadence",
+    "story": "The soldier's rhythm made manifest - disciplined fire means more shots.",
+    "keywords": [
+      "weapon"
+    ],
+    "type": "freeManeuver",
+    "category": "heroic",
+    "resource": 2,
+    "trigger": "",
+    "distance": {
+      "type": "self",
+      "primary": 0
+    },
+    "damageDisplay": "self",
+    "target": {
+      "type": "self",
+      "value": 1,
+      "custom": "Self"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "agility"
+        ]
+      },
+      "effects": {
+        "tPFZAfmQkBTu4PJp": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "tPFZAfmQkBTu4PJp",
+          "damage": {
+            "tier1": {
+              "value": "0",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "0",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "0",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "<p>Spend 2 Adrenaline. Take an additional main-action attack this turn (a Controlled Pair, Suppressing Burst, or a weapon signature). Once per turn. This is where the cadence resource cashes out - the tempo spike the whole engine builds toward.</p>",
+      "after": ""
+    },
+    "spend": {
+      "text": "2 Adrenaline",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!OBtdCrS5SKdgIRA2"
+}

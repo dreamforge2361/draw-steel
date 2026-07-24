@@ -1,0 +1,97 @@
+{
+  "folder": "FYg2eJaasmtVyotG",
+  "name": "Holy Rebuke",
+  "type": "ability",
+  "_id": "SprHerHolyRbk000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "holy-rebuke",
+    "story": "When mercy has run its course, the Light is not gentle.",
+    "keywords": [
+      "holy",
+      "ranged",
+      "veil",
+      "strike"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "presence"
+        ]
+      },
+      "effects": {
+        "SprDmgHolyRbkX00": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "SprDmgHolyRbkX00",
+          "damage": {
+            "tier1": {
+              "value": "3",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "9",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Conviction, main action, ranged.</strong> A heavier smite than the signature - holy damage on the <strong>Medium band</strong>: <strong>Outcome Tier 1 = 9 + rider</strong> (+Tier PR bonus, +0 at T5) &middot; <strong>Tier 2 = 6</strong> &middot; <strong>Tier 3 = 3</strong> - plus a <strong>push</strong> or <strong>Frightened</strong> (attacker's choice).</p>"
+    },
+    "spend": {
+      "text": "3 Conviction",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!SprHerHolyRbk000"
+}

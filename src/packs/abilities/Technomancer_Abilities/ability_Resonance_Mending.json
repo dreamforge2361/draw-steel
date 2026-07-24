@@ -1,0 +1,58 @@
+{
+  "folder": "X1OLgoEMU0QSz1V2",
+  "name": "Resonance Mending",
+  "type": "ability",
+  "_id": "TcnSigMending000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "resonance-mending",
+    "story": "Lay hands on steel and code - the only healing in the game that works on machines and Cyborgs.",
+    "keywords": [
+      "matrix",
+      "heal",
+      "tech"
+    ],
+    "type": "main",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 5
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "ally",
+      "value": 1,
+      "custom": "One ally, machine, drone, or Cyborg"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Main action (or maneuver for a quick patch), touch or Wired range, no Resonance cost.</strong> Channel Resonance to restore <strong>Integrity/Stamina equal to your Recovery value (7)</strong> to a machine, drone, vehicle, piece of chrome, or a <strong>Cyborg</strong>, or clear a mechanical/Wired condition (glitch, jam, suppression). The class's signature niche - the only healing in the game that works on Cyborgs and tech. On <strong>Outcome Tier 1</strong>, mend more and clear a condition; on Tier 3 the patch is unstable (holds until next hit).</p><p><strong>Enhance - Spend Resonance:</strong> mend at greater range or a second target, or restore a wrecked machine / crashing Cyborg to minimal function.</p>"
+    },
+    "spend": {
+      "text": "No Resonance cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnSigMending000"
+}

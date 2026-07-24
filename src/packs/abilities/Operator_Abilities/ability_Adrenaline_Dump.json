@@ -1,0 +1,96 @@
+{
+  "folder": "8B5Y13AYOm72bgVT",
+  "name": "Adrenaline Dump",
+  "type": "ability",
+  "_id": "5pKx5ZqCQi3l07n8",
+  "img": "systems/draw-steel/assets/classes/operator.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "adrenaline-dump",
+    "story": "The moment the professional stops holding back. The sam goes hot.",
+    "keywords": [
+      "ranged",
+      "strike",
+      "weapon"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 5,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "special",
+      "value": 3,
+      "custom": "Up to three Strikes, distributed as you choose"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "agility"
+        ]
+      },
+      "effects": {
+        "Vo2d7tB30X7U1S9I": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "Vo2d7tB30X7U1S9I",
+          "damage": {
+            "tier1": {
+              "value": "4 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "7 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "11 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p>Spend 5 Adrenaline. Make THREE weapon Strikes distributed as you choose; each Tier-1 hit refunds 1 Adrenaline. For the rest of the turn you cannot be Slowed or knocked Prone. Pairs with combat-drug and adrenal-pump chrome.</p>"
+    },
+    "spend": {
+      "text": "5 Adrenaline",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!5pKx5ZqCQi3l07n8"
+}

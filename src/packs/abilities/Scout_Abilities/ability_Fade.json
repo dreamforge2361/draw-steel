@@ -1,0 +1,49 @@
+{
+  "folder": "BEehwFhDb8lvX4q8",
+  "name": "Fade",
+  "type": "ability",
+  "_id": "ScoutSigFade0001",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-fade",
+    "story": "The fade-and-strike engine; movement is fuel.",
+    "keywords": [
+      "self"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "self",
+      "primary": 0
+    },
+    "damageDisplay": "melee",
+    "target": {
+      "type": "self",
+      "value": 1,
+      "custom": "Self"
+    },
+    "effect": {
+      "before": "",
+      "after": "<p>You <strong>Hide even if observed</strong> if you end with cover or concealment (chrome, gear, or the Ghost Kit widen this), then <strong>shift</strong> a short distance. Feeds the reposition reward: the first time each round you end a Hide/Disengage/shift and then strike, gain 1 Advantage.</p><p><em>Enhance - spend 1 Advantage:</em> grant concealment to one adjacent ally at your destination.</p>"
+    },
+    "spend": {
+      "text": "Enhance: 1 Advantage (optional)",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!ScoutSigFade0001"
+}

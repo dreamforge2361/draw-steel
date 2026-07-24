@@ -1,0 +1,94 @@
+{
+  "folder": "X1OLgoEMU0QSz1V2",
+  "name": "Swarm the Signal",
+  "type": "ability",
+  "_id": "TcnHerSwarmSig00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "swarm-the-signal",
+    "story": "The congregation concentrates - every ghost he holds strikes at once.",
+    "keywords": [
+      "matrix",
+      "signature",
+      "resonance"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "area",
+    "target": {
+      "type": "creature",
+      "value": null,
+      "custom": "Each creature in area"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {
+        "TcnDmgSwarmSigX0": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "TcnDmgSwarmSigX0",
+          "damage": {
+            "tier1": {
+              "value": "9",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "3",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Resonance, main action.</strong> Every sprite you command takes an action at once against a single target or objective (all attack one foe, or all mend one machine, or all pile onto one node). <strong>Sprite-Weaver:</strong> with 3 or more sprites active, this automatically adds a Wired-condition rider on the target.</p>"
+    },
+    "spend": {
+      "text": "3 Resonance",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnHerSwarmSig00"
+}

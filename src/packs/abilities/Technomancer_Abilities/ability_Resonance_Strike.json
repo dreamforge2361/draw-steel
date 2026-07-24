@@ -1,0 +1,96 @@
+{
+  "folder": "X1OLgoEMU0QSz1V2",
+  "name": "Resonance Strike",
+  "type": "ability",
+  "_id": "TcnSigStrike0000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "resonance-strike",
+    "story": "Lash a target with hostile code and biofeedback - direct on a wired target, or through a jacked sprite.",
+    "keywords": [
+      "ranged",
+      "matrix",
+      "strike"
+    ],
+    "type": "main",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr + 3",
+        "characteristics": [
+          "reason"
+        ]
+      },
+      "effects": {
+        "TcnDmgStrikeX000": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "TcnDmgStrikeX000",
+          "damage": {
+            "tier1": {
+              "value": "4 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "8 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Main action, Wired range or a sprite's reach, no Resonance cost.</strong> Make a <strong>Cognition</strong> Power Roll (2d10 + Cognition + Resonance skill = 2d10+7 at Tier 5) against one creature. <strong>Outcome Tier 1:</strong> full damage + a Wired rider (glitched, blinded-sensor, or a sprite free-reposition). <strong>Tier 2:</strong> damage. <strong>Tier 3:</strong> miss, and the current recoils (minor biofeedback risk to you). A commanded Attack-sprite can strike in your place.</p><p><strong>Enhance - Spend Resonance:</strong> a second sprite strikes too, or add an edge via deep communion.</p>"
+    },
+    "spend": {
+      "text": "No Resonance cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!TcnSigStrike0000"
+}

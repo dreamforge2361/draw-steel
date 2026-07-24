@@ -1,0 +1,54 @@
+{
+  "folder": "XGe5jz2aU7lNPd7B",
+  "name": "Coordinated Assault",
+  "type": "ability",
+  "_id": "CmdHerCoordAsl01",
+  "img": "systems/draw-steel/assets/classes/tactician.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "coordinated-assault",
+    "story": "The moment the crew moves as one strike team - make everyone better at once.",
+    "keywords": [
+      "ranged",
+      "buff"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "creature",
+      "value": null,
+      "custom": "Multiple targets in range"
+    },
+    "power": {
+      "roll": null,
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Influence, action.</strong> Choose one:</p><ul><li>Up to <strong>3 allies</strong> in range each gain an <strong>edge and Light-band bonus damage (4)</strong> on their next attack this round; or</li><li>Grant <strong>one ally a full extra action</strong> this turn.</li></ul><p>The class's core force-multiplier payoff. (Baseline E9.)</p>"
+    },
+    "spend": {
+      "text": "3 Influence",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348"
+  },
+  "_key": "!items!CmdHerCoordAsl01"
+}

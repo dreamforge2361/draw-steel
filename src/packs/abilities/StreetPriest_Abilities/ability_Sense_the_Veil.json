@@ -1,0 +1,58 @@
+{
+  "folder": "FYg2eJaasmtVyotG",
+  "name": "Sense the Veil (Discern Spirits)",
+  "type": "ability",
+  "_id": "SprSigSenseVl000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "sense-the-veil",
+    "story": "She reads the thin places the way another reads a face - what walks here, and what wears it.",
+    "keywords": [
+      "veil",
+      "utility",
+      "holy"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Maneuver; no Conviction cost.</strong> Read a spirit's or soul's rank and nature, sense how thin the Veil runs nearby, or detect corruption or possession. Free intel that sets up wards and banishment - her version leans toward reading <strong>spirits, souls, and corruption</strong> specifically.</p>"
+    },
+    "spend": {
+      "text": "No Conviction cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!SprSigSenseVl000"
+}

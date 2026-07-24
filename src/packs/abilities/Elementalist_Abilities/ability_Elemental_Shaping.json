@@ -1,0 +1,53 @@
+{
+  "folder": "JPETO7zJg4MbFVmJ",
+  "name": "Elemental Shaping",
+  "type": "ability",
+  "_id": "ElmSigShaping001",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "elemental-shaping",
+    "story": "Bending the working after the fact - knockback, a harder edge, or a step out of the blast.",
+    "keywords": [
+      "magic"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": null,
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Maneuver, no Essence cost.</strong> Choose one: <strong>knock back</strong> a creature you just damaged this turn, deal a small amount of <strong>fixed elemental damage</strong> to a creature adjacent to your last working, or <strong>reposition yourself</strong> a short distance riding your own element (a gust, a wave, a shift of loose stone).</p>"
+    },
+    "spend": {
+      "text": "No Essence cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365"
+  },
+  "_key": "!items!ElmSigShaping001"
+}
