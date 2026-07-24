@@ -1,0 +1,93 @@
+{
+  "folder": "GWOrgFldrSpec001",
+  "name": "Revenant",
+  "type": "ancestry",
+  "_id": "GWSpeciesRevnt00",
+  "img": "icons/magic/death/skull-horned-goat-fire-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Homo mortuus redivivus</strong> - Reanimate / Post-Mortem Type, corporate/common name; <em>Revs, Deaders, Rotters, Ghosts (late-stage)</em> on the street. No one starts life as a Revenant - they are made: a person who died with a burning purpose (vengeance, an oath, a debt, a refusal) and rose again sustained by will rather than blood. They keep their memories and personality from life. A Revenant is <strong>embodied undead</strong> at first and only slowly loses corporeality as they endure death after death.</p><p><strong>Attributes:</strong> +1 Resolve, +1 Insight, and -1 to either Physique or Presence (chosen at creation - withered muscle or unsettling deadness). Obeys normal tier attribute caps.</p><p><strong>Free at creation (Tier 5):</strong> the signature <strong>Undying Return</strong>, plus <strong>Deathless Physiology</strong> (split into its two halves - survival immunities and grave-warded resistance), <strong>Deathsight (Glowing Eyes)</strong>, <strong>Former Life</strong>, and <strong>Decay Stage (Fleshbound)</strong>. Unified species, no subtypes.</p><p>Nine BP-purchased Species Options span utility, defense, movement, and social play, gated across all tiers - capped by <em>Wraithform Mastery</em> at Tier 1. A tier-gated <strong>Decay ladder</strong> carries the Revenant from rotting flesh (Fleshbound, T5-T4) to hardened bone (Withered/Skeletal, T3) to incorporeal spirit (Spectral, T2-T1).</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-species-revenant",
+    "advancements": {
+      "RevAdvFreeTrait0": {
+        "type": "itemGrant",
+        "name": "Signature + Free Traits",
+        "img": "icons/magic/death/skull-horned-goat-fire-orange.webp",
+        "_id": "RevAdvFreeTrait0",
+        "chooseN": null,
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevSigUndyingRt0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevFreDeathless0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevFreGraveWard0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevFreDeathsight"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevFreFormerLife"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevFreDecayStage"
+          }
+        ],
+        "description": "<p>You gain the Revenant signature trait <strong>Undying Return</strong> and the free package: <strong>Deathless Physiology</strong>, <strong>Grave-Warded Flesh</strong>, <strong>Deathsight (Glowing Eyes)</strong>, <strong>Former Life</strong>, and <strong>Decay Stage (Fleshbound)</strong>.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "RevAdvOptionBP00": {
+        "type": "itemGrant",
+        "name": "Species Options (spend BP)",
+        "img": "icons/magic/death/skull-communication-purple.webp",
+        "_id": "RevAdvOptionBP00",
+        "chooseN": 1,
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.RevOptDeathSpk00"
+          }
+        ],
+        "description": "<p>Optionally spend BP on a tier-gated Revenant option. Sabbat takes <strong>Deathspeaker</strong> (2 BP, Tier 5). Each option lists its BP cost and minimum tier.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {},
+        "additional": {
+          "type": "ancestryTrait"
+        }
+      }
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784753227140,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWSpeciesRevnt00"
+}

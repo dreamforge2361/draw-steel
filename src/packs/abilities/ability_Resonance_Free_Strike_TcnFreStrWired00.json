@@ -1,0 +1,111 @@
+{
+  "folder": null,
+  "name": "Resonance Free Strike",
+  "type": "ability",
+  "_id": "TcnFreStrWired00",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "resonance-free-strike",
+    "story": "",
+    "keywords": [
+      "matrix",
+      "ranged",
+      "strike"
+    ],
+    "type": "main",
+    "category": "freeStrike",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": "10",
+      "secondary": "10",
+      "tertiary": "10"
+    },
+    "damageDisplay": "melee",
+    "target": {
+      "type": "creatureObject",
+      "value": 1,
+      "custom": ""
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "reason"
+        ],
+        "reactive": false
+      },
+      "effects": {
+        "uMnGIJk7i9wqGwXr": {
+          "type": "damage",
+          "_id": "uMnGIJk7i9wqGwXr",
+          "damage": {
+            "tier1": {
+              "value": "2 + @chr",
+              "types": [],
+              "ignoredImmunities": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "5 + @chr",
+              "types": [],
+              "ignoredImmunities": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": "none"
+              }
+            },
+            "tier3": {
+              "value": "7 + @chr",
+              "types": [],
+              "ignoredImmunities": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": "none"
+              }
+            }
+          },
+          "name": "",
+          "img": null,
+          "sort": 0
+        }
+      }
+    },
+    "effects": {
+      "before0000000001": {
+        "_id": "before0000000001",
+        "type": "base",
+        "description": "<p>Make a ranged free strike, lashing a small burst of hostile code/biofeedback at a creature or object within range. This is a main action strike using Cognition, the Technomancer's Wired-flavored equivalent of a Melee Free Strike.</p>",
+        "before": true,
+        "name": "",
+        "img": null,
+        "sort": 0
+      }
+    },
+    "prerequisites": {
+      "value": "",
+      "dsid": [],
+      "level": null
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!TcnFreStrWired00"
+}

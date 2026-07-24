@@ -1,0 +1,98 @@
+{
+  "folder": null,
+  "name": "Overwatch Shot",
+  "type": "ability",
+  "_id": "ScoutHerOvwt0001",
+  "img": "icons/skills/ranged/target-bullseye-arrow-glowing.webp",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-scout-overwatch",
+    "story": "The recon-sniper's control tool; pure Hunter, pairs with the Longshot Kit.",
+    "keywords": [
+      "ranged",
+      "strike",
+      "weapon"
+    ],
+    "type": "main",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 10
+    },
+    "damageDisplay": "ranged",
+    "target": {
+      "type": "creature",
+      "value": 1,
+      "custom": "One creature"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": [
+          "agility"
+        ]
+      },
+      "effects": {
+        "PwrDmgEffect0001": {
+          "name": "Damage",
+          "img": null,
+          "type": "damage",
+          "_id": "PwrDmgEffect0001",
+          "damage": {
+            "tier1": {
+              "value": "9 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.weak",
+                "characteristic": "none"
+              }
+            },
+            "tier2": {
+              "value": "6 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.average",
+                "characteristic": ""
+              }
+            },
+            "tier3": {
+              "value": "3 + @chr",
+              "types": [],
+              "properties": [],
+              "potency": {
+                "value": "@potency.strong",
+                "characteristic": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Cost 3 Advantage.</strong> A firing-lane stance. Until your next turn, the <strong>first enemy</strong> to enter or act in your lane provokes a <strong>free Precision Strike</strong> from you.</p>"
+    },
+    "spend": {
+      "text": "Cost: 3 Advantage",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "13.348",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ScoutHerOvwt0001"
+}

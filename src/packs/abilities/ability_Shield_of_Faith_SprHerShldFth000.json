@@ -1,0 +1,60 @@
+{
+  "folder": null,
+  "name": "Shield of Faith",
+  "type": "ability",
+  "_id": "SprHerShldFth000",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "shield-of-faith",
+    "story": "A warmth settles over the target like a hand on the shoulder - and the next blow finds it harder to land true.",
+    "keywords": [
+      "holy",
+      "protection",
+      "veil"
+    ],
+    "type": "maneuver",
+    "category": "heroic",
+    "resource": 3,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 5
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "ally",
+      "value": 1,
+      "custom": "Self or one ally"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>3 Conviction, maneuver, ranged (ally or self).</strong> Ward a target: they gain <strong>temporary Stamina equal to her Recovery value (7)</strong>, and the next attack against them takes a <strong>bane</strong>. <strong>Persistent 1</strong> - sustain (2 Conviction/turn) to keep the ward.</p>"
+    },
+    "spend": {
+      "text": "3 Conviction (Sustain 2)",
+      "value": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!SprHerShldFth000"
+}

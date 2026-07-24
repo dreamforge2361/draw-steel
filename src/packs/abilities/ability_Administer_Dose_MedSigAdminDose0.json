@@ -1,0 +1,59 @@
+{
+  "folder": null,
+  "name": "Administer Dose",
+  "type": "ability",
+  "_id": "MedSigAdminDose0",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "administer-dose",
+    "story": "One press of the injector and the crew moves a half-second faster.",
+    "keywords": [
+      "medical",
+      "buff"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "melee",
+      "primary": 1
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "ally",
+      "value": 1,
+      "custom": "Self or one ally"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Maneuver, melee (self or one ally); no Reagent cost.</strong> Apply a basic compound: the target gains an <strong>edge</strong> on their next roll, or a small amount of <strong>temporary Stamina</strong>, or may <strong>ignore one condition</strong> until the end of their next turn.</p><p><strong>Enhance - Spend X Reagents:</strong> upgrade to a hard combat drug (larger buff) at the risk of a <strong>crash</strong> when it ends, or dose an additional ally.</p>"
+    },
+    "spend": {
+      "text": "No Reagent cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!MedSigAdminDose0"
+}

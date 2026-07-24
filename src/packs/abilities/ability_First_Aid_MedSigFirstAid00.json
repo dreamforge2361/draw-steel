@@ -1,0 +1,59 @@
+{
+  "folder": null,
+  "name": "First Aid",
+  "type": "ability",
+  "_id": "MedSigFirstAid00",
+  "img": "systems/draw-steel/assets/classes/conduit.png",
+  "system": {
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "first-aid",
+    "story": "The bag comes off the shoulder before the body hits the ground.",
+    "keywords": [
+      "medical",
+      "heal"
+    ],
+    "type": "maneuver",
+    "category": "signature",
+    "resource": null,
+    "trigger": "",
+    "distance": {
+      "type": "ranged",
+      "primary": 5
+    },
+    "damageDisplay": "none",
+    "target": {
+      "type": "ally",
+      "value": 1,
+      "custom": "Self or one ally"
+    },
+    "power": {
+      "roll": {
+        "formula": "@chr",
+        "characteristics": []
+      },
+      "effects": {}
+    },
+    "effect": {
+      "before": "",
+      "after": "<p><strong>Maneuver, ranged (self or one ally); no Reagent cost.</strong> The target may <strong>spend a Recovery</strong> (heals 7, their Recovery value), and any <strong>dying</strong> target you touch is <strong>stabilized</strong>. Pure mundane trauma medicine - no Veil, no code.</p><p><strong>Enhance - Spend X Reagents:</strong> target an additional ally, clear a poison/condition, grant temporary Stamina, or let a prone target stand.</p>"
+    },
+    "spend": {
+      "text": "No Reagent cost",
+      "value": null
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!MedSigFirstAid00"
+}

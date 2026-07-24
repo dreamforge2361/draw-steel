@@ -5,3 +5,8 @@ public
 .vscode/settings.json
 foundry
 foundry-config.yaml
+
+# GHOSTWIRE local backups
+assets/ghostwire/tokens/_backup_*/
+src/packs/_*_backup_*/
+packs_backup_*/

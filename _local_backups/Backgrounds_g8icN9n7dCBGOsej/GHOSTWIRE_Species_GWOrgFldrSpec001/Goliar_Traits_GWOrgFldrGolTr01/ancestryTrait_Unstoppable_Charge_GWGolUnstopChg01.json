@@ -1,0 +1,39 @@
+{
+  "folder": "GWOrgFldrGolTr01",
+  "name": "Unstoppable Charge",
+  "type": "ancestryTrait",
+  "_id": "GWGolUnstopChg01",
+  "img": "icons/skills/movement/figure-running-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>(Movement/Offense - 4 BP, Tier 4.)</em> When you move at least a short distance in a straight line and hit, you knock the target back and may push through them to keep moving.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-goliar-opt-charge",
+    "advancements": {},
+    "points": 4
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784740523404,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWGolUnstopChg01"
+}

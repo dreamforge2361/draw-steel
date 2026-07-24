@@ -1,0 +1,131 @@
+{
+  "folder": "nBS0PwQrSqOHWCUn",
+  "name": "Fixer's Apprentice",
+  "type": "career",
+  "_id": "886NiA1m4u391yGV",
+  "img": "icons/tools/scribal/magnifying-glass.webp",
+  "system": {
+    "description": {
+      "value": "<p>Learned the trade under a Switchboard-type broker.</p><p><strong>Skills:</strong> choose 2 of: Negotiation, Contacts, Streetwise.</p><p><strong>Perk:</strong> one Perk (suggested: interpersonal).</p><h5>Inciting Incident</h5><p>Roll or choose a d6 Inciting Incident - the event that pushed you into the run economy:</p><ol><li>1 - A run went wrong: you were the one who got out, or the one who got blamed.</li><li>2 - A corp betrayal: the employer you trusted sold you out or cut you loose.</li><li>3 - A debt came due: a favor, a loan, or a mistake put you on the hook.</li><li>4 - The Veil touched you: a brush with the Dark One's agents, a haunting, a mark.</li><li>5 - The body changed: a mutation surfaced, chrome rejected, or a decay set in.</li><li>6 - Someone was taken: a person you loved vanished, was killed, or was disappeared.</li></ol><p><em>If your rolled incident predates this Career, treat it as the break that ended your old life and started the one this Career describes.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-fixers-apprentice",
+    "advancements": {
+      "l2oONzutf3vy99lF": {
+        "type": "skill",
+        "name": "Career Skills (choose 2)",
+        "img": null,
+        "_id": "l2oONzutf3vy99lF",
+        "chooseN": 2,
+        "skills": {
+          "groups": [],
+          "choices": [
+            "negotiation",
+            "contacts",
+            "streetwise"
+          ]
+        },
+        "description": "",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "qgGWGZDdCXH9oydI": {
+        "type": "language",
+        "_id": "qgGWGZDdCXH9oydI",
+        "name": "Career Language",
+        "img": null,
+        "chooseN": 1,
+        "languages": [
+          "static",
+          "highwire"
+        ],
+        "description": "",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "S3ipMdGdupKHfFTB": {
+        "type": "itemGrant",
+        "_id": "S3ipMdGdupKHfFTB",
+        "name": "Career Perk",
+        "img": "icons/magic/symbols/fleur-de-lis-yellow.webp",
+        "chooseN": 1,
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.fBos54gboa8FH5A6"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.AeghHvtfDCZSbb6S"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.Jz8hssu19cftbxIN"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.Bepbl7r618snnZx0"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.ygZBwmcHjZgLnCIu"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.e7rh9wI42p4FlD8g"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.cnfdqnROS0OUOex6"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.OaTle2mm2Sesll3s"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.ZNYFzuhxbsV4y37x"
+          },
+          {
+            "uuid": "Compendium.draw-steel.character-options.Item.u8oa7FY1a3Kp3ijD"
+          }
+        ],
+        "description": "<p>One Perk (suggested family: interpersonal - guidance, not a restriction). You may also drop any other perk here.</p>",
+        "additional": {
+          "type": "perk",
+          "perkType": [
+            "interpersonal"
+          ]
+        },
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      }
+    },
+    "projectPoints": 0,
+    "renown": 1,
+    "wealth": 2
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.361",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.0",
+    "createdTime": 1784725693070,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!886NiA1m4u391yGV"
+}
