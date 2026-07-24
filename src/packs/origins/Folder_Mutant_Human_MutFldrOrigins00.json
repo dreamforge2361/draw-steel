@@ -1,7 +1,7 @@
 {
   "name": "Mutant Human",
   "sorting": "a",
-  "folder": null,
+  "folder": "GWOrgFldrSpec001",
   "type": "Item",
   "_id": "MutFldrOrigins00",
   "sort": 0,
