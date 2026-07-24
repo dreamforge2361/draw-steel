@@ -1,0 +1,39 @@
+{
+  "folder": "GWOrgFldrCybTrt1",
+  "name": "Optical Sensor Array",
+  "type": "ancestryTrait",
+  "_id": "GWCybModOptics01",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Module (1 slot, T5, sensory).</strong> Low-light, thermal, and magnification optics: gain an edge on sight-based Perception, and ignore darkness and smoke banes on your strikes.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-species-cyborg-mod-optics",
+    "advancements": {},
+    "points": 2
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784740523404,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWCybModOptics01"
+}

@@ -1,0 +1,114 @@
+{
+  "folder": "GWOrgFldrSpec001",
+  "name": "Goliar",
+  "type": "ancestry",
+  "_id": "GWSpeciesGoliar1",
+  "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Homo sapiens giganticus</strong> - the corp-engineered <strong>heavy caste</strong>: towering slabs of muscle bred for hazardous industry, demolition, load-bearing, and security/enforcement. The brute counterpart to the Corran's skilled labor. \"Ogre\" is the slur; <strong>Goliar</strong> is the name.</p><p><strong>Attributes:</strong> +2 Physique, -1 Reflex, -1 Presence (the only +2 chassis in the game - the most physically front-loaded species). Obeys normal tier attribute caps.</p><p><strong>Free at creation (Tier 5):</strong> the signature <strong>Towering Menace</strong> (Large size + Crushing Might + Intimidating Bulk), plus <strong>Powerful Build</strong>, <strong>Thick Hide</strong>, <strong>Iron Stomach</strong>, and <strong>Hard to Move</strong>. Unified species, no subtypes. Fully mundane; breeds true and cannot interbreed.</p><p>Nine BP-purchased, tier-gated options span offense, control, movement, defense, and utility - capped by <em>Colossus</em> at Tier 1.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE Core",
+      "page": "",
+      "license": "Draw Steel Creator License"
+    },
+    "_dsid": "gw-species-goliar",
+    "advancements": {
+      "GWGolAdvFreeTr01": {
+        "type": "itemGrant",
+        "name": "Signature + Free Traits",
+        "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+        "_id": "GWGolAdvFreeTr01",
+        "chooseN": null,
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolSigTower001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolPwrBuild001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolThickHide01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolIronStom001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolHardMove001"
+          }
+        ],
+        "description": "<p>You gain the Goliar signature trait <strong>Towering Menace</strong> and the free package: <strong>Powerful Build</strong>, <strong>Thick Hide</strong>, <strong>Iron Stomach</strong>, and <strong>Hard to Move</strong>.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {}
+      },
+      "GWGolAdvOption01": {
+        "type": "itemGrant",
+        "name": "Species Options (spend BP)",
+        "img": "icons/skills/melee/unarmed-punch-fist.webp",
+        "_id": "GWGolAdvOption01",
+        "chooseN": 1,
+        "pool": [
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolSledgeFst01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolLongReach01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolBeastBurd01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolUnstopChg01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolNoWeaken001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolTerrRoar001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolBatterRam01"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolBulwark0001"
+          },
+          {
+            "uuid": "Compendium.draw-steel.origins.Item.GWGolColossus001"
+          }
+        ],
+        "description": "<p>Optionally spend BP on a tier-gated Goliar option (Sledgehammer Fists, Long Reach, Beast of Burden at Tier 5; more unlock as you climb). Each option lists its BP cost and minimum tier.</p>",
+        "requirements": {
+          "level": null
+        },
+        "sort": 0,
+        "repick": {},
+        "additional": {
+          "type": "ancestryTrait"
+        }
+      }
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": 1784740523404,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!GWSpeciesGoliar1"
+}

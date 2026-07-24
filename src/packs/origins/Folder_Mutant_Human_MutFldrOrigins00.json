@@ -1,0 +1,18 @@
+{
+  "name": "Mutant Human",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "MutFldrOrigins00",
+  "sort": 0,
+  "color": "#4a5a3f",
+  "flags": {},
+  "_stats": {
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.365",
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!MutFldrOrigins00"
+}

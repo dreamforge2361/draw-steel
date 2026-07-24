@@ -1,0 +1,39 @@
+{
+  "folder": "CorFldrOrigins00",
+  "name": "Laborer's Read",
+  "type": "ancestryTrait",
+  "_id": "CorTrLaborRead00",
+  "img": "icons/environment/people/cleric-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your breed built the world's guts. You gain an <strong>edge</strong> on Power Rolls to assess structural integrity, load and rigging, mining and excavation, and industrial machinery - you know at a glance what will hold and what will fall.</p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": "GHOSTWIRE"
+    },
+    "_dsid": "laborers-read",
+    "advancements": {},
+    "points": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CorTrLaborRead00"
+}
