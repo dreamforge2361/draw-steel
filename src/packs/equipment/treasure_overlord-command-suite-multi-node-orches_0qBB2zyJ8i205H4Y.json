@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4BPrograms00",
+  "name": "Overlord / Command Suite / multi-node orchestration daemon",
+  "type": "treasure",
+  "_id": "0qBB2zyJ8i205H4Y",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>The controller apex - one more node under your thumb than anyone else can manage.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥22,000</li><li><strong>Profile:</strong> Program-mod (occupies 1 deck slot, persistent). Effect: Lets you hold one extra compromised node beyond your normal cap (deepens intrusion-momentum) and issue a held-node command as a maneuver.</li><li><strong>Mod slots:</strong> 1 (deck slot)</li><li><strong>Tags:</strong> Program, Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "overlord-command-suite-multi-node-orchestration-daemon",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 127000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0qBB2zyJ8i205H4Y"
+}

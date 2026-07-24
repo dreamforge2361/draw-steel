@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3ALightFirea",
+  "name": "Ghost Pistol / Fichetti Null / caseless prototype pistol",
+  "type": "treasure",
+  "_id": "bYP3kOqTzzQYIBsM",
+  "img": "icons/weapons/artillery/mount-weapon-sprayer-chem-green-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Apex holdout - caseless, silent, smart-ready, and undetectable. Smart-ready takes a smartlink without a mount slot.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥24,000</li><li><strong>Profile:</strong> Damage: 5 kinetic | Range: Short | Tags: [Light], Concealable, Quiet, Smart-ready</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> [Light], Concealable, Quiet, Smart-ready</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "ghost-pistol-fichetti-null-caseless-prototype-pistol",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 67000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bYP3kOqTzzQYIBsM"
+}

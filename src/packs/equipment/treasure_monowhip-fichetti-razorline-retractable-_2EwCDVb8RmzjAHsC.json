@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3DMeleeBlade",
+  "name": "Monowhip / Fichetti Razorline / retractable monofilament",
+  "type": "treasure",
+  "_id": "2EwCDVb8RmzjAHsC",
+  "img": "icons/weapons/swords/scimitar-broad.webp",
+  "system": {
+    "description": {
+      "value": "<p>A retractable monofilament whip - lethal and Dangerous: it risks the wielder on a fumble (Combat chapter).</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥20,000</li><li><strong>Profile:</strong> Damage: 7 AP | Range: Adjacent | Tags: [Medium], Concealable, Dangerous</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> [Medium], Concealable, Dangerous</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "monowhip-fichetti-razorline-retractable-monofilament",
+    "kind": "weapon",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "melee"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 91000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2EwCDVb8RmzjAHsC"
+}

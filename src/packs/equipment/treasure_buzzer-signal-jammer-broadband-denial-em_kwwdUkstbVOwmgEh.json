@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4FMatrixSupp",
+  "name": "Buzzer / Signal Jammer / broadband denial emitter",
+  "type": "treasure",
+  "_id": "kwwdUkstbVOwmgEh",
+  "img": "icons/commodities/tech/lever.webp",
+  "system": {
+    "description": {
+      "value": "<p>A blunt instrument - kills wireless in an area, yours included. Death to enemy overwatch and drone control.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥900</li><li><strong>Profile:</strong> Deployable jammer: imposes a bane on all wireless Matrix/comm actions in an area (friend and foe - a blunt instrument). Kills enemy overwatch and drone control.</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "buzzer-signal-jammer-broadband-denial-emitter",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 144000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kwwdUkstbVOwmgEh"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2DSealedHard",
+  "name": "Faraday Suit / Insulator Line / dielectric-shielded armor",
+  "type": "treasure",
+  "_id": "aIiv12DGJVMUWtZW",
+  "img": "icons/equipment/chest/breastplate-collared-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dielectric shielding against the shock-and-stun toolbox - taser rounds, stun batons, capacitive traps.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥4,000</li><li><strong>Profile:</strong> MEDIUM base. Electricity immunity 2 (typed); resists shock/taser/EMP-adjacent effects. Medium Stamina +6/+8/+11/+14/+18.</li><li><strong>Mod slots:</strong> 3</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "faraday-suit-insulator-line-dielectric-shielded-armor",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "sealed"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 53000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aIiv12DGJVMUWtZW"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6BStreetPrst",
+  "name": "Creed-brand / Fidei Sigil / conviction-anchor seal",
+  "type": "treasure",
+  "_id": "ASYurcAOGHnEEzzI",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "system": {
+    "description": {
+      "value": "<p>The safety net - softens the backlash when the faith die betrays you.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥300</li><li><strong>Profile:</strong> Benefit: Steadies the Conviction drip against a bad prayer result (softens backlash on the gamble's worst outcome). | Mod slots: 1 | Tags: Veil, Faith</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> Veil, Faith</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "creed-brand-fidei-sigil-conviction-anchor-seal",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 197000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ASYurcAOGHnEEzzI"
+}

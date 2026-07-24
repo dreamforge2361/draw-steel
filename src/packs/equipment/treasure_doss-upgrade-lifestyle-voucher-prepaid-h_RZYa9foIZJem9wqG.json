@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1GLifestyle0",
+  "name": "Doss Upgrade / Lifestyle Voucher / prepaid habitation contract",
+  "type": "treasure",
+  "_id": "RZYa9foIZJem9wqG",
+  "img": "icons/commodities/currency/coin-embossed-star-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Buys you a better place to lay low between runs. A service, tracked as an item here for convenience.</p><hr /><ul><li><strong>Availability:</strong> varies</li><li><strong>Cost:</strong> per lifestyle band</li><li><strong>Profile:</strong> Pays/steps up Lifestyle upkeep for a respite (Squatter ~100 up to Elite ~9,000). Not an item - a service pointer to the Lifestyle economy.</li><li><strong>Tags:</strong> Service</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "doss-upgrade-lifestyle-voucher-prepaid-habitation-contract",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "lifestyle",
+      "service"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 35000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!RZYa9foIZJem9wqG"
+}

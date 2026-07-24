@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3ALightFirea",
+  "name": "Workhorse / Ceska Duty / service pistol",
+  "type": "treasure",
+  "_id": "1dlCssYyXeshArx8",
+  "img": "icons/weapons/artillery/mount-weapon-sprayer-chem-green-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The reliable duty pistol - what a cop or corp guard carries on the belt.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥500</li><li><strong>Profile:</strong> Damage: 4 kinetic | Range: Short | Tags: [Light]</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> [Light]</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "workhorse-ceska-duty-service-pistol",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 61000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1dlCssYyXeshArx8"
+}

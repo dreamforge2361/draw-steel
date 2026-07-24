@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6DSharedFoci",
+  "name": "Ward-stone / Custos Node / protective anchor-stone",
+  "type": "treasure",
+  "_id": "v1fl5xPEdPfOVI6F",
+  "img": "icons/sundries/books/book-embossed-clasp-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>The shared defensive backbone - any caster's Ward holds longer with this anchored down.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥750</li><li><strong>Profile:</strong> Benefit: An edge on Ward rituals and helps a sustained ward hold longer; the shared defensive backbone tool. | Mod slots: 2 | Tags: Ritual, Ward</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Ritual, Ward</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "ward-stone-custos-node-protective-anchor-stone",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 213000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!v1fl5xPEdPfOVI6F"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6BStreetPrst",
+  "name": "Saint's relic / Numen Cor / apex covenant reliquary",
+  "type": "treasure",
+  "_id": "aNYUfxtlSC4ojWuk",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "system": {
+    "description": {
+      "value": "<p>The Street-Priest's masterwork - broad power across the whole creed, and the readiest signature bond. The Price still applies.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥22,000</li><li><strong>Profile:</strong> Benefit: A broad edge across invocation, warding, and the pact; the readiest signature-focus bond candidate (BP deepens it). The Price still applies. | Mod slots: 5 | Tags: Veil, Signature-capable</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> Veil, Signature-capable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "saint-s-relic-numen-cor-apex-covenant-reliquary",
+    "kind": "implement",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 203000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aNYUfxtlSC4ojWuk"
+}

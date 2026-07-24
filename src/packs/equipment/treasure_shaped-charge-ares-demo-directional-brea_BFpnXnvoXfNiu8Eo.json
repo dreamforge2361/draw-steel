@@ -1,0 +1,56 @@
+{
+  "folder": "GWEq3EThrownGrnd",
+  "name": "Shaped Charge / Ares Demo / directional breaching charge",
+  "type": "treasure",
+  "_id": "BFpnXnvoXfNiu8Eo",
+  "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A directional demolition charge - focuses Heavy AP Blast through a single hardened point.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥3,500</li><li><strong>Profile:</strong> Damage: 9 AP | Range: Adjacent | Tags: [Heavy], Blast, Consumable</li><li><strong>Tags:</strong> [Heavy], Blast, Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "shaped-charge-ares-demo-directional-breaching-charge",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "thrown",
+      "breaching"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 99000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BFpnXnvoXfNiu8Eo"
+}

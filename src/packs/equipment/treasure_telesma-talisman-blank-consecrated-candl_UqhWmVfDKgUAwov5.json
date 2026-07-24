@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6EMaterialCm",
+  "name": "Telesma (talisman blank, consecrated candle, resonant shard)",
+  "type": "treasure",
+  "_id": "UqhWmVfDKgUAwov5",
+  "img": "icons/commodities/materials/parchment-secrets.webp",
+  "system": {
+    "description": {
+      "value": "<p>The vessel a working is anchored to - the medium that holds the charge until it's spent.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥750</li><li><strong>Profile:</strong> Consumed in casting. A physical vessel that HOLDS a ritual's charge; the medium the working is anchored to. Grade scales with tier. | Grade/cost scales with Ritual Tier (Rituals appendix B2 authoritative). Tags: Ritual, Consumable</li><li><strong>Tags:</strong> Ritual, Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "telesma-talisman-blank-consecrated-candle-resonant-shard",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ritual",
+      "component"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 219000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UqhWmVfDKgUAwov5"
+}

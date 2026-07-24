@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4CAtkPayload",
+  "name": "Blackout / Cascade Payload / systemic-collapse routine",
+  "type": "treasure",
+  "_id": "XDCOaynd6UziKMCC",
+  "img": "icons/commodities/tech/detonator-timer.webp",
+  "system": {
+    "description": {
+      "value": "<p>The floor-killer - loud, decisive, and gone in one use.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥9,000</li><li><strong>Profile:</strong> Consumable program-mod (one use, occupies 1 deck slot until fired). Effect: Crashes an entire small network / hard-locks a host briefly - the 'kill the cameras and doors on this floor' button. Loud, decisive, single-use.</li><li><strong>Mod slots:</strong> 1 (deck slot)</li><li><strong>Tags:</strong> Program, Consumable, Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "blackout-cascade-payload-systemic-collapse-routine",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 132000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XDCOaynd6UziKMCC"
+}

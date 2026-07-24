@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1DSurvvField",
+  "name": "Rebreather / Aqua-Lung / closed-circuit O2 recycler",
+  "type": "treasure",
+  "_id": "BijxX5nHedeYMTrl",
+  "img": "icons/commodities/tech/frame-armor-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>A scene's worth of independent air - dives, floods, and brief vacuum exposure.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥800</li><li><strong>Profile:</strong> Sealed (breath) vs. drowning/vacuum for a scene; adds to the Life Support stack.</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Sealed</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "rebreather-aqua-lung-closed-circuit-o2-recycler",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "survival",
+      "sealed"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 18000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BijxX5nHedeYMTrl"
+}

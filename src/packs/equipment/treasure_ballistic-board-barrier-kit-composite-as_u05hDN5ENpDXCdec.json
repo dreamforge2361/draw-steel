@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2EShieldRiot",
+  "name": "Ballistic Board / Barrier Kit / composite assault shield",
+  "type": "treasure",
+  "_id": "u05hDN5ENpDXCdec",
+  "img": "icons/equipment/shield/heater-crystal-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Brace behind it and you become a fixed point on the battlefield.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥3,000</li><li><strong>Profile:</strong> +Shield Stamina (+3/+4/+5/+6/+8, stacks); cover as a riot shield; edge vs. forced movement while braced (set-and-brace synergy). One hand.</li><li><strong>Mod slots:</strong> 3</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "ballistic-board-barrier-kit-composite-assault-shield",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "shield"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 57000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!u05hDN5ENpDXCdec"
+}

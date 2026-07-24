@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2DSealedHard",
+  "name": "HE Combat Suit / Wasteland Prime / hostile-env battle exosuit",
+  "type": "treasure",
+  "_id": "E90eAgg2L4U8LcIJ",
+  "img": "icons/equipment/chest/breastplate-collared-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>The apex survival warplate - armor first, sealing second, everything the environment can throw at you shrugged aside.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥70,000</li><li><strong>Profile:</strong> APEX sealed HEAVY armor: Sealed/Vacuum, Rad-Shielded, Filtered, Thermal, Pressure all at once (portable Life Support), removes -1 Speed, immunity 2 vs. fire, cold, AND toxin. Heavy Stamina +9/+12/+16/+21/+27.</li><li><strong>Mod slots:</strong> 6</li><li><strong>Tags:</strong> Sealed, Rad-Shielded, Filtered, Thermal, Pressure</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "he-combat-suit-wasteland-prime-hostile-env-battle-exosuit",
+    "kind": "armor",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "sealed"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 55000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!E90eAgg2L4U8LcIJ"
+}

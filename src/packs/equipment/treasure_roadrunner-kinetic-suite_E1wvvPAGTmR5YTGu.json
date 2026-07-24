@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq7BPackages00",
+  "name": "\"Roadrunner\" Kinetic Suite",
+  "type": "treasure",
+  "_id": "E1wvvPAGTmR5YTGu",
+  "img": "icons/commodities/tech/plating-metal-armor-tech-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Get there first, never fall, move like water. The courier's/scout's bundle.</p><hr /><ul><li><strong>Cost:</strong> bundled (slight premium vs piecemeal), by grade</li><li><strong>Profile:</strong> Brand: Shiawase Mobility | Role: Mobility | Bundled loadout: Running gear + reaction enhancer + balance augmentation | One product, one surgery, one bundled nuyen price + one published total Body Integrity cost. Grade (Salvage/Standard/Soft) applies to the whole package. One package per role; no location overlap; no same-effect double-dip.</li><li><strong>Mod slots:</strong> published total Body Integrity + slot footprint (per grade)</li><li><strong>Tags:</strong> Package, Chrome, Role:Mobility</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "roadrunner-kinetic-suite",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "chrome",
+      "package"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 242000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!E1wvvPAGTmR5YTGu"
+}

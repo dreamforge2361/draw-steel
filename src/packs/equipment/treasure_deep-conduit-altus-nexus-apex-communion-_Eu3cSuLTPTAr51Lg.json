@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6CTechnomanc",
+  "name": "Deep-conduit / Altus Nexus / apex communion conduit",
+  "type": "treasure",
+  "_id": "Eu3cSuLTPTAr51Lg",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Extends your reach through the Resonance - project into and control an attuned machine at distance.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥12,000</li><li><strong>Profile:</strong> Benefit: An edge on projecting into a machine/drone/Cyborg you're attuned to via Deep Communion, extending reach and control. | Mod slots: 4 | Tags: Veil, Wired</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Veil, Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "deep-conduit-altus-nexus-apex-communion-conduit",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 210000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Eu3cSuLTPTAr51Lg"
+}

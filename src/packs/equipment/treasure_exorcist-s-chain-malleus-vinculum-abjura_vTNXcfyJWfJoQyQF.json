@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6BStreetPrst",
+  "name": "Exorcist's chain / Malleus Vinculum / abjuration binding-focus",
+  "type": "treasure",
+  "_id": "vTNXcfyJWfJoQyQF",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "system": {
+    "description": {
+      "value": "<p>The Exorcist's signature - chains and casts out what should not be here.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥11,000</li><li><strong>Profile:</strong> Benefit: An edge on banishing and anti-corruption rites; the Exorcist's signature tool against hostile spirits. | Mod slots: 4 | Tags: Veil, Ward</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Veil, Ward</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "exorcist-s-chain-malleus-vinculum-abjuration-binding-focus",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 202000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!vTNXcfyJWfJoQyQF"
+}

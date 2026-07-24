@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2ALightArmor",
+  "name": "Armored Jacket / Defiance Line / aramid-panel outerwear",
+  "type": "treasure",
+  "_id": "ppQIETOxrkb2Zj36",
+  "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The workhorse light layer. Same protection as any Light armor at your Hero Tier; the higher Item Tier only buys concealment, legality, and mod room.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥900</li><li><strong>Profile:</strong> LIGHT armor (Stamina +3/+4/+6/+8/+10 by Hero Tier). The classic armored jacket - rugged, unremarkable.</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> Concealable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "armored-jacket-defiance-line-aramid-panel-outerwear",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "light"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 38000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ppQIETOxrkb2Zj36"
+}

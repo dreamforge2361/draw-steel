@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Suppressor / SternMeyer Hush / sound suppressor",
+  "type": "treasure",
+  "_id": "QCNwpXOPNXUw17Xr",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>The classic can - quiets the shot. Field-mountable only if the barrel is pre-threaded.</p><hr /><ul><li><strong>Cost:</strong> ¥300</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Adds the Quiet tag (lowers Alert/Wired + Hostile-Env noise footprint); slight range penalty at Extreme. Field-mountable if pre-threaded. | Craft skill: Gunsmithing | Tags: Quiet</li><li><strong>Mod slots:</strong> 1 (slot cost)</li><li><strong>Tags:</strong> Quiet</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "suppressor-sternmeyer-hush-sound-suppressor",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 109000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!QCNwpXOPNXUw17Xr"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6AElemntlist",
+  "name": "Grave-anchor / Terra Core / geomantic mass-focus",
+  "type": "treasure",
+  "_id": "7gxHUOu9Mn6sIltu",
+  "img": "icons/magic/fire/barrier-wall-flame-ring-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>The Geomancer's ballast - a heavy hit won't shake your earthworking loose.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥900</li><li><strong>Profile:</strong> Benefit: An edge on Channeling Earth, and steadies concentration against being broken by a heavy hit while sustaining an earth working. | Mod slots: 2 | Tags: Veil, Earth</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Veil, Earth</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "grave-anchor-terra-core-geomantic-mass-focus",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 191000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7gxHUOu9Mn6sIltu"
+}

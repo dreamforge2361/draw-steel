@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5AGround0000",
+  "name": "Rustbucket / City Runabout / urban commuter EV",
+  "type": "treasure",
+  "_id": "wpBn9feRdbLrHv5s",
+  "img": "icons/commodities/tech/wheel.webp",
+  "system": {
+    "description": {
+      "value": "<p>The disposable get-around - you ditch it three blocks out and never look back.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥250</li><li><strong>Profile:</strong> Domain: Ground | Scale: Vehicle | Low Handling, no mounts to speak of; the car you abandon three blocks from the job.</li><li><strong>Mod slots:</strong> 1</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "rustbucket-city-runabout-urban-commuter-ev",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 149000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wpBn9feRdbLrHv5s"
+}

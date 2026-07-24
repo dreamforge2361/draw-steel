@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2ALightArmor",
+  "name": "Synth-Leather Duster / Nightcoat / lined tactical longcoat",
+  "type": "treasure",
+  "_id": "T7WvMkna8gHorA13",
+  "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The iconic street-runner's coat - armor and a weapon-hide in one silhouette.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥3,500</li><li><strong>Profile:</strong> LIGHT armor (Stamina +3/+4/+6/+8/+10). Room to hide a longarm or holdout; edge to conceal a Concealable weapon on your person.</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Concealable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "synth-leather-duster-nightcoat-lined-tactical-longcoat",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "light"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 39000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!T7WvMkna8gHorA13"
+}

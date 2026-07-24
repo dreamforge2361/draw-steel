@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2DSealedHard",
+  "name": "Flashweave / Salamander Line / fire-retardant armor liner",
+  "type": "treasure",
+  "_id": "G8QFJdTAB9jQyKWc",
+  "img": "icons/equipment/chest/breastplate-collared-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Where genuine damage reduction lives - always typed, always small. Shrugs 2 off each fire hit; does nothing against bullets.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥1,000</li><li><strong>Profile:</strong> LIGHT base. Fire immunity 2 (typed, applied last per the damage calc); Thermal seal (slows the heat/cold Exposure clock). Light Stamina +3/+4/+6/+8/+10.</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> Thermal</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "flashweave-salamander-line-fire-retardant-armor-liner",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "sealed"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 52000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!G8QFJdTAB9jQyKWc"
+}

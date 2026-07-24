@@ -1,0 +1,56 @@
+{
+  "folder": "GWEq1FAmmoThrown",
+  "name": "Frag Grenade / Fragmentation / prefragmented dispersal charge",
+  "type": "treasure",
+  "_id": "pNmG5nSBAHfz5rtU",
+  "img": "icons/skills/ranged/arrow-barbed-flying-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Area denial in a can. The [Heavy] band burst punishes anyone bunched up.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥1,300</li><li><strong>Profile:</strong> Thrown to Short; [Heavy]-band burst in a small area; every target in the burst rolls.</li><li><strong>Tags:</strong> Consumable, Heavy</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "frag-grenade-fragmentation-prefragmented-dispersal-charge",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ammunition",
+      "thrown",
+      "grenade"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 29000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pNmG5nSBAHfz5rtU"
+}

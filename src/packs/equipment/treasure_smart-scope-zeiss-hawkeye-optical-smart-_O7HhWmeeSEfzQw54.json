@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Smart-Scope / Zeiss Hawkeye / optical smart-sight",
+  "type": "treasure",
+  "_id": "O7HhWmeeSEfzQw54",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Extends effective reach one band and brings smart-targeting to those without a datajack.</p><hr /><ul><li><strong>Cost:</strong> ¥600</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Improves the weapon's optimal range band by one step (e.g. Medium to Long) and enables Smart on non-datajack users. Togglable optics modes in field. | Craft skill: Cyber/electronics | Tags: Smart</li><li><strong>Mod slots:</strong> 1 (slot cost)</li><li><strong>Tags:</strong> Smart</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "smart-scope-zeiss-hawkeye-optical-smart-sight",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 112000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!O7HhWmeeSEfzQw54"
+}

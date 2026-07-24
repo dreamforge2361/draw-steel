@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Recoil Comp / Ares Steady / gas-vented compensator",
+  "type": "treasure",
+  "_id": "MLeDKxf3U562ZArc",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tames a full-auto weapon so sustained fire stays on target.</p><hr /><ul><li><strong>Cost:</strong> ¥250</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Removes the auto-fire/burst bane on the second target or sustained fire (Combat chapter). | Craft skill: Gunsmithing | Tags: -</li><li><strong>Mod slots:</strong> 1 (slot cost)</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "recoil-comp-ares-steady-gas-vented-compensator",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 110000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MLeDKxf3U562ZArc"
+}

@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3FBowsExotic",
+  "name": "Net-Gun / Lone Star Snare / capture launcher",
+  "type": "treasure",
+  "_id": "3N1Y1le6oiZQWSaJ",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>A capture launcher - applies Restrained (per the conditions rules) rather than damage.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥900</li><li><strong>Profile:</strong> Damage: - | Range: Short | Tags: [Light], Restraining, Non-lethal-capable</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> [Light], Restraining, Non-lethal-capable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "net-gun-lone-star-snare-capture-launcher",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 106000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3N1Y1le6oiZQWSaJ"
+}

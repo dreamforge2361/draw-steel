@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq1GLifestyle0",
+  "name": "Designer Threads / Corporate Wardrobe / status-signal apparel",
+  "type": "treasure",
+  "_id": "U5jp9lkr7e3QO2wO",
+  "img": "icons/commodities/currency/coin-embossed-star-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are what you wear in the corp towers. The Face's armor is a good suit.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥2,500</li><li><strong>Profile:</strong> Edge on social checks where appearance/status matters (pairs with the Face's Influence).</li><li><strong>Mod slots:</strong> 3</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "designer-threads-corporate-wardrobe-status-signal-apparel",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "lifestyle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 34000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!U5jp9lkr7e3QO2wO"
+}

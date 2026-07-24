@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Underbarrel Mount / Ares Adapt / accessory rail",
+  "type": "treasure",
+  "_id": "Vd5NOJnwO7NGtwyC",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>A rail for a second tool or weapon - the mounted item keeps its own profile.</p><hr /><ul><li><strong>Cost:</strong> ¥200</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Adds a mount for a second small weapon/tool (holdout, flashlight, grapple) or a bayonet; the mounted item uses its own profile. | Craft skill: Gunsmithing | Tags: -</li><li><strong>Mod slots:</strong> 1 (slot cost)</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "underbarrel-mount-ares-adapt-accessory-rail",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 114000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Vd5NOJnwO7NGtwyC"
+}

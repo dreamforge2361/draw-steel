@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3ALightFirea",
+  "name": "Zapper / Defiance Shock / capacitive pistol",
+  "type": "treasure",
+  "_id": "O8cCfKbQNTMP8QiH",
+  "img": "icons/weapons/artillery/mount-weapon-sprayer-chem-green-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Electrical damage for stun takedowns and to punish the chromed - matters vs. dielectric-shielded gear.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥800</li><li><strong>Profile:</strong> Damage: 4 electrical | Range: Short | Tags: [Light], Non-lethal-capable</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> [Light], Non-lethal-capable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "zapper-defiance-shock-capacitive-pistol",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 63000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!O8cCfKbQNTMP8QiH"
+}

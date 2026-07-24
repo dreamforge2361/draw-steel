@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5EDrones0000",
+  "name": "Crawler / Recon Drone / quadruped sensor unit",
+  "type": "treasure",
+  "_id": "9GUxFKw3pBMvIGUa",
+  "img": "icons/commodities/tech/robotics-frame-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The decker's and Scout's forward sensor - climbs, maps, and clamps a Tap-Kit for you.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥800</li><li><strong>Profile:</strong> Domain: Ground (drone) | Scale: Light | A ground scout - climbs, maps, plants taps (feeds the Wired Tap-Kit).</li><li><strong>Mod slots:</strong> 2</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "crawler-recon-drone-quadruped-sensor-unit",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 170000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9GUxFKw3pBMvIGUa"
+}

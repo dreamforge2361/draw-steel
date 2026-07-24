@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2CHeavyArmor",
+  "name": "Powered Hardsuit / Titan Frame / servo-exoskeleton armor",
+  "type": "treasure",
+  "_id": "hjS3ZBLeU8bMk0IU",
+  "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Exoskeleton servos take the weight so you move at normal speed in a tank's worth of plate.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥18,000</li><li><strong>Profile:</strong> POWERED HEAVY armor (Stamina +9/+12/+16/+21/+27). Removes the -1 Speed penalty (servos carry the weight - Stealth/Reflex banes remain).</li><li><strong>Mod slots:</strong> 5</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "powered-hardsuit-titan-frame-servo-exoskeleton-armor",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "heavy"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 50000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!hjS3ZBLeU8bMk0IU"
+}

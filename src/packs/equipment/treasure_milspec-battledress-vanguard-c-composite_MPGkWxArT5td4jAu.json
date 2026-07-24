@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2CHeavyArmor",
+  "name": "Milspec Battledress / Vanguard-C / composite combat armor",
+  "type": "treasure",
+  "_id": "MPGkWxArT5td4jAu",
+  "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Composite combat plate - immovable under fire.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥5,000</li><li><strong>Profile:</strong> MILITARY HEAVY armor (Stamina +9/+12/+16/+21/+27). +1 stability (resists forced movement) on top of class Stamina. Full Heavy encumbrance.</li><li><strong>Mod slots:</strong> 4</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "milspec-battledress-vanguard-c-composite-combat-armor",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "heavy"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 49000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MPGkWxArT5td4jAu"
+}

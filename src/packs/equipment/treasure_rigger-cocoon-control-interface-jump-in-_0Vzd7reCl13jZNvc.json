@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq5FVehDrnMods",
+  "name": "Rigger Cocoon / Control Interface / Jump-In coupling",
+  "type": "treasure",
+  "_id": "0Vzd7reCl13jZNvc",
+  "img": "icons/commodities/tech/bearing-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>The bridge between the control rig (Chrome) and the machine - clean, edge-granting Jump-In.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥7,000</li><li><strong>Profile:</strong> Effect: Upgrades a vehicle to accept a Jumped-In pilot cleanly (edge on Jump-In control). | Craft to install | Tags: Wired</li><li><strong>Mod slots:</strong> 1 (F6 slot)</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "rigger-cocoon-control-interface-jump-in-coupling",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 186000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0Vzd7reCl13jZNvc"
+}

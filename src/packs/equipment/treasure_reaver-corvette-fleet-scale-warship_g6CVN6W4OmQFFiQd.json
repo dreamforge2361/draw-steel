@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5DSpace00000",
+  "name": "Reaver / Corvette / fleet-scale warship",
+  "type": "treasure",
+  "_id": "g6CVN6W4OmQFFiQd",
+  "img": "icons/commodities/tech/plating-metal-armor-tech-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A campaign centerpiece, not a purchase - the top of the Scale ladder, a nation or megacorp asset.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥80,000+</li><li><strong>Profile:</strong> Domain: Space | Scale: Capital | Capital-scale warship - the top of the Scale ladder, a mobile base with heavy mounts and a crew of stations.</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> Sealed</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "reaver-corvette-fleet-scale-warship",
+    "kind": "other",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 168000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!g6CVN6W4OmQFFiQd"
+}

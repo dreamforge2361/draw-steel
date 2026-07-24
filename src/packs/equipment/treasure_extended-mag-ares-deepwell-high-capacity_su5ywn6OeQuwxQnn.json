@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Extended Mag / Ares Deepwell / high-capacity magazine",
+  "type": "treasure",
+  "_id": "su5ywn6OeQuwxQnn",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>More rounds before you have to reload - the spray weapon's best friend.</p><hr /><ul><li><strong>Cost:</strong> ¥150</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Doubles shots between reloads; halves reload frequency in play. | Craft skill: Gunsmithing | Tags: -</li><li><strong>Mod slots:</strong> 1 (slot cost)</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "extended-mag-ares-deepwell-high-capacity-magazine",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 111000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!su5ywn6OeQuwxQnn"
+}

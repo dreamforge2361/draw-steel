@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Personalized Grip / Fichetti Lockhand / biometric grip",
+  "type": "treasure",
+  "_id": "LuM0cFj2GpHOw3P4",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Biometric lock - a foe who grabs your weapon gets an expensive club.</p><hr /><ul><li><strong>Cost:</strong> ¥350</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Weapon fires only for its keyed owner (anti-theft/anti-disarm-use); a foe who grabs it gets nothing. | Craft skill: Cyber/electronics | Tags: Wired</li><li><strong>Mod slots:</strong> 1 (slot cost)</li><li><strong>Tags:</strong> Wired</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "personalized-grip-fichetti-lockhand-biometric-grip",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 115000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LuM0cFj2GpHOw3P4"
+}

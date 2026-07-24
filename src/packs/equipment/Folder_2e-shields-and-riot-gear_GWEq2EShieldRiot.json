@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": "GWEqCat2Armor000",
+  "name": "2E. Shields & Riot Gear",
+  "color": null,
+  "sorting": "a",
+  "_id": "GWEq2EShieldRiot",
+  "description": "",
+  "sort": 1400000,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!GWEq2EShieldRiot"
+}

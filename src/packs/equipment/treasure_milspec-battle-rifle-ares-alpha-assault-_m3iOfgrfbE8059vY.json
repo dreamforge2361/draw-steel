@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3BLongarms00",
+  "name": "Milspec Battle Rifle / Ares Alpha / assault platform",
+  "type": "treasure",
+  "_id": "m3iOfgrfbE8059vY",
+  "img": "icons/weapons/guns/flamethrower-spray-fire-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>The military assault platform - restricted, mod-rich, full-auto.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥9,000</li><li><strong>Profile:</strong> Damage: 7 kinetic | Range: Medium | Tags: [Medium], Two-handed, Auto</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> [Medium], Two-handed, Auto</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "milspec-battle-rifle-ares-alpha-assault-platform",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 74000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!m3iOfgrfbE8059vY"
+}

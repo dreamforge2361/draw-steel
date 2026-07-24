@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1FAmmoThrown",
+  "name": "Smoke / Screening Canister / aerosol obscurant",
+  "type": "treasure",
+  "_id": "ZSRbHs2aWryXK5v3",
+  "img": "icons/skills/ranged/arrow-barbed-flying-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cover on demand. Cheap, reliable, and countered only by thermal.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥200</li><li><strong>Profile:</strong> Thrown to Short; creates concealment (bane on ranged through it) - negated by thermal optics (1B).</li><li><strong>Tags:</strong> Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "smoke-screening-canister-aerosol-obscurant",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ammunition",
+      "thrown"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 31000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZSRbHs2aWryXK5v3"
+}

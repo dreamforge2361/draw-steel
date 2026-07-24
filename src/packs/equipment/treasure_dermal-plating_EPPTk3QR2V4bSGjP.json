@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq7AImplants00",
+  "name": "Dermal Plating",
+  "type": "treasure",
+  "_id": "EPPTk3QR2V4bSGjP",
+  "img": "icons/commodities/tech/cable-armored-reticulated.webp",
+  "system": {
+    "description": {
+      "value": "<p>Armor under the skin - always on, but it shows, and some rooms hold that against you.</p><hr /><ul><li><strong>Cost:</strong> by grade (Salvage/Standard/Soft)</li><li><strong>Profile:</strong> Location: Torso/Core | Benefit: Sub-dermal armor; standing damage reduction; visibly 'chromed' (Presence cost in some social contexts). | Cost: nuyen + Body Integrity, set by grade (Salvage/Standard/Soft; Core Numbers F7).</li><li><strong>Mod slots:</strong> Body Integrity (per grade)</li><li><strong>Tags:</strong> Implant, Chrome</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "dermal-plating",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "chrome",
+      "implant"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 234000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!EPPTk3QR2V4bSGjP"
+}

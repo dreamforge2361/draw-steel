@@ -1,0 +1,56 @@
+{
+  "folder": "GWEq1FAmmoThrown",
+  "name": "Flash-Bang / Distraction Device / photoacoustic stun charge",
+  "type": "treasure",
+  "_id": "PS89lwLZkOTTDaf8",
+  "img": "icons/skills/ranged/arrow-barbed-flying-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>The breacher's opener - stuns the room so the crew takes it clean.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥1,200</li><li><strong>Profile:</strong> Thrown to Short; no damage, applies Dazed + Frightened to all in area (save-ends).</li><li><strong>Tags:</strong> Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "flash-bang-distraction-device-photoacoustic-stun-charge",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ammunition",
+      "thrown",
+      "grenade"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 30000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PS89lwLZkOTTDaf8"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6AElemntlist",
+  "name": "Cascade-band / Elementa Suite / poly-elemental attunement array",
+  "type": "treasure",
+  "_id": "BFHlIUQ218DAdKWx",
+  "img": "icons/magic/fire/barrier-wall-flame-ring-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>The versatile caster's focus - pivot between elements without losing your ramp.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥9,000</li><li><strong>Profile:</strong> Benefit: Reduces the penalty for switching elements (the ramp-reset sting) - lets a Stormcaller pivot fire to air with less lost momentum. | Mod slots: 4 | Tags: Veil</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Veil</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "cascade-band-elementa-suite-poly-elemental-attunement-array",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 193000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BFHlIUQ218DAdKWx"
+}

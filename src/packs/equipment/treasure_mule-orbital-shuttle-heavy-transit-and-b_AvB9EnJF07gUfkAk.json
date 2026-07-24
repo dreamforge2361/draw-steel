@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5DSpace00000",
+  "name": "Mule / Orbital Shuttle / heavy transit & boarding craft",
+  "type": "treasure",
+  "_id": "AvB9EnJF07gUfkAk",
+  "img": "icons/commodities/tech/plating-metal-armor-tech-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The working orbital vehicle - hauls cargo and crew, and its docking collar makes boarding actions possible.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥22,000</li><li><strong>Profile:</strong> Domain: Space | Scale: Heavy | Heavy-scale transit and boarding craft - cargo, crew, a docking collar for boarding actions.</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Sealed</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "mule-orbital-shuttle-heavy-transit-and-boarding-craft",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 167000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AvB9EnJF07gUfkAk"
+}

@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq1EMedConsum0",
+  "name": "Field Surgery Kit / Trauma Kit / portable surgical suite",
+  "type": "treasure",
+  "_id": "EKMHPHd5GiIrWiZd",
+  "img": "icons/consumables/potions/bottle-metal-yellow-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>The reusable kit that keeps a downed crewmate breathing until the Medic arrives.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥2,000</li><li><strong>Profile:</strong> Reusable: enables stabilizing a dying (0-Stamina) ally and grants edge on First-Aid/Restorative checks.</li><li><strong>Mod slots:</strong> 3</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "field-surgery-kit-trauma-kit-portable-surgical-suite",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "medical"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 23000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!EKMHPHd5GiIrWiZd"
+}

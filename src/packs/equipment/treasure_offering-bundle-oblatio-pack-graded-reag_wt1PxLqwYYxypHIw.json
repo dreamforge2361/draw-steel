@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6FReagentPkg",
+  "name": "Offering bundle / Oblatio Pack / graded reagent offering",
+  "type": "treasure",
+  "_id": "wt1PxLqwYYxypHIw",
+  "img": "icons/consumables/potions/bottle-bulb-corked-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The buy-down-the-risk package - extra grade traded straight for less Drain, capped so nuyen never erases the risk entirely.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥750</li><li><strong>Profile:</strong> Pre-assembled, consumed in play, refilled in downtime. A tier-graded offering bought expressly to feed the drain-trade (spend extra grade to buy -1 Drain, per B2). The 'buy down the risk' package. | Priced at B2 grade for tier (B2 authoritative). Tags: Ritual, Consumable, Drain-trade</li><li><strong>Tags:</strong> Ritual, Consumable, Drain-trade</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "offering-bundle-oblatio-pack-graded-reagent-offering",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ritual",
+      "reagent"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 224000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wt1PxLqwYYxypHIw"
+}

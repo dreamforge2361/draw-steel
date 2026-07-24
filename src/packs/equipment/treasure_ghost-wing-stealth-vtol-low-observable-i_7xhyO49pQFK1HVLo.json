@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5BAir0000000",
+  "name": "Ghost-Wing / Stealth VTOL / low-observable insertion craft",
+  "type": "treasure",
+  "_id": "7xhyO49pQFK1HVLo",
+  "img": "icons/commodities/tech/robotics-frame-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The black-ops apex - a silent heavy insertion craft that arrives before anyone knows it is coming.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥60,000</li><li><strong>Profile:</strong> Domain: Air | Scale: Heavy | Radar-and-Alert-quiet heavy insertion craft - pairs with the Wired chapter's Alert-scrub for silent arrivals.</li><li><strong>Mod slots:</strong> 5</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "ghost-wing-stealth-vtol-low-observable-insertion-craft",
+    "kind": "other",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 161000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7xhyO49pQFK1HVLo"
+}

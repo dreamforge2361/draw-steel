@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5EDrones0000",
+  "name": "Stinger / Gun-Drone / aerial weapons platform",
+  "type": "treasure",
+  "_id": "HwBQXOdpy3rIx8Js",
+  "img": "icons/commodities/tech/robotics-frame-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Several of these ARE a Wrench's offense on the shared round - the fleet's real damage dealer.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥13,000</li><li><strong>Profile:</strong> Domain: Air (drone) | Scale: Vehicle | The autonomous/Jumped-In gunner - a real hardpoint, the fleet's damage dealer.</li><li><strong>Mod slots:</strong> 4</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "stinger-gun-drone-aerial-weapons-platform",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 176000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!HwBQXOdpy3rIx8Js"
+}

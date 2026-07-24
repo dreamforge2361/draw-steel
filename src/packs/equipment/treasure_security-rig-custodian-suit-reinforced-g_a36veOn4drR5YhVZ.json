@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2CHeavyArmor",
+  "name": "Security Rig / Custodian Suit / reinforced guard hardshell",
+  "type": "treasure",
+  "_id": "a36veOn4drR5YhVZ",
+  "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>The guard's hardshell - built-in plate turns aside one aimed shot per scene.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥1,200</li><li><strong>Profile:</strong> HEAVY armor (Stamina +9/+12/+16/+21/+27). Standard corp-sec; grants cover vs. one called shot per scene (built-in plate). Full Heavy encumbrance.</li><li><strong>Mod slots:</strong> 3</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "security-rig-custodian-suit-reinforced-guard-hardshell",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "heavy"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 48000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!a36veOn4drR5YhVZ"
+}

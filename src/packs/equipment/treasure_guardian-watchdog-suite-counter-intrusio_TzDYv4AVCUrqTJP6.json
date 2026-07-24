@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4BPrograms00",
+  "name": "Guardian / Watchdog Suite / counter-intrusion daemon",
+  "type": "treasure",
+  "_id": "TzDYv4AVCUrqTJP6",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>The defensive daemon - shields you from ICE and warns the crew when things go loud.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥8,000</li><li><strong>Profile:</strong> Program-mod (occupies 1 deck slot, persistent). Effect: Defensive: edge on resisting hostile ICE and enemy-decker attacks; warns the crew (Overwatch) when the network's Alert spikes.</li><li><strong>Mod slots:</strong> 1 (deck slot)</li><li><strong>Tags:</strong> Program, Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "guardian-watchdog-suite-counter-intrusion-daemon",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 126000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TzDYv4AVCUrqTJP6"
+}

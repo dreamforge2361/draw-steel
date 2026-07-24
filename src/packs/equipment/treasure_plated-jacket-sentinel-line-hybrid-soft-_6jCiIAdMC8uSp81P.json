@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2BMediumArmr",
+  "name": "Plated Jacket / Sentinel Line / hybrid soft-hard armor coat",
+  "type": "treasure",
+  "_id": "6jCiIAdMC8uSp81P",
+  "img": "icons/equipment/chest/breastplate-layered-leather-studded-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>Medium protection dressed down as a heavy coat - less obvious than a plate carrier.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥1,100</li><li><strong>Profile:</strong> MEDIUM armor (Stamina +6/+8/+11/+14/+18). Styled as heavy outerwear; blends better than a bare vest (Stealth bane still applies in a search).</li><li><strong>Mod slots:</strong> 2</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "plated-jacket-sentinel-line-hybrid-soft-hard-armor-coat",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "medium"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 43000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6jCiIAdMC8uSp81P"
+}

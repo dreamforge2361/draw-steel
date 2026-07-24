@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2ALightArmor",
+  "name": "Whisperweave / Diplomat's Skin / milspec concealed liner",
+  "type": "treasure",
+  "_id": "DOPzRSsHAYKalh3d",
+  "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The finest concealed armor money can buy - invisible to a search, from the boardroom to the breach.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥45,000</li><li><strong>Profile:</strong> APEX LIGHT armor (Stamina +3/+4/+6/+8/+10). Undetectable by pat-down or standard scanner; edge to defeat weapon/armor detection. Boardroom to breach.</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Concealable, Stealth</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "whisperweave-diplomat-s-skin-milspec-concealed-liner",
+    "kind": "armor",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "light"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 41000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DOPzRSsHAYKalh3d"
+}

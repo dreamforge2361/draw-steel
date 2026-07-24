@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3DMeleeBlade",
+  "name": "Monoblade / Renraku Edge / monofilament sword",
+  "type": "treasure",
+  "_id": "azXTSCwrRR0dO8dL",
+  "img": "icons/weapons/swords/scimitar-broad.webp",
+  "system": {
+    "description": {
+      "value": "<p>A monofilament-edged sword - the mono edge tags it AP, slicing through armor.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥3,000</li><li><strong>Profile:</strong> Damage: 6 AP | Range: Adjacent | Tags: [Medium]</li><li><strong>Mod slots:</strong> 3</li><li><strong>Tags:</strong> [Medium]</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "monoblade-renraku-edge-monofilament-sword",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "melee"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 88000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!azXTSCwrRR0dO8dL"
+}

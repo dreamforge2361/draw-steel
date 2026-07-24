@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq7AImplants00",
+  "name": "Cyber-Eyes (optical suite)",
+  "type": "treasure",
+  "_id": "xtr1zDQWD9asu1h9",
+  "img": "icons/commodities/tech/cable-armored-reticulated.webp",
+  "system": {
+    "description": {
+      "value": "<p>The chromed eye - sees in the dark and through smoke, but it's a called-shot target like any other lens.</p><hr /><ul><li><strong>Cost:</strong> by grade (Salvage/Standard/Soft)</li><li><strong>Profile:</strong> Location: Eyes/Optics | Benefit: Low-light + thermal + magnification + recording; edge on sight perception, ignore darkness/smoke banes on strikes. Destroyable target. | Cost: nuyen + Body Integrity, set by grade (Salvage/Standard/Soft; Core Numbers F7).</li><li><strong>Mod slots:</strong> Body Integrity (per grade)</li><li><strong>Tags:</strong> Implant, Chrome</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "cyber-eyes-optical-suite",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "chrome",
+      "implant"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 230000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xtr1zDQWD9asu1h9"
+}

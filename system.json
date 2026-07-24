@@ -1,4 +1,4 @@
-{
+﻿{
     "id":  "draw-steel",
     "title":  "GHOSTWIRE",
     "description":  "The Draw Steel system by MCDM for Foundry Virtual Tabletop",
@@ -403,6 +403,17 @@
                       "label":  "DRAW_STEEL.COMPENDIUM.effects",
                       "type":  "ActiveEffect",
                       "banner":  "systems/draw-steel/assets/banners/effects.webp"
+                  },
+                  {
+                      "name":  "equipment",
+                      "label":  "GHOSTWIRE Equipment",
+                      "type":  "Item",
+                      "path":  "packs/equipment",
+                      "system":  "draw-steel",
+                      "ownership":  {
+                                        "PLAYER":  "OBSERVER",
+                                        "ASSISTANT":  "OWNER"
+                                    }
                   }
               ],
     "packFolders":  [

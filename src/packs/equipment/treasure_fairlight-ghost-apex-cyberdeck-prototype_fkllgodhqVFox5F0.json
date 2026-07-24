@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4ACyberdecks",
+  "name": "Fairlight Ghost / Apex Cyberdeck / prototype quantum-intrusion mainframe-in-hand",
+  "type": "treasure",
+  "_id": "fkllgodhqVFox5F0",
+  "img": "icons/commodities/tech/console-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>The legend-maker - maximum headroom, a free verb per turn, and the safe deep-dive.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥55,000</li><li><strong>Profile:</strong> The apex rig. Maximum Bandwidth cap; one free program-slot verb per turn; jacked-in connection carries no extra biofeedback penalty (the safe deep-dive). Legends run on these.</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "fairlight-ghost-apex-cyberdeck-prototype-quantum-intrusion-mainframe-in-hand",
+    "kind": "implement",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 120000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fkllgodhqVFox5F0"
+}

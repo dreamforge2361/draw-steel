@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1GLifestyle0",
+  "name": "Certified Credstick / Corporate Account Chip / authenticated value token",
+  "type": "treasure",
+  "_id": "DX2Zj9psit3tQPOQ",
+  "img": "icons/commodities/currency/coin-embossed-star-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Clean money you can hand over without a paper trail - the stick that makes a fixer smile.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> (holds value)</li><li><strong>Profile:</strong> Carries nuyen securely; a 'certified' stick launders payment and eases high-value purchases (Availability).</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "certified-credstick-corporate-account-chip-authenticated-value-token",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "lifestyle",
+      "credentials"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 33000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DX2Zj9psit3tQPOQ"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6DSharedFoci",
+  "name": "Lodge-kit / Sanctum Suite / portable ritual foundation",
+  "type": "treasure",
+  "_id": "3OOYsHg1JbAbx9UW",
+  "img": "icons/sundries/books/book-embossed-clasp-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>The travelling ritualist's rig - a field lodge, capped by your Lifestyle tier. (The home lodge comes from Lifestyle, not this kit.)</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥9,000</li><li><strong>Profile:</strong> Benefit: Raises the effective lodge tier a caster can work at away from home (field-deployable foundation), within the Lifestyle cap. | Mod slots: 4 | Tags: Ritual, Lodge</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Ritual, Lodge</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "lodge-kit-sanctum-suite-portable-ritual-foundation",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 216000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3OOYsHg1JbAbx9UW"
+}

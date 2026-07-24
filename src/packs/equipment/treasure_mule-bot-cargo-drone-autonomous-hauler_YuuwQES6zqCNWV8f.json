@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5EDrones0000",
+  "name": "Mule-Bot / Cargo Drone / autonomous hauler",
+  "type": "treasure",
+  "_id": "YuuwQES6zqCNWV8f",
+  "img": "icons/commodities/tech/robotics-frame-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The utility body of the fleet - hauls the gear, drags out the wounded, plugs a corridor.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥1,100</li><li><strong>Profile:</strong> Domain: Ground (drone) | Scale: Vehicle | A load-carrier - hauls gear, extracts wounded, blocks a corridor.</li><li><strong>Mod slots:</strong> 2</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "mule-bot-cargo-drone-autonomous-hauler",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 172000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YuuwQES6zqCNWV8f"
+}

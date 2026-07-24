@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3DMeleeBlade",
+  "name": "Machete / Ares Bushmaster / survival blade",
+  "type": "treasure",
+  "_id": "bxdShXC05yKtqIBU",
+  "img": "icons/weapons/swords/scimitar-broad.webp",
+  "system": {
+    "description": {
+      "value": "<p>Half tool, half weapon - the wasteland survival blade.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥300</li><li><strong>Profile:</strong> Damage: 5 kinetic | Range: Adjacent | Tags: [Light]</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> [Light]</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "machete-ares-bushmaster-survival-blade",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "melee"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 87000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bxdShXC05yKtqIBU"
+}

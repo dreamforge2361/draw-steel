@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3ALightFirea",
+  "name": "Streetsweeper SMG / Ares Executive / milspec SMG",
+  "type": "treasure",
+  "_id": "xuooc31e0IgvhcAh",
+  "img": "icons/weapons/artillery/mount-weapon-sprayer-chem-green-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Milspec submachine gun - restricted, mod-rich, and cheap to run.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥7,500</li><li><strong>Profile:</strong> Damage: 5 kinetic | Range: Medium | Tags: [Light], Auto</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> [Light], Auto</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "streetsweeper-smg-ares-executive-milspec-smg",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 66000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xuooc31e0IgvhcAh"
+}

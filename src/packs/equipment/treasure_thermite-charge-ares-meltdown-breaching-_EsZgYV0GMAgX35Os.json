@@ -1,0 +1,56 @@
+{
+  "folder": "GWEq3EThrownGrnd",
+  "name": "Thermite Charge / Ares Meltdown / breaching charge",
+  "type": "treasure",
+  "_id": "EsZgYV0GMAgX35Os",
+  "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thermite breaching charge - Heavy fire Blast placed adjacent to melt through a wall or door.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥900</li><li><strong>Profile:</strong> Damage: 9 fire | Range: Adjacent | Tags: [Heavy], Blast, Consumable</li><li><strong>Tags:</strong> [Heavy], Blast, Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "thermite-charge-ares-meltdown-breaching-charge",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "thrown",
+      "breaching"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 98000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!EsZgYV0GMAgX35Os"
+}

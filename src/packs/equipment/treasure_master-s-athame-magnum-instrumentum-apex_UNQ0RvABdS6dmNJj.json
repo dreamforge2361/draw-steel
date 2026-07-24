@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6DSharedFoci",
+  "name": "Master's athame / Magnum Instrumentum / apex ritual implement",
+  "type": "treasure",
+  "_id": "UNQ0RvABdS6dmNJj",
+  "img": "icons/sundries/books/book-embossed-clasp-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>The generalist ritualist's masterwork - broad edge across the whole shared backbone, and a signature-bond candidate.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> ¥20,000</li><li><strong>Profile:</strong> Benefit: A broad edge across the shared ritual backbone (Ward / Scry / Teleport / Inscription); a signature-focus bond candidate for a generalist ritualist. | Mod slots: 5 | Tags: Ritual, Signature-capable</li><li><strong>Mod slots:</strong> 5</li><li><strong>Tags:</strong> Ritual, Signature-capable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "master-s-athame-magnum-instrumentum-apex-ritual-implement",
+    "kind": "implement",
+    "category": "artifact",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 217000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UNQ0RvABdS6dmNJj"
+}

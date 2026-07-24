@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1ACommsCred0",
+  "name": "Pocket Sec / CommLink Mk II / personal network node",
+  "type": "treasure",
+  "_id": "vhWzKrVZv5v1CoMC",
+  "img": "icons/commodities/tech/transmission.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your everyday comm-computer (street: Pocket Sec / corp: CommLink / sci: personal network node) - the term the Wired chapter leans on. This is what most Edgerunners carry as their daily driver into the Matrix.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥500</li><li><strong>Profile:</strong> The standard runner's phone-computer-node. Runs your Matrix persona; holds up to 2 program mods.</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "pocket-sec-commlink-mk-ii-personal-network-node",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "comms",
+      "credentials"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 2000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!vhWzKrVZv5v1CoMC"
+}

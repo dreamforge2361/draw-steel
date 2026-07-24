@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3EThrownGrnd",
+  "name": "Throwing Knife / Cavalier Fan / balanced blade",
+  "type": "treasure",
+  "_id": "2SgF6Uegr9cSytDf",
+  "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A balanced throwing blade - silent, cheap, and recoverable after the fight.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥60</li><li><strong>Profile:</strong> Damage: 3 kinetic | Range: Short | Tags: [Light], Consumable-recoverable</li><li><strong>Tags:</strong> [Light], Consumable-recoverable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "throwing-knife-cavalier-fan-balanced-blade",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "thrown"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 93000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2SgF6Uegr9cSytDf"
+}

@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq3GWeaponMods",
+  "name": "Gas-Seal Kit / Shiawase Deepdive / hostile-environment seal",
+  "type": "treasure",
+  "_id": "TUAVYpQaQYGszzpw",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Seals the action so the weapon works where the air (or lack of it) would jam a normal gun.</p><hr /><ul><li><strong>Cost:</strong> ¥400</li><li><strong>Profile:</strong> Slot cost: 1 | Effect: Weapon fires reliably underwater / in vacuum / in toxic atmosphere (Hostile-Env hook); no jam from environment. | Craft skill: Gunsmithing | Tags: Sealed</li><li><strong>Mod slots:</strong> 1 (slot cost)</li><li><strong>Tags:</strong> Sealed</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "gas-seal-kit-shiawase-deepdive-hostile-environment-seal",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 113000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TUAVYpQaQYGszzpw"
+}

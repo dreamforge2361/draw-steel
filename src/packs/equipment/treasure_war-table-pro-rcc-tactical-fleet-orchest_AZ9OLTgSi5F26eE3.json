@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4DRCCsRigger",
+  "name": "War Table / Pro RCC / tactical fleet-orchestration suite",
+  "type": "treasure",
+  "_id": "AZ9OLTgSi5F26eE3",
+  "img": "icons/commodities/tech/transmission.webp",
+  "system": {
+    "description": {
+      "value": "<p>The tactician's suite - more drones in the air, longer, before Overheat bites.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥5,000</li><li><strong>Profile:</strong> Edge on issuing fleet commands; larger Uptime buffer; holds more drones active before Overheat pressure.</li><li><strong>Mod slots:</strong> 3</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "war-table-pro-rcc-tactical-fleet-orchestration-suite",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 136000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AZ9OLTgSi5F26eE3"
+}

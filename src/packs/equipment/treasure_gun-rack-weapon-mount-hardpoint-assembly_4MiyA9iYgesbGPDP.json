@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq5FVehDrnMods",
+  "name": "Gun Rack / Weapon Mount / hardpoint assembly",
+  "type": "treasure",
+  "_id": "4MiyA9iYgesbGPDP",
+  "img": "icons/commodities/tech/bearing-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>The hardpoint - fit any scale-appropriate Cat-3 weapon and fire it with Gunnery. Turret variant swings wide.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥800</li><li><strong>Profile:</strong> Effect: Adds a hardpoint to fit one Category-3 weapon (scale-appropriate); the gunner fires it with Gunnery. Turret variant allows wide arc. | Craft to install | Tags: Mount</li><li><strong>Mod slots:</strong> 1 (F6 slot)</li><li><strong>Tags:</strong> Mount</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "gun-rack-weapon-mount-hardpoint-assembly",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle",
+      "mod"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 180000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4MiyA9iYgesbGPDP"
+}

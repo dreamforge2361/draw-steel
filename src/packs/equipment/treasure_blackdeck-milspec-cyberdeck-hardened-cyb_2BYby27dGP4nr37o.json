@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4ACyberdecks",
+  "name": "Blackdeck / Milspec Cyberdeck / hardened cyberwarfare platform",
+  "type": "treasure",
+  "_id": "2BYby27dGP4nr37o",
+  "img": "icons/commodities/tech/console-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>A hardened cyberwarfare platform - built to fight other deckers and shrug off ICE.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥15,000</li><li><strong>Profile:</strong> Edge on all EW/Disruptor verbs; a larger Bandwidth reservoir (bigger cap); resists hostile Alert-spikes (bane on enemy ICE trying to raise your Alert).</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "blackdeck-milspec-cyberdeck-hardened-cyberwarfare-platform",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 119000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2BYby27dGP4nr37o"
+}

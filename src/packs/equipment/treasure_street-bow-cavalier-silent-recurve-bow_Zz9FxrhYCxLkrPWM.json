@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3FBowsExotic",
+  "name": "Street-Bow / Cavalier Silent / recurve bow",
+  "type": "treasure",
+  "_id": "Zz9FxrhYCxLkrPWM",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>The silent recurve - raises no Alert and pings no weapon-detection.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥200</li><li><strong>Profile:</strong> Damage: 4 kinetic | Range: Medium | Tags: [Light], Two-handed, Quiet</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> [Light], Two-handed, Quiet</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "street-bow-cavalier-silent-recurve-bow",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 101000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Zz9FxrhYCxLkrPWM"
+}

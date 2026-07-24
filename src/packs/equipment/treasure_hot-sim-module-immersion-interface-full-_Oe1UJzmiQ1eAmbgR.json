@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4ECyberjacks",
+  "name": "Hot-Sim Module / Immersion Interface / full-sensory dive rig",
+  "type": "treasure",
+  "_id": "Oe1UJzmiQ1eAmbgR",
+  "img": "icons/commodities/tech/cable-armored-reticulated.webp",
+  "system": {
+    "description": {
+      "value": "<p>Bridges the gap between trodes and an implant - full immersion, external, at the usual inert-body risk.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥4,000</li><li><strong>Profile:</strong> Enables safe(r) full jacked-in immersion externally - edge on jacked-in Wired rolls, at the usual inert-body risk. Bridges the trode-vs-implant gap.</li><li><strong>Mod slots:</strong> 3</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "hot-sim-module-immersion-interface-full-sensory-dive-rig",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 141000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Oe1UJzmiQ1eAmbgR"
+}

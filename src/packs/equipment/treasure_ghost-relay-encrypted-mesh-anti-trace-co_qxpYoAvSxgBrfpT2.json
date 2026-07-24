@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq1ACommsCred0",
+  "name": "Ghost Relay / Encrypted Mesh / anti-trace comm array",
+  "type": "treasure",
+  "_id": "qxpYoAvSxgBrfpT2",
+  "img": "icons/commodities/tech/transmission.webp",
+  "system": {
+    "description": {
+      "value": "<p>The team's private, hardened net - the backbone the Full Sensorium shares marks over. When the crew needs to talk without corp ears, this is the array.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥9,000</li><li><strong>Profile:</strong> Crew-wide encrypted comms; bane on enemy attempts to trace or tap the crew's channel. Pairs with the Hacker's Alert-scrub.</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "ghost-relay-encrypted-mesh-anti-trace-comm-array",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "comms"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 4000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qxpYoAvSxgBrfpT2"
+}

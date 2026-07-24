@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq1FAmmoThrown",
+  "name": "Standard Rounds / Ball Ammo / FMJ magazine",
+  "type": "treasure",
+  "_id": "AJEPt8FAy9DvFUiw",
+  "img": "icons/skills/ranged/arrow-barbed-flying-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>What comes in the box. Special ammo is bought to swap in for specific jobs.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥50</li><li><strong>Profile:</strong> Baseline; no modifier. Sold per magazine/reload.</li><li><strong>Tags:</strong> Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "standard-rounds-ball-ammo-fmj-magazine",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ammunition"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 26000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AJEPt8FAy9DvFUiw"
+}

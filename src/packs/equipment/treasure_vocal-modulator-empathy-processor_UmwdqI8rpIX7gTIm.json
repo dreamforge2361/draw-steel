@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq7AImplants00",
+  "name": "Vocal Modulator / Empathy Processor",
+  "type": "treasure",
+  "_id": "UmwdqI8rpIX7gTIm",
+  "img": "icons/commodities/tech/cable-armored-reticulated.webp",
+  "system": {
+    "description": {
+      "value": "<p>The Face's chrome - mimic a voice or read a room, soft-grade to spare the Presence it trades on.</p><hr /><ul><li><strong>Cost:</strong> by grade (Salvage/Standard/Soft)</li><li><strong>Profile:</strong> Location: Head/Neural | Benefit: The Face's chrome - voice mimicry or a social edge; the rare implant a Commander/Face bothers with. Soft-grade preferred to protect Presence. | Cost: nuyen + Body Integrity, set by grade (Salvage/Standard/Soft; Core Numbers F7).</li><li><strong>Mod slots:</strong> Body Integrity (per grade)</li><li><strong>Tags:</strong> Implant, Chrome</li></ul>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "vocal-modulator-empathy-processor",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "chrome",
+      "implant"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 241000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UmwdqI8rpIX7gTIm"
+}

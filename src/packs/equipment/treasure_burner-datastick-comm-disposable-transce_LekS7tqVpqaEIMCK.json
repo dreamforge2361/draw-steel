@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1ACommsCred0",
+  "name": "Burner / DataStick Comm / disposable transceiver",
+  "type": "treasure",
+  "_id": "LekS7tqVpqaEIMCK",
+  "img": "icons/commodities/tech/transmission.webp",
+  "system": {
+    "description": {
+      "value": "<p>The everyday comm-computer at its cheapest: a throwaway node you burn and drop the moment a run goes hot. Street term for the whole class of disposable transceivers.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥60</li><li><strong>Profile:</strong> Basic encrypted call/text; no trace-hardening. Ditch after a run.</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> Wired, Consumable-ish</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "burner-datastick-comm-disposable-transceiver",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "comms",
+      "credentials"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LekS7tqVpqaEIMCK"
+}

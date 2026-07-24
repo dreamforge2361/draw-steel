@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq4CAtkPayload",
+  "name": "Static / Jam Burst / local-mesh disruption packet",
+  "type": "treasure",
+  "_id": "KBUpvTd6KKNF2Hge",
+  "img": "icons/commodities/tech/detonator-timer.webp",
+  "system": {
+    "description": {
+      "value": "<p>One round of silence on an enemy device - the tactical EW debuff.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥2,000</li><li><strong>Profile:</strong> Consumable program-mod (one use, occupies 1 deck slot until fired). Effect: Suppresses one enemy device (smartgun link, camera, comm, hostile drone control) for a round - the EW debuff.</li><li><strong>Mod slots:</strong> 1 (deck slot)</li><li><strong>Tags:</strong> Program, Consumable, Wired</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "static-jam-burst-local-mesh-disruption-packet",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "matrix"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 130000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KBUpvTd6KKNF2Hge"
+}

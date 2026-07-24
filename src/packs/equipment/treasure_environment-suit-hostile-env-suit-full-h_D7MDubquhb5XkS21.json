@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq1DSurvvField",
+  "name": "Environment Suit / Hostile-Env Suit / full hazard-sealed exosuit",
+  "type": "treasure",
+  "_id": "D7MDubquhb5XkS21",
+  "img": "icons/commodities/tech/frame-armor-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>One suit against every environment. Worn over or instead of armor when the world itself is the enemy.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥14,000</li><li><strong>Profile:</strong> Sealed / Vacuum / Thermal / Rad-Shielded / Filtered all at once - a portable Life Support rating; the wasteland/space workhorse.</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> Sealed, Rad-Shielded, Filtered, Thermal</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "environment-suit-hostile-env-suit-full-hazard-sealed-exosuit",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "survival",
+      "sealed"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 20000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!D7MDubquhb5XkS21"
+}

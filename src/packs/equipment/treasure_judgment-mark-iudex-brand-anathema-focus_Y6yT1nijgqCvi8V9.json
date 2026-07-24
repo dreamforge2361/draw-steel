@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6BStreetPrst",
+  "name": "Judgment-mark / Iudex Brand / anathema focus-iron",
+  "type": "treasure",
+  "_id": "Y6yT1nijgqCvi8V9",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "system": {
+    "description": {
+      "value": "<p>The smiter's iron - brands the guilty and feeds the Templar's Conviction back.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥1,000</li><li><strong>Profile:</strong> Benefit: An edge on the Templar's Judgment mark and its Conviction feedback; Templar-flavored (the smiter's iron). | Mod slots: 2 | Tags: Veil, Judgment</li><li><strong>Mod slots:</strong> 2</li><li><strong>Tags:</strong> Veil, Judgment</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "judgment-mark-iudex-brand-anathema-focus-iron",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 199000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Y6yT1nijgqCvi8V9"
+}

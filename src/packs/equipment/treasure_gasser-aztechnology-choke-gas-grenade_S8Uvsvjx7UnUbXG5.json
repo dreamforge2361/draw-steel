@@ -1,0 +1,56 @@
+{
+  "folder": "GWEq3EThrownGrnd",
+  "name": "Gasser / Aztechnology Choke / gas grenade",
+  "type": "treasure",
+  "_id": "S8Uvsvjx7UnUbXG5",
+  "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A gas grenade - toxin Blast that interacts with Hostile-Env suffocation/filtration and the Medic's toxin lane.</p><hr /><ul><li><strong>Item Tier:</strong> T4</li><li><strong>Availability:</strong> 4</li><li><strong>Cost:</strong> ¥220</li><li><strong>Profile:</strong> Damage: 4 toxin | Range: Short | Tags: [Light], Blast, Consumable</li><li><strong>Tags:</strong> [Light], Blast, Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "gasser-aztechnology-choke-gas-grenade",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "weapon",
+      "thrown",
+      "grenade"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 96000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!S8Uvsvjx7UnUbXG5"
+}

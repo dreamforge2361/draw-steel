@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6EMaterialCm",
+  "name": "A corpse / greater vessel (death-magic tier)",
+  "type": "treasure",
+  "_id": "uxoM3lCOw17YyzU4",
+  "img": "icons/commodities/materials/parchment-secrets.webp",
+  "system": {
+    "description": {
+      "value": "<p>The death-magic vessel - named here for completeness, but its use is reserved to the unwritten Necromancer class.</p><hr /><ul><li><strong>Item Tier:</strong> T1</li><li><strong>Availability:</strong> 1</li><li><strong>Cost:</strong> -</li><li><strong>Profile:</strong> Consumed in casting. Flagged here as a T1 component; its full use is RESERVED to the Necromancer class (resurrection, revenant work). | Grade/cost scales with Ritual Tier (Rituals appendix B2 authoritative). Tags: Ritual, Consumable, Reserved</li><li><strong>Tags:</strong> Ritual, Consumable, Reserved</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "a-corpse-greater-vessel-death-magic-tier",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ritual",
+      "component"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 222000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uxoM3lCOw17YyzU4"
+}

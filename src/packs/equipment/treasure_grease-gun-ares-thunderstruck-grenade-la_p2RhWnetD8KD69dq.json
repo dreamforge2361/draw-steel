@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3CHeavyWeapn",
+  "name": "Grease-Gun / Ares Thunderstruck / grenade launcher",
+  "type": "treasure",
+  "_id": "p2RhWnetD8KD69dq",
+  "img": "icons/weapons/artillery/cannon-engraved-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>A shoulder grenade launcher - Blast hits an area per the Combat chapter's area rules.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥14,000</li><li><strong>Profile:</strong> Damage: 9 fire | Range: Medium | Tags: [Heavy], Two-handed, Blast</li><li><strong>Mod slots:</strong> 4</li><li><strong>Tags:</strong> [Heavy], Two-handed, Blast</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "grease-gun-ares-thunderstruck-grenade-launcher",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 79000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!p2RhWnetD8KD69dq"
+}

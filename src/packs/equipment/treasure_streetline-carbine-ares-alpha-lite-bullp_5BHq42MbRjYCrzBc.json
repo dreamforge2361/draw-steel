@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq3BLongarms00",
+  "name": "Streetline Carbine / Ares Alpha-Lite / bullpup carbine",
+  "type": "treasure",
+  "_id": "5BHq42MbRjYCrzBc",
+  "img": "icons/weapons/guns/flamethrower-spray-fire-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>A compact bullpup - full-auto firepower in a shorter frame.</p><hr /><ul><li><strong>Item Tier:</strong> T3</li><li><strong>Availability:</strong> 3</li><li><strong>Cost:</strong> ¥2,400</li><li><strong>Profile:</strong> Damage: 6 kinetic | Range: Medium | Tags: [Medium], Two-handed, Auto</li><li><strong>Mod slots:</strong> 3</li><li><strong>Tags:</strong> [Medium], Two-handed, Auto</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "streetline-carbine-ares-alpha-lite-bullpup-carbine",
+    "kind": "weapon",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "weapon"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 71000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5BHq42MbRjYCrzBc"
+}

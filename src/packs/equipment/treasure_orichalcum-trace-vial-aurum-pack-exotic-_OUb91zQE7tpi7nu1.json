@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6FReagentPkg",
+  "name": "Orichalcum trace vial / Aurum Pack / exotic apex reagents",
+  "type": "treasure",
+  "_id": "OUb91zQE7tpi7nu1",
+  "img": "icons/consumables/potions/bottle-bulb-corked-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Relic-work fuel - exotic reagents and a trace of orichalcum, as often stolen as bought.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥8,000</li><li><strong>Profile:</strong> Pre-assembled, consumed in play, refilled in downtime. Exotic reagents plus an orichalcum trace - the T2 grade for relic-work and high rituals; a run objective as often as a purchase. | Priced at B2 grade for tier (B2 authoritative). Tags: Ritual, Consumable</li><li><strong>Tags:</strong> Ritual, Consumable</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "orichalcum-trace-vial-aurum-pack-exotic-apex-reagents",
+    "kind": "other",
+    "category": "consumable",
+    "echelon": 1,
+    "keywords": [
+      "ritual",
+      "reagent"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 227000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OUb91zQE7tpi7nu1"
+}

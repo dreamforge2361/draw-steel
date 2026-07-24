@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq2CHeavyArmor",
+  "name": "Hardshell / Aegis Line / full ballistic hardsuit",
+  "type": "treasure",
+  "_id": "htayqzmWeex8Sa37",
+  "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Maximum Stamina, maximum encumbrance - the Operator/tank line at its cheapest.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥300</li><li><strong>Profile:</strong> ENTRY HEAVY armor (Stamina +9/+12/+16/+21/+27 by Hero Tier). A wall you can barely walk in. Full Heavy encumbrance: -1 Speed + Stealth &amp; Reflex-agility banes.</li><li><strong>Mod slots:</strong> 2</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "hardshell-aegis-line-full-ballistic-hardsuit",
+    "kind": "armor",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "armor",
+      "heavy"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 47000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!htayqzmWeex8Sa37"
+}

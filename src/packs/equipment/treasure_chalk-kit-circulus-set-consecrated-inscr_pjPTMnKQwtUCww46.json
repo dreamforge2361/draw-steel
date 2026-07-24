@@ -1,0 +1,55 @@
+{
+  "folder": "GWEq6DSharedFoci",
+  "name": "Chalk-kit / Circulus Set / consecrated inscription kit",
+  "type": "treasure",
+  "_id": "pjPTMnKQwtUCww46",
+  "img": "icons/sundries/books/book-embossed-clasp-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>The reusable ritualist's tool - the kit is permanent; the chalk and ink it burns are the 6F consumables.</p><hr /><ul><li><strong>Item Tier:</strong> T5</li><li><strong>Availability:</strong> 5</li><li><strong>Cost:</strong> ¥200</li><li><strong>Profile:</strong> Benefit: An edge on inscribing a ward-line, teleport-circle, or formula-glyph; the reusable ritualist's tool (consumed chalk/ink is 6F). | Mod slots: 1 | Tags: Ritual</li><li><strong>Mod slots:</strong> 1</li><li><strong>Tags:</strong> Ritual</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "chalk-kit-circulus-set-consecrated-inscription-kit",
+    "kind": "implement",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "focus",
+      "magic"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 212000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pjPTMnKQwtUCww46"
+}

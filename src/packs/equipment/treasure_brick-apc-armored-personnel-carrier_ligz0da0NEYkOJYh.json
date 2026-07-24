@@ -1,0 +1,54 @@
+{
+  "folder": "GWEq5AGround0000",
+  "name": "Brick / APC / armored personnel carrier",
+  "type": "treasure",
+  "_id": "ligz0da0NEYkOJYh",
+  "img": "icons/commodities/tech/wheel.webp",
+  "system": {
+    "description": {
+      "value": "<p>The squad's iron - shrugs small arms and mounts a turret, but it is legal nowhere.</p><hr /><ul><li><strong>Item Tier:</strong> T2</li><li><strong>Availability:</strong> 2</li><li><strong>Cost:</strong> ¥18,000</li><li><strong>Profile:</strong> Domain: Ground | Scale: Heavy | Heavy-scale crew mover + weapon platform; shrugs small arms (Scale + Armor), carries a squad, mounts a turret. Loud, legal nowhere.</li><li><strong>Mod slots:</strong> 4</li></ul><p><em>Item Tier sets price, Availability, and mod-slot count only &mdash; never raw power.</em></p>",
+      "director": ""
+    },
+    "source": {
+      "book": "GHOSTWIRE",
+      "page": "",
+      "license": ""
+    },
+    "_dsid": "brick-apc-armored-personnel-carrier",
+    "kind": "other",
+    "category": "trinket",
+    "echelon": 1,
+    "keywords": [
+      "vehicle"
+    ],
+    "quantity": 1,
+    "project": {
+      "prerequisites": "",
+      "source": "",
+      "rollCharacteristic": [],
+      "yield": {
+        "amount": "1",
+        "display": ""
+      },
+      "goal": null
+    }
+  },
+  "effects": [],
+  "sort": 155000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ligz0da0NEYkOJYh"
+}

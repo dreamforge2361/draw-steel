@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": "GWEqCat6Foci0000",
+  "name": "6D. Shared Foci & Ritual Tools",
+  "color": null,
+  "sorting": "a",
+  "_id": "GWEq6DSharedFoci",
+  "description": "",
+  "sort": 4100000,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "draw-steel",
+    "systemVersion": "1.1.2",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!GWEq6DSharedFoci"
+}
